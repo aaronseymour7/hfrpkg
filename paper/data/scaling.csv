@@ -1,0 +1,16 @@
+family,name,formula,heavy_atoms,solve_s,distinct_refs,total_ref_molecules,all_refs_in_ATcT,conserved,reaction
+polyene,C6,C6H8,6,0.015,2,3,True,True,C=C + C6 -> 2 C=CC=C
+polyene,C10,C10H12,10,0.017,2,7,True,True,3 C=C + C10 -> 4 C=CC=C
+polyene,C14,C14H16,14,0.017,2,11,True,True,5 C=C + C14 -> 6 C=CC=C
+polyene,C18,C18H20,18,0.019,2,15,True,True,7 C=C + C18 -> 8 C=CC=C
+polyene,C22,C22H24,22,0.027,2,19,True,True,9 C=C + C22 -> 10 C=CC=C
+polyene,C26,C26H28,26,0.023,2,23,True,True,11 C=C + C26 -> 12 C=CC=C
+polyene,C30,C30H32,30,0.026,2,27,True,True,13 C=C + C30 -> 14 C=CC=C
+polyene,C34,C34H36,34,0.026,2,31,True,True,15 C=C + C34 -> 16 C=CC=C
+polyene,C38,C38H40,38,0.035,2,35,True,True,17 C=C + C38 -> 18 C=CC=C
+PAH,benzene,C6H6,6,0.020,2,6,True,True,3 C=C + benzene -> 3 C=CC=C
+PAH,naphthalene,C10H8,10,0.022,4,13,True,True,2 C=CC + 5 C=C + naphthalene -> 2 C=CC(=C)C + 4 C=CC=C
+PAH,anthracene,C14H10,14,0.024,4,20,True,True,4 C=CC + 7 C=C + anthracene -> 4 C=CC(=C)C + 5 C=CC=C
+PAH,pyrene,C16H10,16,0.027,4,25,True,True,6 C=CC + 8 C=C + pyrene -> 6 C=CC(=C)C + 5 C=CC=C
+PAH,coronene,C24H12,24,0.032,4,42,True,True,12 C=CC + 12 C=C + coronene -> 12 C=CC(=C)C + 6 C=CC=C
+fullerene,C60,C60,60,0.070,3,150,True,True,60 C=CC + 30 C=C + C60 -> 60 C=CC(=C)C

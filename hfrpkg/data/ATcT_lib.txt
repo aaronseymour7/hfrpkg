@@ -1,0 +1,626 @@
+1	Dihydrogen	H2	InChI=1S/H2/h1H	[H][H]	0	0
+2	Helium	He1	InChI=1S/He	[He]	0	0
+3	Carbon	C1	InChI=1S/C	[C]	0	0
+4	Dinitrogen	N2	InChI=1S/N2/c1-2	N#N	0	0
+5	Dioxygen	O2	InChI=1S/O2/c1-2	O=O	0	0
+6	Difluorine	F2	InChI=1S/F2/c1-2	FF	0	0
+7	Neon	Ne1	InChI=1S/Ne	[Ne]	0	0
+10	Dichlorine	Cl2	InChI=1S/Cl2/c1-2	ClCl	0	0
+11	Argon	Ar1	InChI=1S/Ar	[Ar]	0	0
+13	Krypton	Kr1	InChI=1S/Kr	[Kr]	0	0
+15	Xenon	Xe1	InChI=1S/Xe	[Xe]	0	0
+17	Radon	Rn1	InChI=1S/Rn	[Rn]	0	0
+18	Deuterium molecule	D2	InChI=1S/H2/h1H/i1+1D	[2H][2H]	0	0
+19	Hydrogen atom	H1	InChI=1S/H	[H]	216.034	0.000
+21	Oxygen atom	O1	InChI=1S/O	[O]	246.844	0.0021
+22	Methane	C1H4	InChI=1S/CH4/h1H4	C	-66.540	0.043
+24	Nitrogen atom	N1	InChI=1S/N	[N]	470.582	0.022
+25	Carbon dioxide	C1O2	InChI=1S/CO2/c2-1-3	C(=O)=O	-393.111	0.015
+27	Water	H2O1	InChI=1S/H2O/h1H2	O	-238.903	0.022
+28	Ethane	C2H6	InChI=1S/C2H6/c1-2/h1-2H3	CC	-68.39	0.12
+29	Chlorine atom	Cl1	InChI=1S/Cl	[Cl]	119.621	0.0011
+30	Fluorine atom	F1	InChI=1S/F	[F]	77.254	0.017
+31	Ethylene	C2H4	InChI=1S/C2H4/c1-2/h1-2H2	C=C	60.91	0.11
+32	Propane	C3H8	InChI=1S/C3H8/c1-3-2/h3H2,1-2H3	CCC	-82.71	0.15
+33	Methyl	C1H3	InChI=1S/CH3/h1H3	[CH3]	149.883	0.049
+34	Methanol	C1H4O1	InChI=1S/CH4O/c1-2/h2H,1H3	CO	-189.96	0.14
+35	Ammonia	H3N1	InChI=1S/H3N/h1H3	N	-38.563	0.029
+36	Bromine atom	Br1	InChI=1S/Br	[Br]	117.925	0.055
+37	Hydroxyl	H1O1	InChI=1S/HO/h1H	[OH]	37.278	0.022
+38	Formaldehyde	C1H2O1	InChI=1S/CH2O/c1-2/h1H2	C=O	-105.380	0.094
+39	Acetylene	C2H2	InChI=1S/C2H2/c1-2/h1-2H	C#C	228.89	0.12
+40	Ethanol	C2H6O1	InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3	CCO	-217.17	0.19
+42	Hydrogen chloride	Cl1H1	InChI=1S/ClH/h1H	Cl	-91.988	0.0062
+44	Iodine	I1	InChI=1S/I	[I]	107.157	0.0021
+45	Propene	C3H6	InChI=1S/C3H6/c1-3-2/h3H,1H2,2H3	CC=C	34.92	0.18
+46	Hydrogen fluoride	F1H1	InChI=1S/FH/h1H	F	-272.679	0.018
+47	Ethyl	C2H5	InChI=1S/C2H5/c1-2/h1H2,2H3	C[CH2]	131.52	0.20
+48	Hydrogen cyanide	C1H1N1	InChI=1S/CHN/c1-2/h1H	C#N	129.688	0.087
+49	Hydrogen bromide	Br1H1	InChI=1S/BrH/h1H	Br	-27.51	0.12
+50	Nitric oxide	N1O1	InChI=1S/NO/c1-2	[N]=O	90.622	0.064
+51	Methylamine	C1H5N1	InChI=1S/CH5N/c1-2/h2H2,1H3	CN	-6.45	0.22
+52	Acetaldehyde	C2H4O1	InChI=1S/C2H4O/c1-2-3/h2H,1H3	CC=O	-154.86	0.22
+53	Propyne	C3H4	InChI=1S/C3H4/c1-3-2/h1H,2H3	CC#C	192.73	0.20
+54	Chloromethane	C1H3Cl1	InChI=1S/CH3Cl/c1-2/h1H3	CCl	-74.65	0.17
+55	Acetone	C3H6O1	InChI=1S/C3H6O/c1-3(2)4/h1-2H3	CC(=O)C	-199.92	0.26
+56	Silicon	Si1	InChI=1S/Si	[Si]	450.34	0.56
+57	Dioxidanyl	H1O2	InChI=1S/HO2/c1-2/h1H	O[O]	15.07	0.14
+58	Hydrogen iodide	H1I1	InChI=1S/HI/h1H	I	28.646	0.036
+60	Allene	C3H4	InChI=1S/C3H4/c1-3-2/h1-2H2	C=C=C	197.50	0.22
+61	Nitrogen dioxide	N1O2	InChI=1S/NO2/c2-1-3	O=[N]=O	36.861	0.064
+62	Vinyl	C2H3	InChI=1S/C2H3/c1-2/h1H,2H2	C=[CH]	301.26	0.27
+63	Methylene	C1H2	InChI=1S/CH2/h1H2	[CH2]	391.076	0.094
+64	Hydrogen peroxide	H2O2	InChI=1S/H2O2/c1-2/h1-2H	OO	-129.418	0.058
+65	Fluoromethane	C1H3F1	InChI=1S/CH3F/c1-2/h1H3	CF	-227.44	0.24
+66	n-Butane	C4H10	InChI=1S/C4H10/c1-3-4-2/h3-4H2,1-2H3	CCCC	-98.22	0.19
+68	Silane	H4Si1	InChI=1S/H4Si/h1H4	[SiH4]	42.66	0.63
+71	1,3-Butadiene	C4H6	InChI=1S/C4H6/c1-3-4-2/h3-4H,1-2H2	C=CC=C	125.64	0.29
+72	Acetic acid	C2H4O2	InChI=1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)	CC(=O)O	-418.43	0.32
+75	Ketene	C2H2O1	InChI=1S/C2H2O/c1-2-3/h1H2	C=C=O	-45.33	0.11
+76	Nitrilomethyl	C1N1	InChI=1S/CN/c1-2	[C]#N	436.73	0.14
+77	Bromomethane	C1H3Br1	InChI=1S/CH3Br/c1-2/h1H3	CBr	-20.45	0.19
+78	Methoxy	C1H3O1	InChI=1S/CH3O/c1-2/h1H3	C[O]	28.98	0.26
+79	Formic acid	C1H2O2	InChI=1S/CH2O2/c2-1-3/h1H,(H,2,3)	C(=O)O	-370.98	0.20
+80	Ethylamine	C2H7N1	InChI=1S/C2H7N/c1-2-3/h2-3H2,1H3	CCN	-28.02	0.42
+83	Acetonitrile	C2H3N1	InChI=1S/C2H3N/c1-2-3/h1H3	CC#N	81.15	0.23
+84	Hydroxymethyl	C1H3O1	InChI=1S/CH3O/c1-2/h2H,1H2	[CH2]O	-10.10	0.28
+85	Sulfur dioxide	O2S1	InChI=1S/O2S/c1-3-2	O=S=O	-294.20	0.13
+89	Propargyl	C3H3	InChI=1S/C3H3/c1-3-2/h1H,2H2	[CH2]C#C	354.11	0.31
+90	iso-Butane	C4H10	InChI=1S/C4H10/c1-4(2)3/h4H,1-3H3	CC(C)C	-105.87	0.27
+92	Hypochlorous acid	Cl1H1O1	InChI=1S/ClHO/c1-2/h2H	OCl	-73.840	0.024
+94	Ethynyl	C2H1	InChI=1S/C2H/c1-2/h1H	C#[C]	563.76	0.15
+96	Amidogen	H2N1	InChI=1S/H2N/h1H2	[NH2]	188.92	0.11
+97	Tetrafluoromethane	C1F4	InChI=1S/CF4/c2-1(3,4)5	C(F)(F)(F)F	-927.63	0.23
+98	Formyl	C1H1O1	InChI=1S/CHO/c1-2/h1H	[CH]=O	41.390	0.094
+99	Formamide	C1H3N1O1	InChI=1S/CH3NO/c2-1-3/h1H,(H2,2,3)	NC=O	-178.64	0.34
+100	n-Propyl	C3H7	InChI=1S/C3H7/c1-3-2/h1,3H2,2H3	CC[CH2]	118.47	0.39
+101	Cyclopropane	C3H6	InChI=1S/C3H6/c1-2-3-1/h1-3H2	C1CC1	71.07	0.32
+102	Cyclopentadiene	C5H6	InChI=1S/C5H6/c1-2-4-5-3-1/h1-4H,5H2	C1C=CC=C1	151.90	0.49
+103	Dibromine	Br2	InChI=1S/Br2/c1-2	BrBr	45.70	0.11
+104	Diiodine	I2	InChI=1S/I2/c1-2	II	65.497	0.0041
+105	iso-Propyl	C3H7	InChI=1S/C3H7/c1-3-2/h3H,1-2H3	C[CH]C	105.68	0.38
+106	Ethenol	C2H4O1	InChI=1S/C2H4O/c1-2-3/h2-3H,1H2	C=CO	-113.27	0.37
+107	Allyl	C3H5	InChI=1S/C3H5/c1-3-2/h3H,1-2H2	C=C[CH2]	179.92	0.33
+108	Acetyl	C2H3O1	InChI=1S/C2H3O/c1-2-3/h1H3	C[C]=O	-3.60	0.29
+109	Chloroethane	C2H5Cl1	InChI=1S/C2H5Cl/c1-2-3/h2H2,1H3	CCCl	-96.94	0.25
+111	Methoxymethane	C2H6O1	InChI=1S/C2H6O/c1-3-2/h1-2H3	COC	-166.39	0.35
+113	Methanimine	C1H3N1	InChI=1S/CH3N/c1-2/h2H,1H2	C=N	96.39	0.34
+115	Fluoroform	C1H1F3	InChI=1S/CHF3/c2-1(3)4/h1H	C(F)(F)F	-689.28	0.40
+117	Trifluoromethyl	C1F3	InChI=1S/CF3/c2-1(3)4	F[C](F)F	-465.14	0.42
+118	Methylidyne	C1H1	InChI=1S/CH/h1H	[CH]	592.977	0.081
+119	Methyl hydroperoxide	C1H4O2	InChI=1S/CH4O2/c1-3-2/h2H,1H3	COO	-114.82	0.42
+121	Tetrachloromethane	C1Cl4	InChI=1S/CCl4/c2-1(3,4)5	ClC(Cl)(Cl)Cl	-89.28	0.41
+124	Hypobromous acid	Br1H1O1	InChI=1S/BrHO/c1-2/h2H	OBr	-51.27	0.48
+125	Iodomethane	C1H3I1	InChI=1S/CH3I/c1-2/h1H3	CI	24.53	0.16
+126	Methylperoxy	C1H3O2	InChI=1S/CH3O2/c1-3-2/h1H3	CO[O]	22.56	0.34
+128	Cyanoacetylene	C3H1N1	InChI=1S/C3HN/c1-2-3-4/h1H	C#CC#N	372.26	0.57
+129	Chlorooxidanyl	Cl1O1	InChI=1S/ClO/c1-2	Cl=O	101.124	0.035
+132	Hydroxyformyl	C1H1O2	InChI=1S/CHO2/c2-1-3/h(H,2,3)	O[C]=O	-181.14	0.40
+133	Vinyl chloride	C2H3Cl1	InChI=1S/C2H3Cl/c1-2-3/h2H,1H2	C=CCl	29.41	0.27
+134	Glycine	C2H5N1O2	InChI=1S/C2H5NO2/c3-1-2(4)5/h1,3H2,(H,4,5)	NCC(=O)O	-377.67	0.55
+136	Imidogen	H1N1	InChI=1S/HN/h1H	[NH]	358.75	0.16
+137	1-Hydroxyethyl	C2H5O1	InChI=1S/C2H5O/c1-2-3/h2-3H,1H3	C[CH]O	-42.70	0.46
+138	Dimethylamine	C2H7N1	InChI=1S/C2H7N/c1-3-2/h3H,1-2H3	CNC	4.66	0.45
+139	Vinylacetylene	C4H4	InChI=1S/C4H4/c1-3-4-2/h1,4H,2H2	C=CC#C	296.48	0.52
+140	Sulfur trioxide	O3S1	InChI=1S/O3S/c1-4(2)3	O=S(=O)=O	-389.75	0.24
+141	Oxirane	C2H4O1	InChI=1S/C2H4O/c1-2-3-1/h1-2H2	C1OC1	-39.72	0.33
+144	1,3-Butadiyne	C4H2	InChI=1S/C4H2/c1-3-4-2/h1-2H	C#CC#C	458.40	0.48
+146	Isocyanic acid	C1H1N1O1	InChI=1S/CHNO/c2-1-3/h2H	N=C=O	-115.93	0.28
+147	Cyanamide	C1H2N2	InChI=1S/CH2N2/c2-1-3/h2H2	NC#N	141.62	0.78
+148	Difluorophosgene	C1F2O1	InChI=1S/CF2O/c2-1(3)4	O=C(F)F	-603.34	0.40
+149	Hypofluorous acid	F1H1O1	InChI=1S/FHO/c1-2/h2H	OF	-84.38	0.19
+151	Isobutene	C4H8	InChI=1S/C4H8/c1-4(2)3/h1H2,2-3H3	CC(=C)C	4.31	0.32
+152	2-Hydroxyethyl	C2H5O1	InChI=1S/C2H5O/c1-2-3/h3H,1-2H2	[CH2]CO	-12.87	0.48
+153	N-Methylenemethanamine	C2H5N1	InChI=1S/C2H5N/c1-3-2/h1H2,2H3	CN=C	94.61	0.67
+154	Dichloromethane	C1H2Cl2	InChI=1S/CH2Cl2/c2-1-3/h1H2	C(Cl)Cl	-86.84	0.33
+157	Sulfur	S1	InChI=1S/S	[S]	276.84	0.14
+159	Methylamidogen	C1H4N1	InChI=1S/CH4N/c1-2/h2H,1H3	C[NH]	187.99	0.39
+161	1,2-Butadiene	C4H6	InChI=1S/C4H6/c1-3-4-2/h4H,1H2,2H3	CC=C=C	176.06	0.42
+163	Cyclopentadienyl	C5H5	InChI=1S/C5H5/c1-2-4-5-3-1/h1-5H	[CH]1C=CC=C1	275.62	0.80
+164	Ethyl hydroperoxide	C2H6O2	InChI=1S/C2H6O2/c1-2-4-3/h3H,2H2,1H3	CCOO	-142.47	0.62
+166	Trimethylsilane	C3H10Si1	InChI=1S/C3H10Si/c1-4(2)3/h4H,1-3H3	C[SiH](C)C	-125.8	1.5
+167	Hydrogen sulfide	H2S1	InChI=1S/H2S/h1H2	S	-17.36	0.18
+169	Cyanogen chloride	C1Cl1N1	InChI=1S/CClN/c2-1-3	N#CCl	135.14	0.43
+171	Cyclopropene	C3H4	InChI=1S/C3H4/c1-2-3-1/h1-2H,3H2	C1C=C1	292.60	0.41
+173	Methyl formate	C2H4O2	InChI=1S/C2H4O2/c1-4-2-3/h2H,1H3	COC=O	-346.82	0.61
+176	Acrolein	C3H4O1	InChI=1S/C3H4O/c1-2-3-4/h2-3H,1H2	C=CC=O	-55.11	0.64
+178	Tetrafluorosilane	F4Si1	InChI=1S/F4Si/c1-5(2,3)4	[Si](F)(F)(F)F	-1608.76	0.52
+180	Nitrous acid	H1N1O2	InChI=1S/HNO2/c2-1-3/h(H,2,3)	N(=O)O	-72.988	0.077
+183	2-Butyne	C4H6	InChI=1S/C4H6/c1-3-4-2/h1-2H3	CC#CC	159.59	0.45
+185	Difluoromethane	C1H2F2	InChI=1S/CH2F2/c2-1-3/h1H2	C(F)F	-443.32	0.35
+186	Vinyl bromide	C2H3Br1	InChI=1S/C2H3Br/c1-2-3/h2H,1H2	C=CBr	88.84	0.54
+187	Silyl	H3Si1	InChI=1S/H3Si/h1H3	[SiH3]	204.71	0.80
+189	Oxygen difluoride	F2O1	InChI=1S/F2O/c1-3-2	FOF	26.80	0.22
+191	Hypoiodous acid	H1I1O1	InChI=1S/HIO/c1-2/h2H	OI	-53.6	2.8
+192	Nitrosyl hydride	H1N1O1	InChI=1S/HNO/c1-2/h1H	N=O	109.93	0.11
+194	Butatriene	C4H4	InChI=1S/C4H4/c1-3-4-2/h1-2H2	C=C=C=C	328.44	0.53
+195	Ethoxy	C2H5O1	InChI=1S/C2H5O/c1-2-3/h2H2,1H3	CC[O]	1.39	0.42
+196	Vinoxy	C2H3O1	InChI=1S/C2H3O/c1-2-3/h2H,1H2	C=C[O]	22.92	0.53
+197	Ethylperoxy	C2H5O2	InChI=1S/C2H5O2/c1-2-4-3/h2H2,1H3	CCO[O]	-6.09	0.60
+198	Acetone enol	C3H6O1	InChI=1S/C3H6O/c1-3(2)4/h4H,1H2,2H3	C=C(O)C	-151.24	0.68
+199	Phosgene	C1Cl2O1	InChI=1S/CCl2O/c2-1(3)4	O=C(Cl)Cl	-217.49	0.24
+200	1-Hydroxy-2-propanone	C3H6O2	InChI=1S/C3H6O2/c1-3(5)2-4/h4H,2H2,1H3	CC(=O)CO	-354.40	0.83
+201	Cyanoamidogen	C1H1N2	InChI=1S/CHN2/c2-1-3/h2H	[NH]C#N	322.73	0.63
+202	Chloroform	C1H1Cl3	InChI=1S/CHCl3/c2-1(3)4/h1H	C(Cl)(Cl)Cl	-94.51	0.39
+205	Methyl nitrite	C1H3N1O2	InChI=1S/CH3NO2/c1-4-2-3/h1H3	CON=O	-54.33	0.69
+206	Acrylonitrile	C3H3N1	InChI=1S/C3H3N/c1-2-3-4/h2H,1H2	C=CC#N	194.02	0.60
+207	Silanol	H4O1Si1	InChI=1S/H4OSi/c1-2/h1H,2H3	[SiH3]O	-271.0	1.2
+211	Cyanogen bromide	C1Br1N1	InChI=1S/CBrN/c2-1-3	N#CBr	186.8	1.4
+212	n-Butyl	C4H9	InChI=1S/C4H9/c1-3-4-2/h1,3-4H2,2H3	CCC[CH2]	103.10	0.60
+213	neo-Pentane	C5H12	InChI=1S/C5H12/c1-5(2,3)4/h1-4H3	CC(C)(C)C	-134.25	0.38
+214	trans-2-Butene	C4H8	InChI=1S/C4H8/c1-3-4-2/h3-4H,1-2H3/b4-3+	C/C=C/C	9.69	0.28
+215	1-Butene	C4H8	InChI=1S/C4H8/c1-3-4-2/h3H,1,4H2,2H3	CCC=C	21.24	0.33
+217	Vinyl hydroperoxide	C2H4O2	InChI=1S/C2H4O2/c1-2-4-3/h2-3H,1H2	C=COO	-26.04	0.69
+218	Propionaldehyde	C3H6O1	InChI=1S/C3H6O/c1-2-3-4/h3H,2H2,1H3	CCC=O	-171.09	0.20
+219	Methyl acetate	C3H6O2	InChI=1S/C3H6O2/c1-3(4)5-2/h1-2H3	CC(=O)OC	-394.13	0.56
+220	Acetonyl	C3H5O1	InChI=1S/C3H5O/c1-3(2)4/h1H2,2H3	CC(=O)[CH2]	-18.39	0.62
+221	Aziridine	C2H5N1	InChI=1S/C2H5N/c1-2-3-1/h3H,1-2H2	N1CC1	143.58	0.85
+222	Tetrabromomethane	C1Br4	InChI=1S/CBr4/c2-1(3,4)5	BrC(Br)(Br)Br	144.80	0.73
+223	Ethyl bromide	C2H5Br1	InChI=1S/C2H5Br/c1-2-3/h2H2,1H3	CCBr	-40.97	0.24
+224	Propadienone	C3H2O1	InChI=1S/C3H2O/c1-2-3-4/h1H2	C=C=C=O	132.23	0.61
+225	Chlorine fluoride	Cl1F1	InChI=1S/ClF/c1-2	ClF	-55.622	0.030
+228	Hydroxylamine	H3N1O1	InChI=1S/H3NO/c1-2/h2H,1H2	NO	-33.06	0.42
+229	Vinylidene	C2H2	InChI=1S/C2H2/c1-2/h1H2	[C]=C	411.24	0.30
+230	Aminomethyl	C1H4N1	InChI=1S/CH4N/c1-2/h1-2H2	[CH2]N	159.42	0.35
+231	cis-2-Butene	C4H8	InChI=1S/C4H8/c1-3-4-2/h3-4H,1-2H3/b4-3-	C/C=C\C	14.43	0.38
+232	1-Butyne	C4H6	InChI=1S/C4H6/c1-3-4-2/h1H,4H2,2H3	CCC#C	180.43	0.56
+235	Methanetetraylbisamidogen	C1N2	InChI=1S/CN2/c2-1-3	[N]=C=[N]	451.40	0.40
+236	Bromoform	C1H1Br3	InChI=1S/CHBr3/c2-1(3)4/h1H	C(Br)(Br)Br	80.98	0.70
+237	Vinyl fluoride	C2H3F1	InChI=1S/C2H3F/c1-2-3/h2H,1H2	C=CF	-134.50	0.45
+241	Ethyl nitrite	C2H5N1O2	InChI=1S/C2H5NO2/c1-2-5-3-4/h2H2,1H3	CCON=O	-79.93	0.86
+242	Fluorooxidanyl	F1O1	InChI=1S/FO/c1-2	[O]F	110.28	0.14
+246	Peroxynitrous acid	H1N1O3	InChI=1S/HNO3/c2-1-4-3/h3H	OON=O	-5.74	0.35
+247	Ethylidene	C2H4	InChI=1S/C2H4/c1-2/h1H,2H3	[CH]C	361.31	0.48
+250	Cyanomethyl	C2H2N1	InChI=1S/C2H2N/c1-2-3/h1H2	[CH2]C#N	262.84	0.53
+251	Cyanic fluoride	C1F1N1	InChI=1S/CFN/c2-1-3	N#CF	8.49	0.74
+253	t-Butyl	C4H9	InChI=1S/C4H9/c1-4(2)3/h1-3H3	C[C](C)C	75.36	0.68
+254	n-Pentane	C5H12	InChI=1S/C5H12/c1-3-5-4-2/h3-5H2,1-2H3	CCCCC	-114.16	0.29
+255	Methanediol	C1H4O2	InChI=1S/CH4O2/c2-1-3/h2-3H,1H2	C(O)O	-378.49	0.62
+257	Cyanooxidanyl	C1N1O1	InChI=1S/CNO/c2-1-3	N#C[O]	126.96	0.33
+259	Ethenamine	C2H5N1	InChI=1S/C2H5N/c1-2-3/h2H,1,3H2	C=CN	69.39	0.66
+260	Fluoroethane	C2H5F1	InChI=1S/C2H5F/c1-2-3/h2H2,1H3	CCF	-257.24	0.35
+261	Chlorotrifluoromethane	C1Cl1F3	InChI=1S/CClF3/c2-1(3,4)5	FC(F)(F)Cl	-704.26	0.56
+263	Carbamoyl	C1H2N1O1	InChI=1S/CH2NO/c2-1-3/h(H2,2,3)	N[C]=O	-7.73	0.72
+265	1,2,3-Butatrien-1-yl	C4H3	InChI=1S/C4H3/c1-3-4-2/h1H,2H2	C=C=C=[CH]	497.55	0.66
+266	Disilane	H6Si2	InChI=1S/H6Si2/c1-2/h1-2H3	[SiH3][SiH3]	92.0	1.3
+268	Bromooxidanyl	Br1O1	InChI=1S/BrO/c1-2	[O]Br	131.22	0.28
+269	Aminooxy	H2N1O1	InChI=1S/H2NO/c1-2/h1H2	N[O]	70.65	0.62
+270	Hydroxyamidogen	H2N1O1	InChI=1S/H2NO/c1-2/h1-2H	[NH]O	101.27	0.83
+275	Hydroxymethylene	C1H2O1	InChI=1S/CH2O/c1-2/h1-2H	[CH]O	112.70	0.27
+276	Carbonic acid	C1H2O3	InChI=1S/CH2O3/c2-1(3)4/h(H2,2,3,4)	OC(=O)O	-602.24	0.55
+277	Peroxyformic acid	C1H2O3	InChI=1S/CH2O3/c2-1-4-3/h1,3H	C(=O)OO	-279.20	0.63
+279	1-Propanol	C3H8O1	InChI=1S/C3H8O/c1-2-3-4/h4H,2-3H2,1H3	CCCO	-231.13	0.20
+280	Cyclopentane	C5H10	InChI=1S/C5H10/c1-2-4-5-3-1/h1-5H2	C1CCCC1	-43.37	0.38
+283	(1E)-Ethanimine	C2H5N1	InChI=1S/C2H5N/c1-2-3/h2-3H,1H3	CC=N	55.81	0.72
+285	Bromotrifluoromethane	C1Br1F3	InChI=1S/CBrF3/c2-1(3,4)5	FC(F)(F)Br	-638.62	0.39
+286	Tetrahedrane	C4H4	InChI=1S/C4H4/c1-2-3(1)4(1)2/h1-4H	C12C3C1C23	547.73	0.91
+287	Silylene	H2Si1	InChI=1S/H2Si/h1H2	[SiH2]	271.60	0.81
+290	Nitrogen trifluoride	F3N1	InChI=1S/F3N/c1-4(2)3	N(F)(F)F	-125.84	0.55
+291	(E)-Diazene	H2N2	InChI=1S/H2N2/c1-2/h1-2H/b2-1+	[H]/N=N/[H]	207.17	0.40
+292	(E)-Iminomethyl	C1H2N1	InChI=1S/CH2N/c1-2/h1-2H	[CH]=N	275.80	0.56
+293	Cyanogen	C2N2	InChI=1S/C2N2/c3-1-2-4	N#CC#N	308.19	0.41
+295	Peroxyformyl	C1H1O3	InChI=1S/CHO3/c2-1-4-3/h1H	C(=O)O[O]	-100.40	0.67
+296	1-Methylethenyl	C3H5	InChI=1S/C3H5/c1-3-2/h1H2,2H3	C[C]=C	263.05	0.61
+297	Cyclopentene	C5H8	InChI=1S/C5H8/c1-2-4-5-3-1/h1-2H,3-5H2	C1CC=CC1	59.94	0.43
+298	Trioxidane	H2O3	InChI=1S/H2O3/c1-3-2/h1-2H	OOO	-81.75	0.40
+299	Dioxirane	C1H2O2	InChI=1S/CH2O2/c1-2-3-1/h1H2	C1OO1	9.43	0.37
+300	Trimethylamine	C3H9N1	InChI=1S/C3H9N/c1-4(2)3/h1-3H3	CN(C)C	2.70	0.78
+305	Methylketene	C3H4O1	InChI=1S/C3H4O/c1-2-3-4/h2H,1H3	CC=C=O	-54.10	0.63
+306	Disilene	H4Si2	InChI=1S/H4Si2/c1-2/h1-2H2	[SiH2]=[SiH2]	288.8	1.7
+307	1,3-Pentadiyne	C5H4	InChI=1S/C5H4/c1-3-5-4-2/h1H,2H3	C#CC#CC	418.20	0.65
+308	Disulfur	S2	InChI=1S/S2/c1-2	S=S	127.38	0.27
+310	Dimethyl sulfide	C2H6S1	InChI=1S/C2H6S/c1-3-2/h1-2H3	CSC	-20.22	0.35
+316	Difluorodioxidane	F2O2	InChI=1S/F2O2/c1-3-4-2	FOOF	35.38	0.40
+319	Hydrogen isocyanide	C1H1N1	InChI=1S/CHN/c1-2/h2H	[C]=N	192.07	0.32
+320	Chloroacetylene	C2H1Cl1	InChI=1S/C2HCl/c1-2-3/h1H	C#CCl	229.36	0.45
+321	Fluoroacetylene	C2H1F1	InChI=1S/C2HF/c1-2-3/h1H	C#CF	104.99	0.39
+323	1-Propenyl	C3H5	InChI=1S/C3H5/c1-3-2/h1,3H,2H3	CC=[CH]	278.21	0.63
+325	Ketenyl	C2H1O1	InChI=1S/C2HO/c1-2-3/h1H	[CH]=C=O	177.11	0.54
+326	Ethynol	C2H2O1	InChI=1S/C2H2O/c1-2-3/h1,3H	C#CO	95.32	0.73
+327	Hydroxymethoxy	C1H3O2	InChI=1S/CH3O2/c2-1-3/h2H,1H2	[O]CO	-159.58	0.84
+328	1-Butanol	C4H10O1	InChI=1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3	CCCCO	-244.49	0.24
+330	Glycolaldehyde	C2H4O2	InChI=1S/C2H4O2/c3-1-2-4/h1,4H,2H2	C(=O)CO	-304.28	0.89
+332	Glyoxal	C2H2O2	InChI=1S/C2H2O2/c3-1-2-4/h1-2H	O=CC=O	-207.82	0.54
+333	(Methylamino)methyl	C2H6N1	InChI=1S/C2H6N/c1-3-2/h3H,1H2,2H3	CN[CH2]	168.81	0.70
+334	Diazirinyl	C1H1N2	InChI=1S/CHN2/c1-2-3-1/h1H	C1=N[N]1	491.09	0.96
+335	Diazirine	C1H2N2	InChI=1S/CH2N2/c1-2-3-1/h1H2	C1N=N1	320.7	1.1
+336	Trichloromethyl	C1Cl3	InChI=1S/CCl3/c2-1(3)4	Cl[C](Cl)Cl	73.79	0.84
+337	1,1-Dichloroethane	C2H4Cl2	InChI=1S/C2H4Cl2/c1-2(3)4/h2H,1H3	CC(Cl)Cl	-120.15	0.43
+338	Dibromomethane	C1H2Br2	InChI=1S/CH2Br2/c2-1-3/h1H2	C(Br)Br	27.01	0.59
+346	Nitrosomethane	C1H3N1O1	InChI=1S/CH3NO/c1-2-3/h1H3	CN=O	80.95	0.91
+348	Cyclobutadiene	C4H4	InChI=1S/C4H4/c1-2-4-3-1/h1-4H	C1=CC=C1	436.58	0.63
+350	Disilanyl	H5Si2	InChI=1S/H5Si2/c1-2/h1H2,2H3	[SiH3][SiH2]	242.4	1.5
+351	Silanone	H2O1Si1	InChI=1S/H2OSi/c1-2/h2H2	[SiH2]=O	-93.77	0.99
+352	Silyloxy	H3O1Si1	InChI=1S/H3OSi/c1-2/h2H3	[SiH3][O]	8.5	1.4
+353	Sulfanyl	H1S1	InChI=1S/HS/h1H	[SH]	142.81	0.18
+354	Methanethiol	C1H4S1	InChI=1S/CH4S/c1-2/h2H,1H3	CS	-10.39	0.46
+357	Iodooxidanyl	I1O1	InChI=1S/IO/c1-2	I[O]	127.05	0.82
+358	Iodotrifluoromethane	C1F3I1	InChI=1S/CF3I/c2-1(3,4)5	C(F)(F)(F)I	-583.19	0.45
+360	Hydrazine	H4N2	InChI=1S/H4N2/c1-2/h1-2H2	NN	111.75	0.44
+363	Methyleneamidogen	C1H2N1	InChI=1S/CH2N/c1-2/h1H2	C=[N]	242.08	0.55
+365	Cyanogen iodide	C1I1N1	InChI=1S/CIN/c2-1-3	IC#N	222.5	1.7
+368	Cyclopropyl	C3H5	InChI=1S/C3H5/c1-2-3-1/h1H,2-3H2	C1C[CH]1	303.91	0.48
+370	iso-Pentane	C5H12	InChI=1S/C5H12/c1-4-5(2)3/h5H,4H2,1-3H3	CCC(C)C	-118.90	0.39
+371	1-Hydroxyethylidene	C2H4O1	InChI=1S/C2H4O/c1-2-3/h3H,1H3	C[C]O	57.45	0.77
+373	Dimethylamidogen	C2H6N1	InChI=1S/C2H6N/c1-3-2/h1-2H3	C[N]C	175.07	0.92
+374	2-Iminoethyl	C2H4N1	InChI=1S/C2H4N/c1-2-3/h2-3H,1H2	[CH2]C=N	219.37	0.86
+376	Fluorodioxidanyl	F1O2	InChI=1S/FO2/c1-3-2	FO[O]	26.87	0.26
+378	1,1-Difluoroethene	C2H2F2	InChI=1S/C2H2F2/c1-2(3)4/h1H2	C=C(F)F	-343.59	0.63
+381	Carbamic acid	C1H3N1O2	InChI=1S/CH3NO2/c2-1(3)4/h2H2,(H,3,4)	NC(=O)O	-421.82	0.83
+382	3-Buten-2-one	C4H6O1	InChI=1S/C4H6O/c1-3-4(2)5/h3H,1H2,2H3	CC(=O)C=C	-95.28	0.85
+383	Urea	C1H4N2O1	InChI=1S/CH4N2O/c2-1(3)4/h(H4,2,3,4)	NC(=O)N	-218.16	0.42
+385	Acetamide	C2H5N1O1	InChI=1S/C2H5NO/c1-2(3)4/h1H3,(H2,3,4)	CC(=O)N	-219.62	0.56
+386	1-Cyanovinyl	C3H2N1	InChI=1S/C3H2N/c1-2-3-4/h1H2	C=[C]C#N	419.1	1.1
+388	(E)-1-Methylallyl	C4H7	InChI=1S/C4H7/c1-3-4-2/h3-4H,1H2,2H3/b4-3+	C/C=C/[CH2]	152.70	0.79
+390	Iodine monochloride	Cl1I1	InChI=1S/ClI/c1-2	ICl	19.024	0.013
+404	Cyclobutane	C4H8	InChI=1S/C4H8/c1-2-4-3-1/h1-4H2	C1CCC1	52.27	0.36
+405	2-Butynyl	C4H5	InChI=1S/C4H5/c1-3-4-2/h1H2,2H3	CC#C[CH2]	318.18	0.66
+406	1,2-Butadienyl	C4H5	InChI=1S/C4H5/c1-3-4-2/h1,4H,2H3	CC=C=[CH]	328.98	0.63
+407	Isoprene	C5H8	InChI=1S/C5H8/c1-4-5(2)3/h4H,1-2H2,3H3	CC(=C)C=C	96.29	0.66
+408	Oxirene	C2H2O1	InChI=1S/C2H2O/c1-2-3-1/h1-2H	C1=CO1	272.44	0.60
+409	Dihydroxymethyl	C1H3O2	InChI=1S/CH3O2/c2-1-3/h1-3H	[CH](O)O	-196.9	1.1
+410	Formyloxidanyl	C1H1O2	InChI=1S/CHO2/c2-1-3/h1H	C(=O)[O]	-125.76	0.55
+411	Methoxyethane	C3H8O1	InChI=1S/C3H8O/c1-3-4-2/h3H2,1-2H3	CCOC	-194.27	0.52
+413	1,1,1-Trichloroethane	C2H3Cl3	InChI=1S/C2H3Cl3/c1-2(3,4)5/h1H3	CC(Cl)(Cl)Cl	-133.96	0.52
+416	Chlorodifluoromethane	C1H1Cl1F2	InChI=1S/CHClF2/c2-1(3)4/h1H	C(F)(F)Cl	-475.57	0.99
+418	Fluoroformyl	C1F1O1	InChI=1S/CFO/c2-1-3	O=[C]F	-176.62	0.37
+419	2-Bromoethanol	C2H5Br1O1	InChI=1S/C2H5BrO/c3-1-2-4/h4H,1-2H2	BrCCO	-195.98	0.52
+420	Carbon suboxide	C3O2	InChI=1S/C3O2/c4-2-1-3-5	O=C=C=C=O	-94.41	0.96
+424	Methylcarbamic acid	C2H5N1O2	InChI=1S/C2H5NO2/c1-3-2(4)5/h3H,1H3,(H,4,5)	CNC(=O)O	-414.50	0.92
+425	3-Oxo-1-propenyl	C3H3O1	InChI=1S/C3H3O/c1-2-3-4/h1-3H	[CH]=CC=O	190.97	0.91
+426	2-Propynal	C3H2O1	InChI=1S/C3H2O/c1-2-3-4/h1,3H	C#CC=O	135.53	0.87
+428	3-Methylenecyclopropene	C4H4	InChI=1S/C4H4/c1-4-2-3-4/h2-3H,1H2	C=C1C=C1	396.11	0.81
+431	Silylidyne	H1Si1	InChI=1S/HSi/h1H	[SiH]	371.23	0.67
+432	Bromosilane	Br1H3Si1	InChI=1S/BrH3Si/c1-2/h2H3	[SiH3]Br	-59.0	1.4
+433	Bromotrimethylsilane	C3H9Br1Si1	InChI=1S/C3H9BrSi/c1-5(2,3)4/h1-3H3	C[Si](Br)(C)C	-259.4	2.0
+435	1-Methyl-1-propenyl	C4H7	InChI=1S/C4H7/c1-3-4-2/h3H,1-2H3	C[C]=CC	240.12	0.66
+436	1-Butenyl	C4H7	InChI=1S/C4H7/c1-3-4-2/h1,3H,4H2,2H3	CCC=[CH]	263.48	0.68
+438	Sulfur monoxide	O1S1	InChI=1S/OS/c1-2	S=O	5.96	0.13
+567	Ethylidyne	C2H3	InChI=1S/C2H3/c1-2/h1H3	[C]C	508.65	0.80
+447	1-Methylethylidene	C3H6	InChI=1S/C3H6/c1-3-2/h1-2H3	C[C]C	316.08	0.97
+448	Propylidene	C3H6	InChI=1S/C3H6/c1-3-2/h1H,3H2,2H3	CC[CH]	349.52	0.92
+451	Cyclobutene	C4H6	InChI=1S/C4H6/c1-2-4-3-1/h1-2H,3-4H2	C1CC=C1	178.11	0.60
+452	1,3-Butadienyl	C4H5	InChI=1S/C4H5/c1-3-4-2/h1,3-4H,2H2	C=CC=[CH]	372.30	0.87
+455	Methoxymethyl	C2H5O1	InChI=1S/C2H5O/c1-3-2/h1H2,2H3	CO[CH2]	13.47	0.86
+458	Diethyl ether	C4H10O1	InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3	CCOCC	-222.77	0.75
+459	Cyanic acid	C1H1N1O1	InChI=1S/CHNO/c2-1-3/h3H	OC#N	-12.32	0.43
+463	Acetyl chloride	C2H3Cl1O1	InChI=1S/C2H3ClO/c1-2(3)4/h1H3	CC(=O)Cl	-232.51	0.39
+464	Dioxoethyl	C2H1O2	InChI=1S/C2HO2/c3-1-2-4/h1H	C(=O)[C]=O	-63.26	0.86
+465	Chlorohydroxymethyl	C1H2Cl1O1	InChI=1S/CH2ClO/c2-1-3/h1,3H	[CH](Cl)O	-54.7	1.1
+466	1,1-Dichloroethene	C2H2Cl2	InChI=1S/C2H2Cl2/c1-2(3)4/h1H2	C=C(Cl)Cl	9.32	0.50
+467	Tetraiodomethane	C1I4	InChI=1S/CI4/c2-1(3,4)5	C(I)(I)(I)I	323.7	1.1
+468	Dichlorodifluoromethane	C1Cl2F2	InChI=1S/CCl2F2/c2-1(3,4)5	FC(F)(Cl)Cl	-488.87	0.44
+469	Fluorodichloromethane	C1H1Cl2F1	InChI=1S/CHCl2F/c2-1(3)4/h1H	C(F)(Cl)Cl	-277.62	0.90
+472	Formyl fluoride	C1H1F1O1	InChI=1S/CHFO/c2-1-3/h1H	FC=O	-378.63	0.31
+478	2-Hydroxyprop-1-en-1-yl	C3H5O1	InChI=1S/C3H5O/c1-3(2)4/h1,4H,2H3	CC(O)=[CH]	101.65	0.86
+480	1-Formylethenyl	C3H3O1	InChI=1S/C3H3O/c1-2-3-4/h3H,1H2	C=[C]C=O	177.62	0.80
+481	2-Cyanovinyl	C3H2N1	InChI=1S/C3H2N/c1-2-3-4/h1-2H	[CH]=CC#N	447.86	0.98
+483	1-Buten-3-yn-1-yl	C4H3	InChI=1S/C4H3/c1-3-4-2/h1-3H	C#CC=[CH]	547.40	0.84
+484	3-Buten-1-ynyl	C4H3	InChI=1S/C4H3/c1-3-4-2/h3H,1H2	C=CC#[C]	628.65	0.99
+485	Methylsilane	C1H6Si1	InChI=1S/CH6Si/c1-2/h1-2H3	C[SiH3]	-9.82	0.89
+486	Fluorosilane	F1H3Si1	InChI=1S/FH3Si/c1-2/h2H3	[SiH3]F	-346.20	0.72
+487	Chlorosilane	Cl1H3Si1	InChI=1S/ClH3Si/c1-2/h2H3	[SiH3]Cl	-126.5	1.4
+488	Tetramethylsilane	C4H12Si1	InChI=1S/C4H12Si/c1-5(2,3)4/h1-4H3	C[Si](C)(C)C	-185.8	1.9
+489	Hydroxysilyl	H3O1Si1	InChI=1S/H3OSi/c1-2/h1H,2H2	[SiH2]O	-104.1	1.5
+490	Trimethylsilanol	C3H10O1Si1	InChI=1S/C3H10OSi/c1-5(2,3)4/h4H,1-3H3	C[Si](C)(C)O	-465.2	1.9
+491	2-Aminoethyl	C2H6N1	InChI=1S/C2H6N/c1-2-3/h1-3H2	[CH2]CN	174.49	0.82
+492	2-Propanamine	C3H9N1	InChI=1S/C3H9N/c1-3(2)4/h3H,4H2,1-2H3	CC(C)N	-56.63	0.52
+494	Sulfuric acid	H2O4S1	InChI=1S/H2O4S/c1-5(2,3)4/h(H2,1,2,3,4)	OS(=O)(=O)O	-715.5	1.1
+499	Chloro hypochlorite	Cl2O1	InChI=1S/Cl2O/c1-3-2	ClOCl	79.79	0.36
+503	Hydrazino	H3N2	InChI=1S/H3N2/c1-2/h1H,2H2	N[NH]	234.79	0.69
+507	Chlorooxy hypochlorite	Cl2O2	InChI=1S/Cl2O2/c1-3-4-2	ClOOCl	134.58	0.56
+520	Hydroperoxymethyl	C1H3O2	InChI=1S/CH3O2/c1-3-2/h2H,1H2	[CH2]OO	73.26	0.97
+522	Oxiranyl	C2H3O1	InChI=1S/C2H3O/c1-2-3-1/h1H,2H2	C1[CH]O1	172.78	0.98
+525	Methoxyethene	C3H6O1	InChI=1S/C3H6O/c1-3-4-2/h3H,1H2,2H3	C=COC	-89.3	1.1
+526	2-Propanol	C3H8O1	InChI=1S/C3H8O/c1-3(2)4/h3-4H,1-2H3	CC(O)C	-248.60	0.26
+528	Carboxymethyl	C2H3O2	InChI=1S/C2H3O2/c1-2(3)4/h1H2,(H,3,4)	[CH2]C(=O)O	-226.5	1.1
+529	1-Iminoethyl	C2H4N1	InChI=1S/C2H4N/c1-2-3/h3H,1H3	C[C]=N	233.1	1.1
+530	1-Aminoethenyl	C2H4N1	InChI=1S/C2H4N/c1-2-3/h1,3H2	C=[C]N	294.71	0.92
+531	Peroxyhypochlorous acid	Cl1H1O2	InChI=1S/ClHO2/c1-3-2/h2H	OOCl	3.97	0.95
+533	Nitrilomethylimidogen	C1H1N2	InChI=1S/CHN2/c2-1-3/h1H	[N]C=[N]	581.6	1.5
+536	Chloromethanol	C1H3Cl1O1	InChI=1S/CH3ClO/c2-1-3/h3H,1H2	ClCO	-232.3	1.2
+537	Chloromethoxy	C1H2Cl1O1	InChI=1S/CH2ClO/c2-1-3/h1H2	C(Cl)[O]	-11.9	1.1
+538	Fluorotrichloromethane	C1Cl3F1	InChI=1S/CCl3F/c2-1(3,4)5	FC(Cl)(Cl)Cl	-283.23	0.76
+539	Formyl chloride	C1H1Cl1O1	InChI=1S/CHClO/c2-1-3/h1H	C(=O)Cl	-179.87	0.67
+540	2-Chloroethanol	C2H5Cl1O1	InChI=1S/C2H5ClO/c3-1-2-4/h4H,1-2H2	ClCCO	-249.78	0.59
+541	Butadiynyl	C4H1	InChI=1S/C4H/c1-3-4-2/h1H	[C]#CC#C	801.90	0.96
+545	Furan	C4H4O1	InChI=1S/C4H4O/c1-2-4-5-3-1/h1-4H	O1C=CC=C1	-21.38	0.94
+546	1-Hydroxy-1-methylethyl	C3H7O1	InChI=1S/C3H7O/c1-3(2)4/h4H,1-2H3	C[C](O)C	-78.21	0.79
+547	Trifluoroethene	C2H1F3	InChI=1S/C2HF3/c3-1-2(4)5/h1H	FC(F)=CF	-493.5	1.4
+551	3-Methylene-1-cyclopropen-1-yl	C4H3	InChI=1S/C4H3/c1-4-2-3-4/h2H,1H2	C=C1C=[C]1	628.3	1.1
+554	Cyclobutyl	C4H7	InChI=1S/C4H7/c1-2-4-3-1/h1H,2-4H2	C1C[CH]C1	246.59	0.72
+555	1-Ethynyl-2-propyn-1-yl	C5H3	InChI=1S/C5H3/c1-3-5-4-2/h1-2,5H	C#C[CH]C#C	577.09	0.99
+556	1-Propanamine	C3H9N1	InChI=1S/C3H9N/c1-2-3-4/h2-4H2,1H3	CCCN	-42.20	0.42
+557	Sulfurous acid	H2O3S1	InChI=1S/H2O3S/c1-4(2)3/h(H2,1,2,3)	O=S(O)O	-511.31	0.89
+558	Sulfo	H1O3S1	InChI=1S/HO3S/c1-4(2)3/h(H,1,2)	O=S(O)[O]	-366.9	1.1
+559	Dioxodiazoxane	N2O3	InChI=1S/N2O3/c3-1-5-2-4	O=NON=O	93.0	1.3
+561	Isodiazene	H2N2	InChI=1S/H2N2/c1-2/h1H2	[N]N	307.57	0.60
+569	Methylimidogen	C1H3N1	InChI=1S/CH3N/c1-2/h1H3	C[N]	323.0	1.0
+573	Propylidyne	C3H5	InChI=1S/C3H5/c1-3-2/h3H2,1H3	CC[C]	492.7	1.2
+574	Cyclopropylidene	C3H4	InChI=1S/C3H4/c1-2-3-1/h1-2H2	[C]1CC1	475.06	0.84
+576	Cycloprop-1-enyl	C3H3	InChI=1S/C3H3/c1-2-3-1/h1H,2H2	C1C=[C]1	527.52	0.58
+577	Cyclopropenylidene	C3H2	InChI=1S/C3H2/c1-2-3-1/h1-2H	C1=C=C1	497.09	0.45
+580	sec-Butyl	C4H9	InChI=1S/C4H9/c1-3-4-2/h3H,4H2,1-2H3	CC[CH]C	91.35	0.71
+581	iso-Butyl	C4H9	InChI=1S/C4H9/c1-4(2)3/h4H,1H2,2-3H3	CC(C)[CH2]	97.34	0.78
+582	1-Methylene-2-propenyl	C4H5	InChI=1S/C4H5/c1-3-4-2/h3H,1-2H2	C=C[C]=C	327.20	0.74
+586	2-Hydroperoxyethyl	C2H5O2	InChI=1S/C2H5O2/c1-2-4-3/h3H,1-2H2	[CH2]COO	64.8	1.3
+587	Methoxyoxomethyl	C2H3O2	InChI=1S/C2H3O2/c1-4-2-3/h1H3	CO[C]=O	-152.8	1.1
+588	Water dimer	H4O2	InChI=1S/2H2O/h2*1H2	O.O	-491.026	0.044
+591	Ethyl formate	C3H6O2	InChI=1S/C3H6O2/c1-2-5-3-4/h3H,2H2,1H3	C(=O)OCC	-375.0	1.0
+592	Propionic acid	C3H6O2	InChI=1S/C3H6O2/c1-2-3(4)5/h2H2,1H3,(H,4,5)	CCC(=O)O	-435.77	0.60
+595	(Methylimino)methyl	C2H4N1	InChI=1S/C2H4N/c1-3-2/h1H,2H3	CN=[CH]	278.0	1.1
+596	1-Aziridinyl	C2H4N1	InChI=1S/C2H4N/c1-2-3-1/h1-2H2	[N]1CC1	314.0	1.4
+597	(Dimethylamino)methyl	C3H8N1	InChI=1S/C3H8N/c1-4(2)3/h1H2,2-3H3	CN(C)[CH2]	166.5	1.3
+605	cis-1,2-Dichloroethene	C2H2Cl2	InChI=1S/C2H2Cl2/c3-1-2-4/h1-2H/b2-1-	C(\Cl)=C\Cl	3.83	0.55
+606	Dichloroacetylene	C2Cl2	InChI=1S/C2Cl2/c3-1-2-4	ClC#CCl	232.85	0.72
+607	Iodoform	C1H1I3	InChI=1S/CHI3/c2-1(3)4/h1H	C(I)(I)I	217.3	1.6
+609	1,1-Difluoroethane	C2H4F2	InChI=1S/C2H4F2/c1-2(3)4/h2H,1H3	CC(F)F	-489.00	0.53
+610	Vinyl iodide	C2H3I1	InChI=1S/C2H3I/c1-2-3/h2H,1H2	C=CI	139.64	0.93
+611	Bromoacetylene	C2H1Br1	InChI=1S/C2HBr/c1-2-3/h1H	C#CBr	287.5	1.6
+612	2-Fluoroethanol	C2H5F1O1	InChI=1S/C2H5FO/c3-1-2-4/h4H,1-2H2	FCCO	-405.62	0.99
+627	cis-1,2-Diiodoethene	C2H2I2	InChI=1S/C2H2I2/c3-1-2-4/h1-2H/b2-1-	C(\I)=C\I	217.57	0.34
+725	Acryloyl	C3H3O1	InChI=1S/C3H3O/c1-2-3-4/h2H,1H2	C=C[C]=O	101.2	1.4
+629	3-Oxo-1,2-propadien-1-yl	C3H1O1	InChI=1S/C3HO/c1-2-3-4/h1H	[CH]=C=C=O	290.36	0.95
+638	Trimethylsiloxy	C3H9O1Si1	InChI=1S/C3H9OSi/c1-5(2,3)4/h1-3H3	C[Si](C)(C)[O]	-188.1	1.9
+640	2-Methylallyl	C4H7	InChI=1S/C4H7/c1-4(2)3/h1-2H2,3H3	CC(=C)[CH2]	155.97	0.77
+641	3-Butenyl	C4H7	InChI=1S/C4H7/c1-3-4-2/h3H,1-2,4H2	C=CC[CH2]	223.26	0.90
+642	2-Methyl-1-propenyl	C4H7	InChI=1S/C4H7/c1-4(2)3/h1H,2-3H3	CC(C)=[CH]	251.26	0.72
+643	N-Methylethanamine	C3H9N1	InChI=1S/C3H9N/c1-3-4-2/h4H,3H2,1-2H3	CCNC	-17.4	1.1
+645	Disulfene oxide	O1S2	InChI=1S/OS2/c1-3-2	S=S=O	-50.61	0.43
+646	Sulfur hydroxide oxide	H1O4S1	InChI=1S/HO4S/c1-5(2,3)4/h(H,1,2,3)	OS(=O)(=O)[O]	-474.5	1.6
+647	Ethanethiol	C2H6S1	InChI=1S/C2H6S/c1-2-3/h3H,2H2,1H3	CCS	-28.74	0.38
+651	Difluoroamidogen	F2N1	InChI=1S/F2N/c1-3-2	[N](F)F	36.24	0.63
+653	Iodine monobromide	Br1I1	InChI=1S/BrI/c1-2	BrI	49.727	0.066
+658	Trioxidanyl	H1O3	InChI=1S/HO3/c1-3-2/h1H	OO[O]	25.36	0.13
+661	Aquacarbon	C1H2O1	InChI=1S/C.H2O/h;1H2	[C].O	442.7	1.3
+665	Trioxygen difluoride	F2O3	InChI=1S/F2O3/c1-3-5-4-2	FOOOF	112.5	1.1
+666	Hydroperoxycarbonyl	C1H1O3	InChI=1S/CHO3/c2-1-4-3/h3H	OO[C]=O	-73.24	0.97
+672	1-Propynyl	C3H3	InChI=1S/C3H3/c1-3-2/h1H3	CC#[C]	528.57	0.65
+677	Methylcyclopropane	C4H8	InChI=1S/C4H8/c1-4-2-3-4/h4H,2-3H2,1H3	CC1CC1	47.5	1.2
+679	2-Hydroxyethenyl	C2H3O1	InChI=1S/C2H3O/c1-2-3/h1-3H	[CH]=CO	138.01	0.72
+683	Ethenyldioxy	C2H3O2	InChI=1S/C2H3O2/c1-2-4-3/h2H,1H2	C=CO[O]	118.42	0.99
+685	Ethoxyethene	C4H8O1	InChI=1S/C4H8O/c1-3-5-4-2/h3H,1,4H2,2H3	C=COCC	-117.7	1.5
+686	1,1-Ethenediol	C2H4O2	InChI=1S/C2H4O2/c1-2(3)4/h3-4H,1H2	C=C(O)O	-307.51	0.82
+687	1,2-Ethenediol	C2H4O2	InChI=1S/C2H4O2/c3-1-2-4/h1-4H/	OC=CO	-272.64	0.89
+688	1-Methoxyethenol	C3H6O2	InChI=1S/C3H6O2/c1-3(4)5-2/h4H,1H2,2H3	C=C(O)OC	-284.2	1.1
+690	(Formyloxy)methyl	C2H3O2	InChI=1S/C2H3O2/c1-4-2-3/h2H,1H2	O=CO[CH2]	-151.3	1.1
+691	Ethylene glycol	C2H6O2	InChI=1S/C2H6O2/c3-1-2-4/h3-4H,1-2H2	OCCO	-369.65	0.40
+695	2-Aminoethenyl	C2H4N1	InChI=1S/C2H4N/c1-2-3/h1-2H,3H2	[CH]=CN	319.8	1.3
+696	Bromochlorane	Br1Cl1	InChI=1S/BrCl/c1-2	ClBr	21.891	0.059
+697	Bromotrichloromethane	C1Br1Cl3	InChI=1S/CBrCl3/c2-1(3,4)5	ClC(Cl)(Cl)Br	-29.81	0.53
+698	Dichloromethyl	C1H1Cl2	InChI=1S/CHCl2/c2-1-3/h1H	[CH](Cl)Cl	92.91	0.88
+699	Chloromethyl	C1H2Cl1	InChI=1S/CH2Cl/c1-2/h1H2	[CH2]Cl	118.47	0.87
+700	Methyl hypochlorite	C1H3Cl1O1	InChI=1S/CH3ClO/c1-3-2/h1H3	COCl	-53.0	1.4
+701	1,2-Dichloroethane	C2H4Cl2	InChI=1S/C2H4Cl2/c3-1-2-4/h1-2H2	C(Cl)CCl	-118.49	0.53
+702	Chlorofluoromethane	C1H2Cl1F1	InChI=1S/CH2ClF/c2-1-3/h1H2	C(F)Cl	-256.43	0.85
+706	1,2-Difluoroacetylene	C2F2	InChI=1S/C2F2/c3-1-2-4	FC#CF	2.85	0.63
+707	Iodoacetylene	C2H1I1	InChI=1S/C2HI/c1-2-3/h1H	C#CI	324.0	2.0
+708	Chloroformyl	C1Cl1O1	InChI=1S/CClO/c2-1-3	O=[C]Cl	-21.92	0.49
+710	Tetroxidane	H2O4	InChI=1S/H2O4/c1-3-4-2/h1-2H	OOOO	-33.32	0.44
+711	Dioxaziridinyl	N1O2	InChI=1S/NO2/c1-2-3-1	[N]1OO1	355.1	1.4
+718	1-Methylethoxy	C3H7O1	InChI=1S/C3H7O/c1-3(2)4/h3H,1-2H3	CC([O])C	-25.05	0.74
+722	Hypochloroperoxoous acid, hydroxy ester	Cl1H1O3	InChI=1S/ClHO3/c1-3-4-2/h2H	OOOCl	48.4	1.8
+723	cis-1,2-Dibromoethene	C2H2Br2	InChI=1S/C2H2Br2/c3-1-2-4/h1-2H/b2-1-	C(\Br)=C\Br	124.7	1.6
+724	2-Butanone	C4H8O1	InChI=1S/C4H8O/c1-3-4(2)5/h3H2,1-2H3	CCC(=O)C	-216.83	0.79
+726	Formaldoxime	C1H3N1O1	InChI=1S/CH3NO/c1-2-3/h3H,1H2	C=NO	30.6	1.3
+727	1,3-Cyclobutadien-1-yl	C4H3	InChI=1S/C4H3/c1-2-4-3-1/h1-3H	[C]1=CC=C1	653.9	1.1
+729	Trifluorosilyl	F3Si1	InChI=1S/F3Si/c1-4(2)3	[Si](F)(F)F	-993.0	1.3
+731	Fluorotrimethylsilane	C3H9F1Si1	InChI=1S/C3H9FSi/c1-5(2,3)4/h1-3H3	C[Si](F)(C)C	-547.1	2.0
+732	Chlorotrimethylsilane	C3H9Cl1Si1	InChI=1S/C3H9ClSi/c1-5(2,3)4/h1-3H3	C[Si](Cl)(C)C	-326.3	2.3
+737	Pentatetraene	C5H4	InChI=1S/C5H4/c1-3-5-4-2/h1-2H2	C=C=C=C=C	452.62	0.93
+738	1-Aminoethyl	C2H6N1	InChI=1S/C2H6N/c1-2-3/h2H,3H2,1H3	C[CH]N	133.37	0.93
+739	Ethylamidogen	C2H6N1	InChI=1S/C2H6N/c1-2-3/h3H,2H2,1H3	CC[NH]	166.75	0.94
+742	Nitrosamine	H2N2O1	InChI=1S/H2N2O/c1-2-3/h(H2,1,3)	NN=O	85.83	0.95
+744	Diazenyl	H1N2	InChI=1S/HN2/c1-2/h1H	[N]=N	252.16	0.45
+745	Nitrosyl chloride	Cl1N1O1	InChI=1S/ClNO/c1-2-3	ClN=O	54.457	0.066
+767	Isoformyl	C1H1O1	InChI=1S/CHO/c1-2/h2H	[C]O	217.25	0.69
+768	Hydroxyoxomethoxy	C1H1O3	InChI=1S/CHO3/c2-1(3)4/h(H,2,3)	O[C](=O)[O]	-360.34	0.93
+769	3-Dioxiranone	C1O3	InChI=1S/CO3/c2-1-3-4-1	O=C1OO1	-159.9	1.5
+771	Methyl hydrocarbonate	C2H4O3	InChI=1S/C2H4O3/c1-5-2(3)4/h1H3,(H,3,4)	C(=O)(O)OC	-576.99	0.87
+772	1,2,3-Trioxolane	C2H4O3	InChI=1S/C2H4O3/c1-2-4-5-3-1/h1-2H2	O1OCCO1	-5.6	1.5
+775	Cyclopropynyl	C3H1	InChI=1S/C3H/c1-2-3-1/h1H	[CH]1C#C1	711.28	0.71
+779	Neopentyl	C5H11	InChI=1S/C5H11/c1-5(2,3)4/h1H2,2-4H3	C(C)(C)(C)[CH2]	70.0	1.3
+788	1-Hydroxyethenyl	C2H3O1	InChI=1S/C2H3O/c1-2-3/h3H,1H2	C=[C]O	121.32	0.83
+795	1-Hydroperoxyethyl	C2H5O2	InChI=1S/C2H5O2/c1-2-4-3/h2-3H,1H3	C[CH]OO	39.7	1.3
+797	Methyldioxirane	C2H4O2	InChI=1S/C2H4O2/c1-2-3-4-2/h2H,1H3	CC1OO1	-40.45	0.91
+800	1-Propene-1,2-diol	C3H6O2	InChI=1S/C3H6O2/c1-3(5)2-4/h2,4-5H,1H3	CC(O)=CO	-311.3	1.2
+802	1-Methylethenyl hydroperoxide	C3H6O2	InChI=1S/C3H6O2/c1-3(2)5-4/h4H,1H2,2H3	C=C(C)OOH	-63.4	1.3
+806	Ethylideneamidogen	C2H4N1	InChI=1S/C2H4N/c1-2-3/h2H,1H3	CC=[N]	209.8	1.1
+807	(Methyleneamino)methyl	C2H4N1	InChI=1S/C2H4N/c1-3-2/h1-2H2	[CH2]N=C	244.3	1.3
+810	Bromo hypobromite	Br2O1	InChI=1S/Br2O/c1-3-2	BrOBr	121.1	1.2
+811	2-Aziridinyl	C2H4N1	InChI=1S/C2H4N/c1-2-3-1/h1,3H,2H2	N1[CH]C1	361.0	1.7
+813	1H-Diazirin-3-yl	C1H1N2	InChI=1S/CHN2/c1-2-3-1/h(H,2,3)	N1N=[C]1	618.7	1.6
+814	1H-Triazirin-1-yl	N3	InChI=1S/N3/c1-2-3-1	[N]1N=[N]1	586.0	2.0
+815	1H-Diazirene	C1H2N2	InChI=1S/CH2N2/c1-2-3-1/h1H,(H,2,3)	C1=NN1	405.1	1.4
+817	1,1,2-Trichloroethane	C2H3Cl3	InChI=1S/C2H3Cl3/c3-1-2(4)5/h2H,1H2	C(Cl)C(Cl)Cl	-135.6	1.1
+823	cis-1,2-Difluoroethene	C2H2F2	InChI=1S/C2H2F2/c3-1-2-4/h1-2H/b2-1-	F/C=C\F	-302.96	0.83
+824	Fluoroethynyl	C2F1	InChI=1S/C2F/c1-2-3	[C]#CF	445.3	1.6
+826	Dibromophosgene	C1Br2O1	InChI=1S/CBr2O/c2-1(3)4	O=C(Br)Br	-97.93	0.37
+834	Hydrogen difluoride	F2H1	InChI=1S/FH.F/h1H;	F.[F]	-198.5	1.2
+975	1-Oxopropyl	C3H5O1	InChI=1S/C3H5O/c1-2-3-4/h2H2,1H3	CC[C]=O	-19.1	1.1
+836	Propyn-1-ol	C3H4O1	InChI=1S/C3H4O/c1-2-3-4/h4H,1H3	CC#CO	65.7	1.1
+837	Formylethynyl	C3H1O1	InChI=1S/C3HO/c1-2-3-4/h3H	[C]#CC=O	468.5	1.3
+838	2-Cyclopropen-1-one	C3H2O1	InChI=1S/C3H2O/c4-3-1-2-3/h1-2H	O=C1C=C1	164.0	1.1
+840	Cyanovinylidene	C3H1N1	InChI=1S/C3HN/c1-2-3-4/h2H	[C]=CC#N	581.8	1.2
+845	2-Methyl-2-cyclopropen-1-ylidene	C4H4	InChI=1S/C4H4/c1-4-2-3-4/h2H,1H3	CC1=C[C]1	448.1	1.2
+849	Cyclobutenyl	C4H5	InChI=1S/C4H5/c1-2-4-3-1/h1-3H,4H2	C1[CH]C=C1	337.3	1.2
+850	Propargyl chloride	C3H3Cl1	InChI=1S/C3H3Cl/c1-2-3-4/h1H,3H2	C#CCCl	186.7	1.3
+851	Dioxosilane	O2Si1	InChI=1S/O2Si/c1-3-2	O=[Si]=O	-277.9	2.0
+852	Dimethylsilane	C2H8Si1	InChI=1S/C2H8Si/c1-3-2/h3H2,1-2H3	C[SiH2]C	-66.7	1.1
+853	Trimethylsilyl	C3H9Si1	InChI=1S/C3H9Si/c1-4(2)3/h1-3H3	C[Si](C)C	47.5	1.9
+856	1,2-Pentadien-4-yne	C5H4	InChI=1S/C5H4/c1-3-5-4-2/h1,5H,2H2	C#CC=C=C	442.32	0.97
+857	2,4-Pentadiynyl	C5H3	InChI=1S/C5H3/c1-3-5-4-2/h1H,2H2	C#CC#C[CH2]	568.83	0.98
+863	Sulfenic acid	H2O1S1	InChI=1S/H2OS/c1-2/h1-2H	OS	-108.0	1.1
+864	3,3-Dioxidedioxathiirane	O4S1	InChI=1S/O4S/c1-5(2)3-4-5	O=S1(=O)OO1	-257.1	1.4
+867	(Z)-Difluorodiazene	F2N2	InChI=1S/F2N2/c1-3-4-2	FN=NF	78.5	2.1
+871	Aminomethylene	C1H3N1	InChI=1S/CH3N/c1-2/h1H,2H2	[CH][NH2]	245.9	1.5
+875	Aminomethylidyne	C1H2N1	InChI=1S/CH2N/c1-2/h2H2	[C]N	371.9	1.1
+878	Ethynylamidogen	C2H2N1	InChI=1S/C2H2N/c1-2-3/h1,3H	C#C[NH]	395.32	0.96
+879	Methyleneoxonium	C1H4O1	InChI=1S/CH2.H2O/h2*1H2	[CH2].O	152.51	0.49
+880	(Z)-Diazene	H2N2	InChI=1S/H2N2/c1-2/h1-2H/b2-1-	[H]/N=N\[H]	228.80	0.59
+890	1-Propenylidene	C3H4	InChI=1S/C3H4/c1-3-2/h3H,1H3	CC=[C]	392.5	1.1
+892	Cycloprop-2-enyl	C3H3	InChI=1S/C3H3/c1-2-3-1/h1-3H	C1=C[CH]1	490.35	0.58
+896	Deuterium atom	D1	InChI=1S/H/i1+1	[2H]	219.804	0.000
+900	2-Hydroxy-1,1-dimethylethyl	C4H9O1	InChI=1S/C4H9O/c1-4(2)3-5/h5H,3H2,1-2H3	[C](C)(C)CO	-71.6	1.4
+926	Oxazirinyl	C1N1O1	InChI=1S/CNO/c1-2-3-1	[C]1=NO1	450.1	1.5
+927	2-Propene-1,2-diol	C3H6O2	InChI=1S/C3H6O2/c1-3(5)2-4/h4-5H,1-2H2	C=C(O)CO	-295.3	1.2
+928	2-Methoxy-2-oxoethyl	C3H5O2	InChI=1S/C3H5O2/c1-3(4)5-2/h1H2,2H3	[CH2]C(=O)OC	-202.9	1.5
+929	(Acetyloxy)methyl	C3H5O2	InChI=1S/C3H5O2/c1-3(4)5-2/h2H2,1H3	CC(=O)O[CH2]	-200.1	1.5
+944	Trichloroethene	C2H1Cl3	InChI=1S/C2HCl3/c3-1-2(4)5/h1H	C(Cl)=C(Cl)Cl	-10.9	1.5
+945	Bromodichloromethane	C1H1Br1Cl2	InChI=1S/CHBrCl2/c2-1(3)4/h1H	C(Cl)(Cl)Br	-34.8	1.2
+946	Diiodomethane	C1H2I2	InChI=1S/CH2I2/c2-1-3/h1H2	C(I)I	122.96	0.78
+947	Difluorodibromomethane	C1Br2F2	InChI=1S/CBr2F2/c2-1(3,4)5	FC(F)(Br)Br	-359.8	1.3
+948	Dichlorodibromomethane	C1Br2Cl2	InChI=1S/CBr2Cl2/c2-1(3,4)5	ClC(Cl)(Br)Br	28.3	1.2
+949	Difluorobromomethane	C1H1Br1F2	InChI=1S/CHBrF2/c2-1(3)4/h1H	C(F)(F)Br	-411.40	0.47
+950	1,2-Difluoroethane	C2H4F2	InChI=1S/C2H4F2/c3-1-2-4/h1-2H2	C(F)CF	-434.39	0.80
+974	1-Hydroxypropyl	C3H7O1	InChI=1S/C3H7O/c1-2-3-4/h3-4H,2H2,1H3	CC[CH]O	-55.3	1.1
+976	1,1-Dibromoethene	C2H2Br2	InChI=1S/C2H2Br2/c1-2(3)4/h1H2	C=C(Br)Br	130.6	1.6
+977	Tribromoethene	C2H1Br3	InChI=1S/C2HBr3/c3-1-2(4)5/h1H	C(Br)=C(Br)Br	169.7	1.6
+978	1,1-Diiodoethene	C2H2I2	InChI=1S/C2H2I2/c1-2(3)4/h1H2	C=C(I)I	225.1	1.6
+979	Triiodoethene	C2H1I3	InChI=1S/C2HI3/c3-1-2(4)5/h1H	C(I)=C(I)I	302.0	1.4
+980	1,3-Butadien-2-ol	C4H6O1	InChI=1S/C4H6O/c1-3-4(2)5/h3,5H,1-2H2	C=C(O)C=C	-53.3	1.5
+981	Cyclopropanone	C3H4O1	InChI=1S/C3H4O/c4-3-1-2-3/h1-2H2	O=C1CC1	30.65	0.96
+983	Ethenedione	C2O2	InChI=1S/C2O2/c3-1-2-4	O=C=C=O	14.5	1.2
+985	Formylamidogen	C1H2N1O1	InChI=1S/CH2NO/c2-1-3/h1-2H	N=C[O]	76.5	1.1
+987	2-Cyclopropen-1-imine	C3H3N1	InChI=1S/C3H3N/c4-3-1-2-3/h1-2,4H	C1=CC1=N	402.0	1.4
+990	Vinylvinylidene	C4H4	InChI=1S/C4H4/c1-3-4-2/h3-4H,1H2	C=CC=[C]	494.2	1.7
+999	Dimethylsilanone	C2H6O1Si1	InChI=1S/C2H6OSi/c1-4(2)3/h1-2H3	C[Si](=O)C	-237.4	2.3
+1000	Ethylsilane	C2H8Si1	InChI=1S/C2H8Si/c1-2-3/h2H2,1,3H3	CC[SiH3]	-12.8	1.8
+1005	1,4-Pentadiyne	C5H4	InChI=1S/C5H4/c1-3-5-4-2/h1-2H,5H2	C#CCC#C	460.3	1.1
+1006	Nitrosodioxaziridine	N2O3	InChI=1S/N2O3/c3-1-2-4-5-2	O=NN1OO1	413.6	1.8
+1010	Sulfinyl hydride	H2O1S1	InChI=1S/H2OS/c1-2/h2H2	O=[SH2]	-40.7	1.2
+1014	Sulfur tetraoxide	O4S1	InChI=1S/O4S/c1-5(2,3)4	[O]S(=O)(=O)[O]	-228.2	2.0
+1016	Thioformaldehyde	C1H2S1	InChI=1S/CH2S/c1-2/h1H2	C=S	121.3	2.0
+1017	Dimethylsulfoxide	C2H6O1S1	InChI=1S/C2H6OS/c1-4(2)3/h1-2H3	CS(=O)C	-131.91	0.57
+1018	Carbon disulfide	C1S2	InChI=1S/CS2/c2-1-3	S=C=S	115.90	0.68
+1240	Hydroxyethenylidene	C2H2O1	InChI=1S/C2H2O/c1-2-3/h2-3H	[C]=CO	302.1	2.1
+1085	Hydroxyimidogen	H1N1O1	InChI=1S/HNO/c1-2/h2H	[N]O	217.89	0.78
+1086	2-Cyclopropyn-1-ylidene	C3	InChI=1S/C3/c1-2-3-1	C1=C=C=1	898.4	1.5
+1087	Dimethyldioxirane	C3H6O2	InChI=1S/C3H6O2/c1-3(2)4-5-3/h1-2H3	CC1(C)OO1	-88.2	1.3
+1088	Acetoxy	C2H3O2	InChI=1S/C2H3O2/c1-2(3)4/h1H3	CC(=O)[O]	-182.02	0.76
+1094	Hydroxyoxoethenyl	C2H1O2	InChI=1S/C2HO2/c3-1-2-4/h3H	O[C]=C=O	24.5	1.7
+1104	Methanediimine	C1H2N2	InChI=1S/CH2N2/c2-1-3/h2-3H	N=C=N	153.2	1.3
+1119	Chlorodibromomethane	C1H1Br2Cl1	InChI=1S/CHBr2Cl/c2-1(3)4/h1H	C(Cl)(Br)Br	22.0	3.5
+1121	Bromochloromethane	C1H2Br1Cl1	InChI=1S/CH2BrCl/c2-1-3/h1H2	C(Cl)Br	-28.2	1.3
+1123	Ethyl iodide	C2H5I1	InChI=1S/C2H5I/c1-2-3/h2H2,1H3	CCI	8.71	0.48
+1125	1,2-Dibromoacetylene	C2Br2	InChI=1S/C2Br2/c3-1-2-4	BrC#CBr	346.5	2.0
+1149	Oxadiazirene	N2O1	InChI=1S/N2O/c1-2-3-1	N1=NO1	351.7	1.7
+1151	1,2-Dibromoethane	C2H4Br2	InChI=1S/C2H4Br2/c3-1-2-4/h1-2H2	C(Br)CBr	-11.5	1.2
+1153	Dimethylketene	C4H6O1	InChI=1S/C4H6O/c1-4(2)3-5/h1-2H3	CC(=C=O)C	-73.3	1.2
+1154	2-Methyloxirene	C3H4O1	InChI=1S/C3H4O/c1-3-2-4-3/h2H,1H3	CC1=CO1	344.0	1.8
+1157	(Hydroxyimino)methyl	C1H2N1O1	InChI=1S/CH2NO/c1-2-3/h1,3H	[CH]=NO	250.2	1.8
+1158	Aminohydroxymethylene	C1H3N1O1	InChI=1S/CH3NO/c2-1-3/h3H,2H2	N[C]O	-22.4	1.6
+1162	Azete	C3H3N1	InChI=1S/C3H3N/c1-2-4-3-1/h1-3H	C1=CN=C1	469.6	1.5
+1163	1-Chloro ozone	Cl1O3	InChI=1S/ClO3/c1-3-4-2	ClOO[O]	226.3	2.3
+1172	2-Cyclopropen-1-ylidenemethyl	C4H3	InChI=1S/C4H3/c1-4-2-3-4/h1-3H	[CH]=C1C=C1	635.8	1.3
+1177	Disiloxane	H6O1Si2	InChI=1S/H6OSi2/c2-1-3/h2-3H3	[SiH3]O[SiH3]	-330.3	2.3
+1178	Iodotrimethylsilane	C3H9I1Si1	InChI=1S/C3H9ISi/c1-5(2,3)4/h1-3H3	C[Si](I)(C)C	-189.7	2.1
+1181	1,2,3-Pentatriene	C5H6	InChI=1S/C5H6/c1-3-5-4-2/h4H,1H2,2H3	C=C=C=CC	302.7	1.4
+1182	(Z)-1-Methylallyl	C4H7	InChI=1S/C4H7/c1-3-4-2/h3-4H,1H2,2H3/b4-3-	C/C=C\[CH2]	154.76	0.99
+1183	2,4-Cyclopentadien-1-ylidene	C5H4	InChI=1S/C5H4/c1-2-4-5-3-1/h1-4H	[C]1C=CC=C1	526.2	1.1
+1189	Thiozone	S3	InChI=1S/S3/c1-3-2	S=S=S	144.28	0.71
+1197	(Methylthio)methyl	C2H5S1	InChI=1S/C2H5S/c1-3-2/h1H2,2H3	CS[CH2]	149.5	1.4
+1916	Dihydrogen fluoride	F1H2	InChI=1S/FH.H/h1H;	F.H	-56.5	1.7
+1221	[1.1.1]Propellane	C5H6	InChI=1S/C5H6/c1-4-2-5(1,4)3-4/h1-3H2	C1C23CC13C2	378.6	1.5
+1233	Tetraoxidanyl	H1O4	InChI=1S/HO4/c1-3-4-2/h1H	OOO[O]	2.1	2.9
+1265	Ethynediol	C2H2O2	InChI=1S/C2H2O2/c3-1-2-4/h3-4H	OC#CO	-18.3	1.6
+1269	Ethylimidogen	C2H5N1	InChI=1S/C2H5N/c1-2-3/h2H2,1H3	CC[N]	306.1	2.0
+1279	3-Diaziridinylidene	C1H2N2	InChI=1S/CH2N2/c1-2-3-1/h2-3H	[C]1NN1	521.9	1.5
+1288	3-Chloro-3-methyl-3H-diazirine	C2H3Cl1N2	InChI=1S/C2H3ClN2/c1-2(3)4-5-2/h1H3	CC1(N=N1)Cl	251.5	2.7
+1289	trans-1,2-Dichloroethene	C2H2Cl2	InChI=1S/C2H2Cl2/c3-1-2-4/h1-2H/b2-1+	C(\Cl)=C/Cl	5.66	0.56
+1292	Iodomethylidyne	C1I1	InChI=1S/CI/c1-2	[C]I	554.8	2.1
+1293	Sulfuryl dichloride	Cl2O2S1	InChI=1S/Cl2O2S/c1-5(2,3)4	O=[S](=O)(Cl)Cl	-348.06	0.75
+1296	Fluorochlorobromomethane	C1H1Br1Cl1F1	InChI=1S/CHBrClF/c2-1(3)4/h1H	C(F)(Cl)Br	-218.3	4.9
+1303	trans-1,2-Difluoroethene	C2H2F2	InChI=1S/C2H2F2/c3-1-2-4/h1-2H/b2-1+	F/C=C/F	-299.72	0.83
+1336	1,1-Dibromoethane	C2H4Br2	InChI=1S/C2H4Br2/c1-2(3)4/h2H,1H3	CC(Br)Br	-4.8	1.8
+1339	Carbamoyl	C1H2N1O1	InChI=1S/CH2NO/c2-1-3/h2H2	N=[C]O	74.1	2.7
+1340	Formaldiminoxy	C1H2N1O1	InChI=1S/CH2NO/c1-2-3/h1H2	[CH2]N=O	161.0	1.5
+1342	Oxaziridine	C1H3N1O1	InChI=1S/CH3NO/c1-2-3-1/h2H,1H2	C1NO1	115.6	2.1
+1343	Cyanoethynyl	C3N1	InChI=1S/C3N/c1-2-3-4	[C]#CC#N	715.8	1.1
+1344	2-Methylene-2H-azirine	C3H3N1	InChI=1S/C3H3N/c1-3-2-4-3/h2H,1H2	C1=NC1=C	404.3	1.7
+1358	Butyraldehyde	C4H8O1	InChI=1S/C4H8O/c1-2-3-4-5/h4H,2-3H2,1H3	CCCC=O	-185.26	0.85
+1359	Chloroallene	C3H3Cl1	InChI=1S/C3H3Cl/c1-2-3-4/h3H,1H2	C=C=CCl	181.9	1.6
+1360	1-Chloropropyne	C3H3Cl1	InChI=1S/C3H3Cl/c1-2-3-4/h1H3	CC#CCl	192.1	1.6
+1374	Iodosilane	H3I1Si1	InChI=1S/H3ISi/c1-2/h2H3	[SiH3]I	6.9	2.6
+1383	2-Methyl-2-propanamine	C4H11N1	InChI=1S/C4H11N/c1-4(2,3)5/h5H2,1-3H3	CC(C)(C)N	-87.00	0.55
+1386	Nitrosyl fluoride	F1N1O1	InChI=1S/FNO/c1-2-3	FN=O	-85.48	0.76
+1405	Platinum	Pt1	InChI=1S/Pt	[Pt]	563.4	1.7
+1430	Oxybismethanol	C2H6O3	InChI=1S/C2H6O3/c3-1-5-2-4/h3-4H,1-2H2	OCOCO	-534.2	1.9
+1437	H-CO2 vdW complex	C1H1O2	InChI=1S/CO2.H/c2-1-3;	[H].O=C=O	-178.3	2.1
+1475	2,3-didehydro-1H-azirin-1-yl	C2N1	InChI=1S/C2N/c1-2-3-1	[N]1C#C1	720.3	2.1
+1504	Triazirine	H1N3	InChI=1S/HN3/c1-2-3-1/h(H,1,2,3)	N1N=N1	464.2	2.6
+1506	3-Methanetetrayl-1,2-cyclopropanediylidene	C4	InChI=1S/C4/c1-4-2-3-4	[C]=C1C#C1	1154.7	1.9
+1509	1-Cyclopropene-1,2-diyl	C3H2	InChI=1S/C3H2/c1-2-3-1/h1H2	C1[C]=[C]1	791.2	1.5
+1515	Bromofluoromethane	C1H2Br1F1	InChI=1S/CH2BrF/c2-1-3/h1H2	C(F)Br	-197.4	4.9
+1516	Fluorodibromomethane	C1H1Br2F1	InChI=1S/CHBr2F/c2-1(3)4/h1H	C(F)(Br)Br	-159.7	4.9
+1517	Difluorochlorobromomethane	C1Br1Cl1F2	InChI=1S/CBrClF2/c2-1(3,4)5	FC(F)(Cl)Br	-428.9	4.9
+1518	Dichlorofluorobromomethane	C1Br1Cl2F1	InChI=1S/CBrCl2F/c2-1(3,4)5	FC(Cl)(Cl)Br	-228.3	4.9
+1519	Dibromofluorochloromethane	C1Br2Cl1F1	InChI=1S/CBr2ClF/c2-1(3,4)5	FC(Cl)(Br)Br	-169.9	4.9
+1560	2-Hydroxy-2-propenyl	C3H5O1	InChI=1S/C3H5O/c1-3(2)4/h4H,1-2H2	C=C(O)[CH2]	4.0	1.2
+1570	trans-1,2-Diiodoethene	C2H2I2	InChI=1S/C2H2I2/c3-1-2-4/h1-2H/b2-1+	C(\I)=C/I	215.19	0.35
+1575	2H-Oxete	C3H4O1	InChI=1S/C3H4O/c1-2-4-3-1/h1-2H,3H2	O1C=CC1	65.8	1.2
+2151	Tetraoxygen	O4	InChI=1S/2O2/c2*1-2	O=O.O=O	69.8	4.4
+1593	Bicyclo[1.1.0]but-3-ene	C4H4	InChI=1S/C4H4/c1-3-2-4(1)3/h1,3H,2H2	C12=CC2C1	483.2	1.6
+1597	Bicyclo[1.1.0]but-1(3)-ene	C4H4	InChI=1S/C4H4/c1-3-2-4(1)3/h1-2H2	C1C2=C1C2	578.8	1.9
+1623	Vinylsilane	C2H6Si1	InChI=1S/C2H6Si/c1-2-3/h2H,1H2,3H3	C=C[SiH3]	107.9	2.2
+1670	Hydroxydimethylsulfur	C2H7O1S1	InChI=1S/C2H7OS/c1-4(2)3/h3H,1-2H3	C[S](O)C	-19.7	2.6
+1680	Dioxiranyl	C1H1O2	InChI=1S/CHO2/c1-2-3-1/h1H	O1[CH]O1	217.3	2.0
+1685	2-Methyl-2-propanol	C4H10O1	InChI=1S/C4H10O/c1-4(2,3)5/h5H,1-3H3	CC(C)(C)O	-282.0	1.9
+1742	Methanol dimer	C2H8O2	InChI=1S/2CH4O/c2*1-2/h2*2H,1H3	CO.CO	-398.3	1.4
+1755	(Iminomethyl)imidogen	C1H2N2	InChI=1S/CH2N2/c2-1-3/h1-2H	N=C[N]	420.1	2.9
+1758	3H-Diazirin-3-ylidene	C1N2	InChI=1S/CN2/c1-2-3-1	[C]1N=N1	579.1	2.7
+1766	Chlorodioxidanyl	Cl1O2	InChI=1S/ClO2/c1-3-2	ClO[O]	100.36	0.34
+1782	Tribromofluoromethane	C1Br3F1	InChI=1S/CBr3F/c2-1(3,4)5	FC(Br)(Br)Br	-97.9	1.4
+1783	Tribromochloromethane	C1Br3Cl1	InChI=1S/CBr3Cl/c2-1(3,4)5	ClC(Br)(Br)Br	86.7	1.4
+1784	Tetrazete	N4	InChI=1S/N4/c1-2-4-3-1	N1=NN=N1	764.9	1.8
+1788	Tetraazatetrahedrane	N4	InChI=1S/N4/c1-2-3(1)4(1)2	N12N3N1N23	763.7	1.7
+1790	Difluorovinylidene	C2F2	InChI=1S/C2F2/c1-2(3)4	[C]=C(F)F	129.4	2.2
+1793	Dioxohydrazine	N2O2	InChI=1S/N2O2/c3-1-2-4	O=NN=O	172.90	0.14
+1811	Deuterium hydride	D1H1	InChI=1S/H2/h1H/i1+1	[H][2H]	0.328	0.000
+1866	1,2-Diiodoethane	C2H4I2	InChI=1S/C2H4I2/c3-1-2-4/h1-2H2	C(I)CI	87.84	0.90
+1869	Trioxirane	O3	InChI=1S/O3/c1-2-3-1	O1OO1	272.5	1.3
+1932	Triiodine	I3	InChI=1S/I3/c1-3-2	III	153.4	3.6
+1944	Hydronium radical	H3O1	InChI=1S/H2O.H/h1H2;	O.[H]	-18.5	2.1
+3366	Dihelium	He2	InChI=1S/He2/c1-2	[He][He]	-0.000	0.000
+1979	Cyclic thiozone	S3	InChI=1S/S3/c1-2-3-1	S1SS1	168.5	2.3
+1988	Dioxidanyl dimer	H2O4	InChI=1S/2HO2/c2*1-2/h2*1H	O[O].O[O]	-8.28	0.50
+1993	Sulfur dioxide - hydroxyl complex	H1O3S1	InChI=1S/O2S.HO/c1-3-2;/h;1H	[OH].O=S=O	-266.0	2.2
+1998	2,4,5-Trioxa-1,3-diazabicyclo[1.1.1]pentane	N2O3	InChI=1S/N2O3/c3-1-4-2(3)5-1	N12ON(O1)O2	602.5	2.1
+2003	Platinum dimer	Pt2	InChI=1S/2Pt	[Pt].[Pt]	823.5	3.9
+2004	Platinum hydride	H1Pt1	InChI=1S/Pt.H	[Pt][H]	451.6	3.8
+2031	Dioxaziridine	H1N1O2	InChI=1S/HNO2/c1-2-3-1/h1H	N1OO1	277.5	1.9
+2035	Dinitrogen dimer	N4	InChI=1S/2N2/c2*1-2	N#N.N#N	-0.88	0.67
+2060	1,2-Diiodoacetylene	C2I2	InChI=1S/C2I2/c3-1-2-4	IC#CI	416.0	2.5
+2092	Water trimer	H6O3	InChI=1S/3H2O/h3*1H2	O.O.O	-762.64	0.20
+2107	Bromodioxy	Br1O2	InChI=1S/BrO2/c1-3-2	[O]OBr	116.8	3.8
+2158	1,2-Cyclobutadiene	C4H4	InChI=1S/C4H4/c1-2-4-3-1/h1,4H,2H2	C1C=C=C1	586.0	2.2
+2824	Formylimidogen	C1H1N1O1	InChI=1S/CHNO/c2-1-3/h1H	C(=O)[N]	245.2	4.6
+2210	1,2,4-Trioxolane	C2H4O3	InChI=1S/C2H4O3/c1-3-2-5-4-1/h1-2H2	O1COOC1	-204.6	2.1
+2214	2-Ethynyl-2-cyclopropen-1-ylidene	C5H2	InChI=1S/C5H2/c1-2-5-3-4-5/h1,3H	C#CC1=C[C]1	726.2	3.2
+2216	Pyramidane	C5H4	InChI=1S/C5H4/c1-2-4-3(1)5(1,2)4/h1-4H	C12C3C4C1C234	602.4	2.3
+2217	Spiropentadiene	C5H4	InChI=1S/C5H4/c1-2-5(1)3-4-5/h1-4H	C1=CC12C=C2	651.9	2.3
+2237	Cyclobutatrienyl	C4H1	InChI=1S/C4H/c1-2-4-3-1/h1H	[CH]1[C][C][C]1	962.0	2.4
+2244	Helium dihydride	H2He1	InChI=1S/H2He/c1-2/h2H	[He]HH	-0.05	0.42
+2246	Helium dihydride	H2He1	InChI=1S/H2He/h1H2	H[He]H	614.5	2.6
+2268	3-Oxidedioxathiirane	O3S1	InChI=1S/O3S/c1-4-2-3-4	O=S1OO1	-127.9	2.2
+2269	Trioxathietane	O3S1	InChI=1S/O3S/c1-2-4-3-1	S1OOO1	263.6	2.3
+2270	Oxadithiirane	O1S2	InChI=1S/OS2/c1-2-3-1	O1SS1	136.4	2.5
+2534	1,2-Dibromoethene	C2H2Br2	InChI=1S/C2H2Br2/c3-1-2-4/h1-2H	C(Br)=CBr	124.7	1.6
+2535	trans-1,2-Dibromoethene	C2H2Br2	InChI=1S/C2H2Br2/c3-1-2-4/h1-2H/b2-1+	C(\Br)=C/Br	124.2	1.7
+2541	1,2-Diiodoethene	C2H2I2	InChI=1S/C2H2I2/c3-1-2-4/h1-2H	C(I)=CI	215.19	0.35
+2641	O--HH Complex	H2O1	InChI=1S/O.H2/h;1H	[H][H].[O]	247.2	2.0
+2687	1,2-Dichloroethene	C2H2Cl2	InChI=1S/C2H2Cl2/c3-1-2-4/h1-2H	C(Cl)=CCl	3.83	0.55
+2708	Dichlorovinylidene	C2Cl2	InChI=1S/C2Cl2/c1-2(3)4	[C]=C(Cl)Cl	424.4	3.0
+2712	Chlorovinylidene	C2H1Cl1	InChI=1S/C2HCl/c1-2-3/h2H	[C]=CCl	429.3	2.9
+2723	Carbonylbis(oxy)	C1O3	InChI=1S/CO3/c2-1(3)4	[O]C(=O)[O]	-144.7	2.4
+2791	Diazene	H2N2	InChI=1S/H2N2/c1-2/h1-2H	N=N	207.17	0.40
+3011	1-Methylallyl	C4H7	InChI=1S/C4H7/c1-3-4-2/h3-4H,1H2,2H3	CC=C[CH2]	152.70	0.79
+3056	1,2-Difluoroethene	C2H2F2	InChI=1S/C2H2F2/c3-1-2-4/h1-2H	C(F)=CF	-302.96	0.83
+3080	Dibromovinylidene	C2Br2	InChI=1S/C2Br2/c1-2(3)4	[C]=C(Br)Br	524.1	4.0
+3083	3H-diazirin-3-ylidene-methylene	C2N2	InChI=1S/C2N2/c1-2-3-4-2	[C]=C1N=N1	837.3	2.3
+3087	Fluorovinylidene	C2H1F1	InChI=1S/C2HF/c1-2-3/h2H	[C]=CF	298.9	3.1
+3097	Bromovinylidene	C2H1Br1	InChI=1S/C2HBr/c1-2-3/h2H	[C]=CBr	471.9	3.8
+3131	Neon hydride	H1Ne1	InChI=1S/HNe/h1H	[Ne]H	215.989	0.024
+3190	2-Iodoethanol	C2H5I1O1	InChI=1S/C2H5IO/c3-1-2-4/h4H,1-2H2	ICCO	-131.9	2.5
+3287	Sulfonic acid	H2O3S1	InChI=1S/H2O3S/c1-4(2)3/h4H,(H,1,2,3)	O=S([H])(=O)O	-482.2	1.4
+3360	Argon dimer	Ar2	InChI=1S/Ar2/c1-2	[Ar][Ar]	-1.013	0.0051

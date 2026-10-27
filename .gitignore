@@ -1,0 +1,13 @@
+__pycache__/
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+*.mhfr/
+unique_files/
+paper/data/stats.json
+paper/data/mols.json
+paper/data/hy_ambiguous.json
+paper/data/wildcards.json
+paper/data/feasibility_summary.json
+paper/Seymour_Wheeler_Homodesmotic_manuscript.pdf

@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hfrpkg"
+dynamic = ["version"]
+description = "A package for generating and analyzing homodesmotic reaction enthalpies"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [
+    { name = "Aaron Seymour", email = "ads09449@uga.edu" }
+]
+dependencies = [
+    "rdkit",
+    "pulp>=2.7,<4",
+    "AaronTools",
+    "jinja2",  # AaronTools.job_control (job submission) imports it but AaronTools does not declare it
+]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[project.scripts]
+hfr = "hfrpkg.cli:main"
+multi-prep = "hfrpkg.multi.hfr_driver:main_cli"
+multi-run = "hfrpkg.multi.run_multiple:main_cli"
+multi-compute = "hfrpkg.multi.compute_multiple:main_cli"
+multi-sprun = "hfrpkg.multi.multi_spec_prep:main_cli"
+multi-spcomp = "hfrpkg.multi.multi_spec:main_cli"
+folder-compute = "hfrpkg.compute_single:main_cli"
+folder-run = "hfrpkg.run_single:main_cli"
+folder-sprun = "hfrpkg.run_spec:main_cli"
+folder-spcomp = "hfrpkg.spec_compute:main_cli"
+
+[tool.setuptools.dynamic]
+version = { attr = "hfrpkg.__version__" }
+
+[tool.setuptools.packages.find]
+include = ["hfrpkg*"]
+
+[tool.setuptools.package-data]
+"hfrpkg.data" = ["*.txt"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

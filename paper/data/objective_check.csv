@@ -1,0 +1,232 @@
+smiles,scheme,legacy,legacy_no_imine,current
+CCCC,ID,CCCC + 2 C -> 3 CC,CCCC + 2 C -> 3 CC,CCCC + 2 C -> 3 CC
+CCCC,HY,CC + CCCC -> 2 CCC,CC + CCCC -> 2 CCC,CC + CCCC -> 2 CCC
+CCCC,HO,CC + CCCC -> 2 CCC,CC + CCCC -> 2 CCC,CC + CCCC -> 2 CCC
+NCC(=O)O,ID,NCC(=O)O + 3 C -> C=O + CC + CN + CO,NCC(=O)O + 3 C -> C=O + CC + CN + CO,NCC(=O)O + 3 C -> C=O + CC + CN + CO
+NCC(=O)O,HY,CC + NCC(=O)O -> CC(=O)O + CCN,CC + NCC(=O)O -> CC(=O)O + CCN,CC + NCC(=O)O -> CC(=O)O + CCN
+NCC(=O)O,HO,CC + NCC(=O)O -> CC(=O)O + CCN,CC + NCC(=O)O -> CC(=O)O + CCN,CC + NCC(=O)O -> CC(=O)O + CCN
+C=C=CC,ID,C=C=CC + 2 C -> CC + 2 C=C,C=C=CC + 2 C -> CC + 2 C=C,C=C=CC + 2 C -> CC + 2 C=C
+C=C=CC,HY,C=C=CC + C=N -> C=C=C + CC=N,C=C + C=C=CC -> C=C=C + C=CC,C=C + C=C=CC -> C=C=C + C=CC
+C=C=CC,HO,C=C + C=C=CC -> C=C=C + C=CC,C=C + C=C=CC -> C=C=C + C=CC,C=C + C=C=CC -> C=C=C + C=CC
+CCOO,ID,C + CCOO + O -> CC + CO + OO,C + CCOO + O -> CC + CO + OO,C + CCOO + O -> CC + CO + OO
+CCOO,HY,CCOO + CO -> CCO + COO,CCOO + CO -> CCO + COO,CCOO + CO -> CCO + COO
+CCOO,HO,CCOO + CO -> CCO + COO,CCOO + CO -> CCO + COO,CCOO + CO -> CCO + COO
+CC#CC,ID,CC#CC + 2 C -> C#C + 2 CC,CC#CC + 2 C -> C#C + 2 CC,CC#CC + 2 C -> C#C + 2 CC
+CC#CC,HY,C#C + CC#CC -> 2 C#CC,C#C + CC#CC -> 2 C#CC,C#C + CC#CC -> 2 C#CC
+CC#CC,HO,C#C + CC#CC -> 2 C#CC,C#C + CC#CC -> 2 C#CC,C#C + CC#CC -> 2 C#CC
+CC(=O)CO,ID,CC(=O)CO + 3 C -> C=O + CO + 2 CC,CC(=O)CO + 3 C -> C=O + CO + 2 CC,CC(=O)CO + 3 C -> C=O + CO + 2 CC
+CC(=O)CO,HY,CC(=O)CO + 2 CC -> CC(C)=O + CCC + CO,CC(=O)CO + 2 CC -> CC(C)=O + CCC + CO,CC + CC(=O)CO -> CC(C)=O + CCO
+CC(=O)CO,HO,CC + CC(=O)CO -> CC(C)=O + CCO,CC + CC(=O)CO -> CC(C)=O + CCO,CC + CC(=O)CO -> CC(C)=O + CCO
+C/C=C/C,ID,C/C=C/C + 2 C -> C=C + 2 CC,C/C=C/C + 2 C -> C=C + 2 CC,C/C=C/C + 2 C -> C=C + 2 CC
+C/C=C/C,HY,C/C=C/C + C=N -> C=CC + CC=N,C/C=C/C + C=C -> 2 C=CC,C/C=C/C + C=C -> 2 C=CC
+C/C=C/C,HO,C/C=C/C + C=C -> 2 C=CC,C/C=C/C + C=C -> 2 C=CC,C/C=C/C + C=C -> 2 C=CC
+COC(C)=O,ID,COC(C)=O + O + 2 C -> C=O + CC + 2 CO,COC(C)=O + O + 2 C -> C=O + CC + 2 CO,COC(C)=O + O + 2 C -> C=O + CC + 2 CO
+COC(C)=O,HY,CO + COC(C)=O -> CC(=O)O + COC,CO + COC(C)=O -> CC(=O)O + COC,CO + COC(C)=O -> CC(=O)O + COC
+COC(C)=O,HO,COC(C)=O + O=CO -> CC(=O)O + COC=O,COC(C)=O + O=CO -> CC(=O)O + COC=O,COC(C)=O + O=CO -> CC(=O)O + COC=O
+C/C=C\C,ID,C/C=C\C + 2 C -> C=C + 2 CC,C/C=C\C + 2 C -> C=C + 2 CC,C/C=C\C + 2 C -> C=C + 2 CC
+C/C=C\C,HY,C/C=C\C + C=N -> C=CC + CC=N,C/C=C\C + C=C -> 2 C=CC,C/C=C\C + C=C -> 2 C=CC
+C/C=C\C,HO,C/C=C\C + C=C -> 2 C=CC,C/C=C\C + C=C -> 2 C=CC,C/C=C\C + C=C -> 2 C=CC
+C#CCC,ID,C#CCC + 2 C -> C#C + 2 CC,C#CCC + 2 C -> C#C + 2 CC,C#CCC + 2 C -> C#C + 2 CC
+C#CCC,HY,C#CCC + CC -> C#CC + CCC,C#CCC + CC -> C#CC + CCC,C#CCC + CC -> C#CC + CCC
+C#CCC,HO,C#CCC + CC -> C#CC + CCC,C#CCC + CC -> C#CC + CCC,C#CCC + CC -> C#CC + CCC
+CCCCC,ID,CCCCC + 3 C -> 4 CC,CCCCC + 3 C -> 4 CC,CCCCC + 3 C -> 4 CC
+CCCCC,HY,CCCCC + 2 CC -> 3 CCC,CCCCC + 2 CC -> 3 CCC,CCCCC + 2 CC -> 3 CCC
+CCCCC,HO,CCCCC + 2 CC -> 3 CCC,CCCCC + 2 CC -> 3 CCC,CCCCC + 2 CC -> 3 CCC
+CCCO,ID,CCCO + 2 C -> CO + 2 CC,CCCO + 2 C -> CO + 2 CC,CCCO + 2 C -> CO + 2 CC
+CCCO,HY,CC + CCCO -> CCC + CCO,CC + CCCO -> CCC + CCO,CC + CCCO -> CCC + CCO
+CCCO,HO,CC + CCCO -> CCC + CCO,CC + CCCO -> CCC + CCO,CC + CCCO -> CCC + CCO
+CC=C=O,ID,CC=C=O + 2 C -> C=C + C=O + CC,CC=C=O + 2 C -> C=C + C=O + CC,CC=C=O + 2 C -> C=C + C=O + CC
+CC=C=O,HY,C=N + CC=C=O -> C=C=O + CC=N,C=C + CC=C=O -> C=C=O + C=CC,C=C + CC=C=O -> C=C=O + C=CC
+CC=C=O,HO,C=C + CC=C=O -> C=C=O + C=CC,C=C + CC=C=O -> C=C=O + C=CC,C=C + CC=C=O -> C=C=O + C=CC
+C#CC#CC,ID,C#CC#CC + 3 C -> 2 C#C + 2 CC,C#CC#CC + 3 C -> 2 C#C + 2 CC,C#CC#CC + 3 C -> 2 C#C + 2 CC
+C#CC#CC,HY,C#C + C#CC#CC + CC -> 3 C#CC,C#C + C#CC#CC + CC -> 3 C#CC,C#C + C#CC#CC + CC -> 3 C#CC
+C#CC#CC,HO,C#C + C#CC#CC -> C#CC + C#CC#C,C#C + C#CC#CC -> C#CC + C#CC#C,C#C + C#CC#CC -> C#CC + C#CC#C
+CCCCO,ID,CCCCO + 3 C -> CO + 3 CC,CCCCO + 3 C -> CO + 3 CC,CCCCO + 3 C -> CO + 3 CC
+CCCCO,HY,CCCCO + 2 CC -> CCO + 2 CCC,CCCCO + 2 CC -> CCO + 2 CCC,CCCCO + 2 CC -> CCO + 2 CCC
+CCCCO,HO,CCCCO + 2 CC -> CCO + 2 CCC,CCCCO + 2 CC -> CCO + 2 CCC,CCCCO + 2 CC -> CCO + 2 CCC
+CCC(C)C,ID,CCC(C)C + 3 C -> 4 CC,CCC(C)C + 3 C -> 4 CC,CCC(C)C + 3 C -> 4 CC
+CCC(C)C,HY,C=N + CC + CCC(C)C -> CC=N + 2 CCC,CC + CCC(C)C -> CC(C)C + CCC,CC + CCC(C)C -> CC(C)C + CCC
+CCC(C)C,HO,CC + CCC(C)C -> CC(C)C + CCC,CC + CCC(C)C -> CC(C)C + CCC,CC + CCC(C)C -> CC(C)C + CCC
+CCOC,ID,C + CCOC + O -> CC + 2 CO,C + CCOC + O -> CC + 2 CO,C + CCOC + O -> CC + 2 CO
+CCOC,HY,CCOC + CO -> CCO + COC,CCOC + CO -> CCO + COC,CCOC + CO -> CCO + COC
+CCOC,HO,CCOC + CO -> CCO + COC,CCOC + CO -> CCO + COC,CCOC + CO -> CCO + COC
+CCOCC,ID,CCOCC + O + 2 C -> 2 CC + 2 CO,CCOCC + O + 2 C -> 2 CC + 2 CO,CCOCC + O + 2 C -> 2 CC + 2 CO
+CCOCC,HY,CCOCC + 2 CO -> COC + 2 CCO,CCOCC + 2 CO -> COC + 2 CCO,CCOCC + 2 CO -> COC + 2 CCO
+CCOCC,HO,CCOCC + 2 CO -> COC + 2 CCO,CCOCC + 2 CO -> COC + 2 CCO,CCOCC + 2 CO -> COC + 2 CCO
+OCCCl,ID,OCCCl + 2 C -> CC + CCl + CO,OCCCl + 2 C -> CC + CCl + CO,OCCCl + 2 C -> CC + CCl + CO
+OCCCl,HY,CC + CCl + OCCCl -> CO + 2 CCCl,CC + CCl + OCCCl -> CO + 2 CCCl,CC + OCCCl -> CCCl + CCO
+OCCCl,HO,CC + OCCCl -> CCCl + CCO,CC + OCCCl -> CCCl + CCO,CC + OCCCl -> CCCl + CCO
+FC=C(F)F,ID,FC=C(F)F + 3 C -> C=C + 3 CF,FC=C(F)F + 3 C -> C=C + 3 CF,FC=C(F)F + 3 C -> C=C + 3 CF
+FC=C(F)F,HY,C=N + CC + FC=C(F)F -> C=C(F)F + CC=N + CF,C=C + FC=C(F)F -> C=C(F)F + C=CF,C=C + FC=C(F)F -> C=C(F)F + C=CF
+FC=C(F)F,HO,C=C + FC=C(F)F -> C=C(F)F + C=CF,C=C + FC=C(F)F -> C=C(F)F + C=CF,C=C + FC=C(F)F -> C=C(F)F + C=CF
+CCCN,ID,CCCN + 2 C -> CN + 2 CC,CCCN + 2 C -> CN + 2 CC,CCCN + 2 C -> CN + 2 CC
+CCCN,HY,CC + CCCN -> CCC + CCN,CC + CCCN -> CCC + CCN,CC + CCCN -> CCC + CCN
+CCCN,HO,CC + CCCN -> CCC + CCN,CC + CCCN -> CCC + CCN,CC + CCCN -> CCC + CCN
+CCOC=O,ID,CCOC=O + O + 2 C -> C=O + CC + 2 CO,CCOC=O + O + 2 C -> C=O + CC + 2 CO,CCOC=O + O + 2 C -> C=O + CC + 2 CO
+CCOC=O,HY,CCOC=O + 2 CO -> CCO + COC + O=CO,CCOC=O + 2 CO -> CCO + COC + O=CO,CCOC=O + 2 CO -> CCO + COC + O=CO
+CCOC=O,HO,CCOC=O + CO -> CCO + COC=O,CCOC=O + CO -> CCO + COC=O,CCOC=O + CO -> CCO + COC=O
+CCC(=O)O,ID,CCC(=O)O + 3 C -> C=O + CO + 2 CC,CCC(=O)O + 3 C -> C=O + CO + 2 CC,CCC(=O)O + 3 C -> C=O + CO + 2 CC
+CCC(=O)O,HY,CCC(=O)O + CO -> CC(=O)O + CCO,CCC(=O)O + CO -> CC(=O)O + CCO,CCC(=O)O + CO -> CC(=O)O + CCO
+CCC(=O)O,HO,CCC(=O)O + CO -> CC(=O)O + CCO,CCC(=O)O + CO -> CC(=O)O + CCO,CCC(=O)O + CO -> CC(=O)O + CCO
+Cl/C=C\Cl,ID,Cl/C=C\Cl + 2 C -> C=C + 2 CCl,Cl/C=C\Cl + 2 C -> C=C + 2 CCl,Cl/C=C\Cl + 2 C -> C=C + 2 CCl
+Cl/C=C\Cl,HY,C=N + CC + Cl/C=C\Cl -> C=CCl + CC=N + CCl,C=C + Cl/C=C\Cl -> 2 C=CCl,C=C + Cl/C=C\Cl -> 2 C=CCl
+Cl/C=C\Cl,HO,C=C + Cl/C=C\Cl -> 2 C=CCl,C=C + Cl/C=C\Cl -> 2 C=CCl,C=C + Cl/C=C\Cl -> 2 C=CCl
+ClC#CCl,ID,ClC#CCl + 2 C -> C#C + 2 CCl,ClC#CCl + 2 C -> C#C + 2 CCl,ClC#CCl + 2 C -> C#C + 2 CCl
+ClC#CCl,HY,C#C + ClC#CCl -> 2 C#CCl,C#C + ClC#CCl -> 2 C#CCl,C#C + ClC#CCl -> 2 C#CCl
+ClC#CCl,HO,C#C + ClC#CCl -> 2 C#CCl,C#C + ClC#CCl -> 2 C#CCl,C#C + ClC#CCl -> 2 C#CCl
+OCCF,ID,OCCF + 2 C -> CC + CF + CO,OCCF + 2 C -> CC + CF + CO,OCCF + 2 C -> CC + CF + CO
+OCCF,HY,CC + CF + OCCF -> CO + 2 CCF,CC + CF + OCCF -> CO + 2 CCF,CC + OCCF -> CCF + CCO
+OCCF,HO,CC + OCCF -> CCF + CCO,CC + OCCF -> CCF + CCO,CC + OCCF -> CCF + CCO
+CCNC,ID,C + CCNC + N -> CC + 2 CN,C + CCNC + N -> CC + 2 CN,C + CCNC + N -> CC + 2 CN
+CCNC,HY,CCNC + CN -> CCN + CNC,CCNC + CN -> CCN + CNC,CCNC + CN -> CCN + CNC
+CCNC,HO,CCNC + CN -> CCN + CNC,CCNC + CN -> CCN + CNC,CCNC + CN -> CCN + CNC
+C=COCC,ID,C=COCC + O + 2 C -> C=C + CC + 2 CO,C=COCC + O + 2 C -> C=C + CC + 2 CO,C=COCC + O + 2 C -> C=C + CC + 2 CO
+C=COCC,HY,C=COCC + 2 CO -> C=CO + CCO + COC,C=COCC + 2 CO -> C=CO + CCO + COC,C=COCC + 2 CO -> C=CO + CCO + COC
+C=COCC,HO,C=COCC + CO -> C=COC + CCO,C=COCC + CO -> C=COC + CCO,C=COCC + CO -> C=COC + CCO
+C=C(O)OC,ID,C=C(O)OC + O + 2 C -> C=C + 3 CO,C=C(O)OC + O + 2 C -> C=C + 3 CO,C=C(O)OC + O + 2 C -> C=C + 3 CO
+C=C(O)OC,HY,C=C(O)OC + CO -> C=C(O)O + COC,C=C(O)OC + CO -> C=C(O)O + COC,C=C(O)OC + CO -> C=C(O)O + COC
+C=C(O)OC,HO,C=C(O)OC + C=CO -> C=C(O)O + C=COC,C=C(O)OC + C=CO -> C=C(O)O + C=COC,C=C(O)OC + C=CO -> C=C(O)O + C=COC
+OCCO,ID,OCCO + 2 C -> CC + 2 CO,OCCO + 2 C -> CC + 2 CO,OCCO + 2 C -> CC + 2 CO
+OCCO,HY,CC + OCCO -> 2 CCO,CC + OCCO -> 2 CCO,CC + OCCO -> 2 CCO
+OCCO,HO,CC + OCCO -> 2 CCO,CC + OCCO -> 2 CCO,CC + OCCO -> 2 CCO
+ClCCCl,ID,ClCCCl + 2 C -> CC + 2 CCl,ClCCCl + 2 C -> CC + 2 CCl,ClCCCl + 2 C -> CC + 2 CCl
+ClCCCl,HY,CC + ClCCCl -> 2 CCCl,CC + ClCCCl -> 2 CCCl,CC + ClCCCl -> 2 CCCl
+ClCCCl,HO,CC + ClCCCl -> 2 CCCl,CC + ClCCCl -> 2 CCCl,CC + ClCCCl -> 2 CCCl
+FC#CF,ID,FC#CF + 2 C -> C#C + 2 CF,FC#CF + 2 C -> C#C + 2 CF,FC#CF + 2 C -> C#C + 2 CF
+FC#CF,HY,C#C + FC#CF -> 2 C#CF,C#C + FC#CF -> 2 C#CF,C#C + FC#CF -> 2 C#CF
+FC#CF,HO,C#C + FC#CF -> 2 C#CF,C#C + FC#CF -> 2 C#CF,C#C + FC#CF -> 2 C#CF
+OOOO,ID,OOOO + 2 O -> 3 OO,OOOO + 2 O -> 3 OO,OOOO + 2 O -> 3 OO
+OOOO,HY,OO + OOOO -> 2 OOO,OO + OOOO -> 2 OOO,OO + OOOO -> 2 OOO
+OOOO,HO,OO + OOOO -> 2 OOO,OO + OOOO -> 2 OOO,OO + OOOO -> 2 OOO
+OOOCl,ID,OOOCl + 2 O -> OCl + 2 OO,OOOCl + 2 O -> OCl + 2 OO,OOOCl + 2 O -> OCl + 2 OO
+OOOCl,HY,OO + OOOCl -> OOCl + OOO,OO + OOOCl -> OOCl + OOO,OO + OOOCl -> OOCl + OOO
+OOOCl,HO,OO + OOOCl -> OOCl + OOO,OO + OOOCl -> OOCl + OOO,OO + OOOCl -> OOCl + OOO
+CCC(C)=O,ID,CCC(C)=O + 3 C -> C=O + 3 CC,CCC(C)=O + 3 C -> C=O + 3 CC,CCC(C)=O + 3 C -> C=O + 3 CC
+CCC(C)=O,HY,CC + CCC(C)=O -> CC(C)=O + CCC,CC + CCC(C)=O -> CC(C)=O + CCC,CC + CCC(C)=O -> CC(C)=O + CCC
+CCC(C)=O,HO,CC=O + CCC(C)=O -> CC(C)=O + CCC=O,CC=O + CCC(C)=O -> CC(C)=O + CCC=O,CC=O + CCC(C)=O -> CC(C)=O + CCC=O
+COC(=O)O,ID,COC(=O)O + O + 2 C -> C=O + 3 CO,COC(=O)O + O + 2 C -> C=O + 3 CO,COC(=O)O + O + 2 C -> C=O + 3 CO
+COC(=O)O,HY,CO + COC(=O)O -> COC + O=C(O)O,CO + COC(=O)O -> COC + O=C(O)O,CO + COC(=O)O -> COC + O=C(O)O
+COC(=O)O,HO,COC(=O)O + O=CO -> COC=O + O=C(O)O,COC(=O)O + O=CO -> COC=O + O=C(O)O,COC(=O)O + O=CO -> COC=O + O=C(O)O
+ClCC(Cl)Cl,ID,ClCC(Cl)Cl + 3 C -> CC + 3 CCl,ClCC(Cl)Cl + 3 C -> CC + 3 CCl,ClCC(Cl)Cl + 3 C -> CC + 3 CCl
+ClCC(Cl)Cl,HY,CC + ClCC(Cl)Cl -> CC(Cl)Cl + CCCl,CCl + ClCC(Cl)Cl -> CC(Cl)Cl + ClCCl,CCl + ClCC(Cl)Cl -> CC(Cl)Cl + ClCCl
+ClCC(Cl)Cl,HO,CCl + ClCC(Cl)Cl -> CC(Cl)Cl + ClCCl,CCl + ClCC(Cl)Cl -> CC(Cl)Cl + ClCCl,CCl + ClCC(Cl)Cl -> CC(Cl)Cl + ClCCl
+F/C=C\F,ID,F/C=C\F + 2 C -> C=C + 2 CF,F/C=C\F + 2 C -> C=C + 2 CF,F/C=C\F + 2 C -> C=C + 2 CF
+F/C=C\F,HY,C=N + CC + F/C=C\F -> C=CF + CC=N + CF,C=C + F/C=C\F -> 2 C=CF,C=C + F/C=C\F -> 2 C=CF
+F/C=C\F,HO,C=C + F/C=C\F -> 2 C=CF,C=C + F/C=C\F -> 2 C=CF,C=C + F/C=C\F -> 2 C=CF
+CC#CO,ID,CC#CO + 2 C -> C#C + CC + CO,CC#CO + 2 C -> C#C + CC + CO,CC#CO + 2 C -> C#C + CC + CO
+CC#CO,HY,C#C + CC#CO -> C#CC + C#CO,C#C + CC#CO -> C#CC + C#CO,C#C + CC#CO -> C#CC + C#CO
+CC#CO,HO,C#C + CC#CO -> C#CC + C#CO,C#C + CC#CO -> C#CC + C#CO,C#C + CC#CO -> C#CC + C#CO
+C#CCCl,ID,C#CCCl + 2 C -> C#C + CC + CCl,C#CCCl + 2 C -> C#C + CC + CCl,C#CCCl + 2 C -> C#C + CC + CCl
+C#CCCl,HY,C#CCCl + CC -> C#CC + CCCl,C#CCCl + CC -> C#CC + CCCl,C#CCCl + CC -> C#CC + CCCl
+C#CCCl,HO,C#CCCl + CC -> C#CC + CCCl,C#CCCl + CC -> C#CC + CCCl,C#CCCl + CC -> C#CC + CCCl
+C#CC=C=C,ID,C#CC=C=C + 3 C -> C#C + CC + 2 C=C,C#CC=C=C + 3 C -> C#C + CC + 2 C=C,C#CC=C=C + 3 C -> C#C + CC + 2 C=C
+C#CC=C=C,HY,C#CC=C=C + C=N + CC -> C#CC + C=C=C + CC=N,C#CC=C=C + C=C + CC -> C#CC + C=C=C + C=CC,C#CC=C=C + C=C + CC -> C#CC + C=C=C + C=CC
+C#CC=C=C,HO,C#CC=C=C + C=C -> C#CC=C + C=C=C,C#CC=C=C + C=C -> C#CC=C + C=C=C,C#CC=C=C + C=C -> C#CC=C + C=C=C
+C=C(O)CO,ID,C=C(O)CO + 3 C -> C=C + CC + 2 CO,C=C(O)CO + 3 C -> C=C + CC + 2 CO,C=C(O)CO + 3 C -> C=C + CC + 2 CO
+C=C(O)CO,HY,C=C(O)CO + CC -> C=C(C)O + CCO,C=C(O)CO + CC -> C=C(C)O + CCO,C=C(O)CO + CC -> C=C(C)O + CCO
+C=C(O)CO,HO,C=C(O)CO + CC -> C=C(C)O + CCO,C=C(O)CO + CC -> C=C(C)O + CCO,C=C(O)CO + CC -> C=C(C)O + CCO
+ClC=C(Cl)Cl,ID,ClC=C(Cl)Cl + 3 C -> C=C + 3 CCl,ClC=C(Cl)Cl + 3 C -> C=C + 3 CCl,ClC=C(Cl)Cl + 3 C -> C=C + 3 CCl
+ClC=C(Cl)Cl,HY,C=N + CC + ClC=C(Cl)Cl -> C=C(Cl)Cl + CC=N + CCl,C=C + ClC=C(Cl)Cl -> C=C(Cl)Cl + C=CCl,C=C + ClC=C(Cl)Cl -> C=C(Cl)Cl + C=CCl
+ClC=C(Cl)Cl,HO,C=C + ClC=C(Cl)Cl -> C=C(Cl)Cl + C=CCl,C=C + ClC=C(Cl)Cl -> C=C(Cl)Cl + C=CCl,C=C + ClC=C(Cl)Cl -> C=C(Cl)Cl + C=CCl
+FCCF,ID,FCCF + 2 C -> CC + 2 CF,FCCF + 2 C -> CC + 2 CF,FCCF + 2 C -> CC + 2 CF
+FCCF,HY,CC + FCCF -> 2 CCF,CC + FCCF -> 2 CCF,CC + FCCF -> 2 CCF
+FCCF,HO,CC + FCCF -> 2 CCF,CC + FCCF -> 2 CCF,CC + FCCF -> 2 CCF
+C#CCC#C,ID,C#CCC#C + 3 C -> 2 C#C + 2 CC,C#CCC#C + 3 C -> 2 C#C + 2 CC,C#CCC#C + 3 C -> 2 C#C + 2 CC
+C#CCC#C,HY,C#CCC#C + 2 CC -> CCC + 2 C#CC,C#CCC#C + 2 CC -> CCC + 2 C#CC,C#CCC#C + 2 CC -> CCC + 2 C#CC
+C#CCC#C,HO,C#CCC#C + 2 CC -> CCC + 2 C#CC,C#CCC#C + 2 CC -> CCC + 2 C#CC,C#CCC#C + 2 CC -> CCC + 2 C#CC
+CC(C)=C=O,ID,CC(C)=C=O + 3 C -> C=C + C=O + 2 CC,CC(C)=C=O + 3 C -> C=C + C=O + 2 CC,CC(C)=C=O + 3 C -> C=C + C=O + 2 CC
+CC(C)=C=O,HY,C=C + CC(C)=C=O -> C=C(C)C + C=C=O,C=C + CC(C)=C=O -> C=C(C)C + C=C=O,C=C + CC(C)=C=O -> C=C(C)C + C=C=O
+CC(C)=C=O,HO,C=C + CC(C)=C=O -> C=C(C)C + C=C=O,C=C + CC(C)=C=O -> C=C(C)C + C=C=O,C=C + CC(C)=C=O -> C=C(C)C + C=C=O
+C=C=C=CC,ID,C=C=C=CC + 3 C -> CC + 3 C=C,C=C=C=CC + 3 C -> CC + 3 C=C,C=C=C=CC + 3 C -> CC + 3 C=C
+C=C=C=CC,HY,C=C + C=C=C=CC + C=N -> CC=N + 2 C=C=C,C=C=C=CC + 2 C=C -> C=CC + 2 C=C=C,C=C=C=CC + 2 C=C -> C=CC + 2 C=C=C
+C=C=C=CC,HO,C=C + C=C=C=CC -> C=C=C=C + C=CC,C=C + C=C=C=CC -> C=C=C=C + C=CC,C=C + C=C=C=CC -> C=C=C=C + C=CC
+OC#CO,ID,OC#CO + 2 C -> C#C + 2 CO,OC#CO + 2 C -> C#C + 2 CO,OC#CO + 2 C -> C#C + 2 CO
+OC#CO,HY,C#C + OC#CO -> 2 C#CO,C#C + OC#CO -> 2 C#CO,C#C + OC#CO -> 2 C#CO
+OC#CO,HO,C#C + OC#CO -> 2 C#CO,C#C + OC#CO -> 2 C#CO,C#C + OC#CO -> 2 C#CO
+Cl/C=C/Cl,ID,Cl/C=C/Cl + 2 C -> C=C + 2 CCl,Cl/C=C/Cl + 2 C -> C=C + 2 CCl,Cl/C=C/Cl + 2 C -> C=C + 2 CCl
+Cl/C=C/Cl,HY,C=N + CC + Cl/C=C/Cl -> C=CCl + CC=N + CCl,C=C + Cl/C=C/Cl -> 2 C=CCl,C=C + Cl/C=C/Cl -> 2 C=CCl
+Cl/C=C/Cl,HO,C=C + Cl/C=C/Cl -> 2 C=CCl,C=C + Cl/C=C/Cl -> 2 C=CCl,C=C + Cl/C=C/Cl -> 2 C=CCl
+F/C=C/F,ID,F/C=C/F + 2 C -> C=C + 2 CF,F/C=C/F + 2 C -> C=C + 2 CF,F/C=C/F + 2 C -> C=C + 2 CF
+F/C=C/F,HY,C=N + CC + F/C=C/F -> C=CF + CC=N + CF,C=C + F/C=C/F -> 2 C=CF,C=C + F/C=C/F -> 2 C=CF
+F/C=C/F,HO,C=C + F/C=C/F -> 2 C=CF,C=C + F/C=C/F -> 2 C=CF,C=C + F/C=C/F -> 2 C=CF
+CCCC=O,ID,CCCC=O + 3 C -> C=O + 3 CC,CCCC=O + 3 C -> C=O + 3 CC,CCCC=O + 3 C -> C=O + 3 CC
+CCCC=O,HY,C=N + CCCC=O + 2 CC -> C=O + CC=N + 2 CCC,CCCC=O + 2 CC -> CC=O + 2 CCC,CCCC=O + 2 CC -> CC=O + 2 CCC
+CCCC=O,HO,CC + CCCC=O -> CCC + CCC=O,CC + CCCC=O -> CCC + CCC=O,CC + CCCC=O -> CCC + CCC=O
+C=C=CCl,ID,C=C=CCl + 2 C -> CCl + 2 C=C,C=C=CCl + 2 C -> CCl + 2 C=C,C=C=CCl + 2 C -> CCl + 2 C=C
+C=C=CCl,HY,C=C=CCl + C=N + CC -> C=C=C + CC=N + CCl,C=C + C=C=CCl -> C=C=C + C=CCl,C=C + C=C=CCl -> C=C=C + C=CCl
+C=C=CCl,HO,C=C + C=C=CCl -> C=C=C + C=CCl,C=C + C=C=CCl -> C=C=C + C=CCl,C=C + C=C=CCl -> C=C=C + C=CCl
+CC#CCl,ID,CC#CCl + 2 C -> C#C + CC + CCl,CC#CCl + 2 C -> C#C + CC + CCl,CC#CCl + 2 C -> C#C + CC + CCl
+CC#CCl,HY,C#C + CC#CCl -> C#CC + C#CCl,C#C + CC#CCl -> C#CC + C#CCl,C#C + CC#CCl -> C#CC + C#CCl
+CC#CCl,HO,C#C + CC#CCl -> C#CC + C#CCl,C#C + CC#CCl -> C#CC + C#CCl,C#C + CC#CCl -> C#CC + C#CCl
+OCOCO,ID,O + OCOCO + 2 C -> 4 CO,O + OCOCO + 2 C -> 4 CO,O + OCOCO + 2 C -> 4 CO
+OCOCO,HY,OCOCO + 2 CO -> COC + 2 OCO,OCOCO + 2 CO -> COC + 2 OCO,OCOCO + 2 CO -> COC + 2 OCO
+OCOCO,HO,OCOCO + 2 CO -> COC + 2 OCO,OCOCO + 2 CO -> COC + 2 OCO,OCOCO + 2 CO -> COC + 2 OCO
+C=C(C)OO,ID,C=C(C)OO + O + 2 C -> C=C + CC + CO + OO,C=C(C)OO + O + 2 C -> C=C + CC + CO + OO,C=C(C)OO + O + 2 C -> C=C + CC + CO + OO
+C=C(C)OO,HY,C=C(C)OO + CO -> C=C(C)O + COO,C=C(C)OO + CO -> C=C(C)O + COO,C=C(C)OO + CO -> C=C(C)O + COO
+C=C(C)OO,HO,C=C(C)OO + C=CO -> C=C(C)O + C=COO,C=C(C)OO + C=CO -> C=C(C)O + C=COO,C=C(C)OO + C=CO -> C=C(C)O + C=COO
+C1CC1,ID,C1CC1 + 3 C -> 3 CC,C1CC1 + 3 C -> 3 CC,C1CC1 + 3 C -> 3 CC
+C1CC1,HY,C1CC1 + 3 CC -> 3 CCC,C1CC1 + 3 CC -> 3 CCC,C1CC1 + 3 CC -> 3 CCC
+C1CC1,HO,C1CC1 + 3 CC -> 3 CCC,C1CC1 + 3 CC -> 3 CCC,C1CC1 + 3 CC -> 3 CCC
+C1=CC1,ID,C1=CC1 + 3 C -> C=C + 2 CC,C1=CC1 + 3 C -> C=C + 2 CC,C1=CC1 + 3 C -> C=C + 2 CC
+C1=CC1,HY,C1=CC1 + C=N + 2 CC -> C=CC + CC=N + CCC,C1=CC1 + C=C + 2 CC -> CCC + 2 C=CC,C1=CC1 + C=C + 2 CC -> CCC + 2 C=CC
+C1=CC1,HO,C1=CC1 + C=C + 2 CC -> CCC + 2 C=CC,C1=CC1 + C=C + 2 CC -> CCC + 2 C=CC,C1=CC1 + C=C + 2 CC -> CCC + 2 C=CC
+C1CN1,ID,C1CN1 + N + 2 C -> CC + 2 CN,C1CN1 + N + 2 C -> CC + 2 CN,C1CN1 + N + 2 C -> CC + 2 CN
+C1CN1,HY,C1CN1 + CC + 2 CN -> CNC + 2 CCN,C1CN1 + CC + 2 CN -> CNC + 2 CCN,C1CN1 + CC + 2 CN -> CNC + 2 CCN
+C1CN1,HO,C1CN1 + CC + 2 CN -> CNC + 2 CCN,C1CN1 + CC + 2 CN -> CNC + 2 CCN,C1CN1 + CC + 2 CN -> CNC + 2 CCN
+C1=CC=C1,ID,C1=CC=C1 + 4 C -> 2 C=C + 2 CC,C1=CC=C1 + 4 C -> 2 C=C + 2 CC,C1=CC=C1 + 4 C -> 2 C=C + 2 CC
+C1=CC=C1,HY,C1=CC=C1 + 2 C=N + 2 CC -> 2 C=CC + 2 CC=N,C1=CC=C1 + 2 C=C + 2 CC -> 4 C=CC,C1=CC=C1 + 2 C=C + 2 CC -> 4 C=CC
+C1=CC=C1,HO,C1=CC=C1 + 2 C=C -> 2 C=CC=C,C1=CC=C1 + 2 C=C -> 2 C=CC=C,C1=CC=C1 + 2 C=C -> 2 C=CC=C
+C=C1C=C1,ID,C=C1C=C1 + 4 C -> 2 C=C + 2 CC,C=C1C=C1 + 4 C -> 2 C=C + 2 CC,C=C1C=C1 + 4 C -> 2 C=C + 2 CC
+C=C1C=C1,HY,C=C1C=C1 + C=N + 2 CC -> C=C(C)C + C=CC + CC=N,C=C + C=C1C=C1 + 2 CC -> C=C(C)C + 2 C=CC,C=C + C=C1C=C1 + 2 CC -> C=C(C)C + 2 C=CC
+C=C1C=C1,HO,C=C + C=C1C=C1 + 2 C=CC -> C=C(C)C + 2 C=CC=C,C=C + C=C1C=C1 + 2 C=CC -> C=C(C)C + 2 C=CC=C,C=C + C=C1C=C1 + 2 C=CC -> C=C(C)C + 2 C=CC=C
+C1=CCC1,ID,C1=CCC1 + 4 C -> C=C + 3 CC,C1=CCC1 + 4 C -> C=C + 3 CC,C1=CCC1 + 4 C -> C=C + 3 CC
+C1=CCC1,HY,C1=CCC1 + C=N + 3 CC -> C=CC + CC=N + 2 CCC,C1=CCC1 + C=C + 3 CC -> 2 C=CC + 2 CCC,C1=CCC1 + C=C + 3 CC -> 2 C=CC + 2 CCC
+C1=CCC1,HO,C1=CCC1 + C=C + CC -> 2 C=CCC,C1=CCC1 + C=C + CC -> 2 C=CCC,C1=CCC1 + C=C + CC -> 2 C=CCC
+CC1CC1,ID,CC1CC1 + 4 C -> 4 CC,CC1CC1 + 4 C -> 4 CC,CC1CC1 + 4 C -> 4 CC
+CC1CC1,HY,C=N + CC1CC1 + 3 CC -> CC=N + 3 CCC,CC1CC1 + 3 CC -> CC(C)C + 2 CCC,CC1CC1 + 3 CC -> CC(C)C + 2 CCC
+CC1CC1,HO,CC1CC1 + 3 CC -> CC(C)C + 2 CCC,CC1CC1 + 3 CC -> CC(C)C + 2 CCC,CC1CC1 + 3 CC -> CC(C)C + 2 CCC
+C1COOO1,ID,C1COOO1 + 2 C + 3 O -> CC + 2 CO + 2 OO,C1COOO1 + 2 C + 3 O -> CC + 2 CO + 2 OO,C1COOO1 + 2 C + 3 O -> CC + 2 CO + 2 OO
+C1COOO1,HY,C1COOO1 + CC + 4 OO -> 2 CCO + 3 OOO,C1COOO1 + CC + 4 OO -> 2 CCO + 3 OOO,C1COOO1 + 2 CC + 3 OO -> OOO + 2 CCO + 2 COO
+C1COOO1,HO,C1COOO1 + CC + OO + 3 CO -> 2 CCO + 3 COO,C1COOO1 + CC + OO + 3 CO -> 2 CCO + 3 COO,C1COOO1 + CC + OO + 3 CO -> 2 CCO + 3 COO
+O=C1CC1,ID,O=C1CC1 + 4 C -> C=O + 3 CC,O=C1CC1 + 4 C -> C=O + 3 CC,O=C1CC1 + 4 C -> C=O + 3 CC
+O=C1CC1,HY,O=C1CC1 + 3 CC -> CC(C)=O + 2 CCC,O=C1CC1 + 3 CC -> CC(C)=O + 2 CCC,O=C1CC1 + 3 CC -> CC(C)=O + 2 CCC
+O=C1CC1,HO,O=C1CC1 + 3 CC -> CC(C)=O + 2 CCC,O=C1CC1 + 3 CC -> CC(C)=O + 2 CCC,O=C1CC1 + 3 CC -> CC(C)=O + 2 CCC
+C1C2=C1C2,ID,C1C2=C1C2 + 6 C -> C=C + 4 CC,C1C2=C1C2 + 6 C -> C=C + 4 CC,C1C2=C1C2 + 6 C -> C=C + 4 CC
+C1C2=C1C2,HY,C1C2=C1C2 + C=C + 4 CC -> 2 C=C(C)C + 2 CCC,C1C2=C1C2 + C=C + 4 CC -> 2 C=C(C)C + 2 CCC,C1C2=C1C2 + C=C + 4 CC -> 2 C=C(C)C + 2 CCC
+C1C2=C1C2,HO,C1C2=C1C2 + C=C + 4 CC -> 2 C=C(C)C + 2 CCC,C1C2=C1C2 + C=C + 4 CC -> 2 C=C(C)C + 2 CCC,C1C2=C1C2 + C=C + 4 CC -> 2 C=C(C)C + 2 CCC
+C1=CCC=1,ID,C1=CCC=1 + 4 C -> 2 C=C + 2 CC,C1=CCC=1 + 4 C -> 2 C=C + 2 CC,C1=CCC=1 + 4 C -> 2 C=C + 2 CC
+C1=CCC=1,HY,C1=CCC=1 + 2 C=C + 2 CC -> C=C=C + CCC + 2 C=CC,C1=CCC=1 + 2 C=C + 2 CC -> C=C=C + CCC + 2 C=CC,C1=CCC=1 + 2 C=C + 2 CC -> C=C=C + CCC + 2 C=CC
+C1=CCC=1,HO,C1=CCC=1 + CC + 2 C=C -> C=C=C + C=CC + C=CCC,C1=CCC=1 + CC + 2 C=C -> C=C=C + C=CC + C=CCC,C1=CCC=1 + CC + 2 C=C -> C=C=C + C=CC + C=CCC
+C1OCOO1,ID,C1OCOO1 + 2 C + 3 O -> OO + 4 CO,C1OCOO1 + 2 C + 3 O -> OO + 4 CO,C1OCOO1 + 2 C + 3 O -> OO + 4 CO
+C1OCOO1,HY,C1OCOO1 + 5 CO -> COO + 2 COC + 2 OCO,C1OCOO1 + 5 CO -> COO + 2 COC + 2 OCO,C1OCOO1 + 5 CO -> COO + 2 COC + 2 OCO
+C1OCOO1,HO,C1OCOO1 + 5 CO -> COO + 2 COC + 2 OCO,C1OCOO1 + 5 CO -> COO + 2 COC + 2 OCO,C1OCOO1 + 5 CO -> COO + 2 COC + 2 OCO
+C1CCC1,ID,C1CCC1 + 4 C -> 4 CC,C1CCC1 + 4 C -> 4 CC,C1CCC1 + 4 C -> 4 CC
+C1CCC1,HY,C1CCC1 + 4 CC -> 4 CCC,C1CCC1 + 4 CC -> 4 CCC,C1CCC1 + 4 CC -> 4 CCC
+C1CCC1,HO,C1CCC1 + 4 CC -> 4 CCC,C1CCC1 + 4 CC -> 4 CCC,C1CCC1 + 4 CC -> 4 CCC
+C1=CC12C=C2,ID,C1=CC12C=C2 + 7 C -> 2 C=C + 4 CC,C1=CC12C=C2 + 7 C -> 2 C=C + 4 CC,C1=CC12C=C2 + 7 C -> 2 C=C + 4 CC
+C1=CC12C=C2,HY,C1=CC12C=C2 + 2 C=N + 4 CC -> CC(C)(C)C + 2 C=CC + 2 CC=N,C1=CC12C=C2 + 2 C=C + 4 CC -> CC(C)(C)C + 4 C=CC,C1=CC12C=C2 + 2 C=C + 4 CC -> CC(C)(C)C + 4 C=CC
+C1=CC12C=C2,HO,C1=CC12C=C2 + 2 C=C + 4 CC -> CC(C)(C)C + 4 C=CC,C1=CC12C=C2 + 2 C=C + 4 CC -> CC(C)(C)C + 4 C=CC,C1=CC12C=C2 + 2 C=C + 4 CC -> CC(C)(C)C + 4 C=CC
+O=c1cc1,ID,O=c1cc1 + 4 C -> C=C + C=O + 2 CC,O=c1cc1 + 4 C -> C=C + C=O + 2 CC,O=c1cc1 + 4 C -> C=C + C=O + 2 CC
+O=c1cc1,HY,C=O + O=c1cc1 + 2 CC -> C=CC + CC(C)=O + CC=O,C=O + O=c1cc1 + 2 CC -> C=CC + CC(C)=O + CC=O,C=O + O=c1cc1 + 2 CC -> C=CC + CC(C)=O + CC=O
+O=c1cc1,HO,C=C + O=c1cc1 + 2 CC=O -> CC(C)=O + 2 C=CC=O,C=C + O=c1cc1 + 2 CC=O -> CC(C)=O + 2 C=CC=O,C=C + O=c1cc1 + 2 CC=O -> CC(C)=O + 2 C=CC=O
+C1=CCCC1,ID,C1=CCCC1 + 5 C -> C=C + 4 CC,C1=CCCC1 + 5 C -> C=C + 4 CC,C1=CCCC1 + 5 C -> C=C + 4 CC
+C1=CCCC1,HY,C1=CCCC1 + C=N + 4 CC -> C=CC + CC=N + 3 CCC,C1=CCCC1 + C=C + 4 CC -> 2 C=CC + 3 CCC,C1=CCCC1 + C=C + 4 CC -> 2 C=CC + 3 CCC
+C1=CCCC1,HO,C1=CCCC1 + C=C + 2 CC -> CCC + 2 C=CCC,C1=CCCC1 + C=C + 2 CC -> CCC + 2 C=CCC,C1=CCCC1 + C=C + 2 CC -> CCC + 2 C=CCC
+C1=CCC=C1,ID,C1=CCC=C1 + 5 C -> 2 C=C + 3 CC,C1=CCC=C1 + 5 C -> 2 C=C + 3 CC,C1=CCC=C1 + 5 C -> 2 C=C + 3 CC
+C1=CCC=C1,HY,C1=CCC=C1 + 2 C=N + 3 CC -> CCC + 2 C=CC + 2 CC=N,C1=CCC=C1 + 2 C=C + 3 CC -> CCC + 4 C=CC,C1=CCC=C1 + 2 C=C + 3 CC -> CCC + 4 C=CC
+C1=CCC=C1,HO,C1=CCC=C1 + CC + 2 C=C -> C=CC + C=CC=C + C=CCC,C1=CCC=C1 + CC + 2 C=C -> C=CC + C=CC=C + C=CCC,C1=CCC=C1 + CC + 2 C=C -> C=CC + C=CC=C + C=CCC
+C1CCCC1,ID,C1CCCC1 + 5 C -> 5 CC,C1CCCC1 + 5 C -> 5 CC,C1CCCC1 + 5 C -> 5 CC
+C1CCCC1,HY,C1CCCC1 + 5 CC -> 5 CCC,C1CCCC1 + 5 CC -> 5 CCC,C1CCCC1 + 5 CC -> 5 CCC
+C1CCCC1,HO,C1CCCC1 + 5 CC -> 5 CCC,C1CCCC1 + 5 CC -> 5 CCC,C1CCCC1 + 5 CC -> 5 CCC
+C1=COC1,ID,C1=COC1 + O + 3 C -> C=C + CC + 2 CO,C1=COC1 + O + 3 C -> C=C + CC + 2 CO,C1=COC1 + O + 3 C -> C=C + CC + 2 CO
+C1=COC1,HY,C1=COC1 + C=N + CC + 2 CO -> C=CO + CC=N + CCO + COC,C1=COC1 + C=C + CC + 2 CO -> C=CC + C=CO + CCO + COC,C1=COC1 + C=C + CC + 2 CO -> C=CC + C=CO + CCO + COC
+C1=COC1,HO,C1=COC1 + C=C + CC + CO -> C=CC + C=COC + CCO,C1=COC1 + C=C + CC + CO -> C=CC + C=COC + CCO,C1=COC1 + C=C + CC + CO -> C=CC + C=COC + CCO
+C12C3C1C23,ID,C12C3C1C23 + 8 C -> 6 CC,C12C3C1C23 + 8 C -> 6 CC,C12C3C1C23 + 8 C -> 6 CC
+C12C3C1C23,HY,C12C3C1C23 + 6 CC -> 4 CC(C)C,C12C3C1C23 + 6 CC -> 4 CC(C)C,C12C3C1C23 + 6 CC -> 4 CC(C)C
+C12C3C1C23,HO,C12C3C1C23 + 6 CC -> 4 CC(C)C,C12C3C1C23 + 6 CC -> 4 CC(C)C,C12C3C1C23 + 6 CC -> 4 CC(C)C
+C1=C2CC12,ID,C1=C2CC12 + 6 C -> C=C + 4 CC,C1=C2CC12 + 6 C -> C=C + 4 CC,C1=C2CC12 + 6 C -> C=C + 4 CC
+C1=C2CC12,HY,C1=C2CC12 + 2 C=N + 4 CC -> C=C(C)C + 2 CC=N + 2 CCC,C1=C2CC12 + 4 CC -> C=C(C)C + 2 CC(C)C,C1=C2CC12 + 4 CC -> C=C(C)C + 2 CC(C)C
+C1=C2CC12,HO,C1=C2CC12 + C=C + 3 CC -> C=C(C)C + C=CCC + CC(C)C,C1=C2CC12 + C=C + 3 CC -> C=C(C)C + C=CCC + CC(C)C,C1=C2CC12 + C=C + 3 CC -> C=C(C)C + C=CCC + CC(C)C
+C1C23CC12C3,ID,C1C23CC12C3 + 9 C -> 7 CC,C1C23CC12C3 + 9 C -> 7 CC,C1C23CC12C3 + 9 C -> 7 CC
+C1C23CC12C3,HY,C1C23CC12C3 + 7 CC -> 2 CC(C)(C)C + 3 CCC,C1C23CC12C3 + 7 CC -> 2 CC(C)(C)C + 3 CCC,C1C23CC12C3 + 7 CC -> 2 CC(C)(C)C + 3 CCC
+C1C23CC12C3,HO,C1C23CC12C3 + 7 CC -> 2 CC(C)(C)C + 3 CCC,C1C23CC12C3 + 7 CC -> 2 CC(C)(C)C + 3 CCC,C1C23CC12C3 + 7 CC -> 2 CC(C)(C)C + 3 CCC
