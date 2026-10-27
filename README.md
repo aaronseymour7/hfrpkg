@@ -1,4 +1,5 @@
-# hfrpkg
+# hfrpkg [![DOI](https://zenodo.org/badge/1435294364.svg)](https://doi.org/10.5281/zenodo.23683594)
+
 
 Generate balanced **isogyric, isodesmic, hypohomodesmotic and homodesmotic** reactions for a molecule, run them
 with Gaussian / ORCA / Psi4, and turn the results into an enthalpy of formation referenced to
