@@ -1,4 +1,4 @@
-# hfrpkg <a href="https://doi.org/10.5281/zenodo.23683594"><img align="right" src="https://zenodo.org/badge/1435294364.svg" alt="DOI"></a>
+# hfrpkg <a href="https://doi.org/10.5281/zenodo.23683594"> <img align="right" src="https://zenodo.org/badge/1435294364.svg" alt="DOI"></a>
 
 
 
