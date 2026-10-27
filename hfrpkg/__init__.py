@@ -4,7 +4,7 @@ Kept import-light on purpose: the version must be readable at build time
 without RDKit / AaronTools installed. Legacy names are resolved lazily.
 """
 
-__version__ = "0.2.0"
+__version__ = "1.0.0"
 
 _LAZY = {
     "hfr_main": ("hfrpkg.cli", "main"),
