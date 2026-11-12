@@ -106,12 +106,29 @@ def test_compute_uses_lowest_energy_conformer_not_the_first(tmp_path, monkeypatc
     assert "yes" in text and text.count("yes") == len(idx.conformers)
 
 
-def test_missing_conformer_is_an_error_not_a_silent_partial_choice(tmp_path, monkeypatch):
+def test_missing_conformer_is_skipped_with_a_warning(tmp_path, monkeypatch, capsys):
     out = tmp_path / "1.mhfr"
     run_reaction("write", "isodesmic", "CCCCO", outfolder=str(out))
     idx = _fake_run(out, monkeypatch)
     name = next(iter(idx.conformers))
     os.remove(out / (conformer_name(name, 2) + ".log"))  # the lowest one never finished
+    _, e, info = select_lowest(str(out), name, idx.conformers[name], ".log")
+    assert not info["selected"].endswith("-c02.log") and info["missing"] == [conformer_name(name, 2) + ".log"]
+    assert "[WARNING]" in capsys.readouterr().out
+    data = cf.compute_folder(str(out))
+    assert data is not None
+    from hfrpkg.write_data import write_conformer_selection
+
+    assert "not finished" in open(write_conformer_selection(data, str(out))).read()
+
+
+def test_species_with_no_finished_conformer_is_an_error(tmp_path, monkeypatch):
+    out = tmp_path / "1.mhfr"
+    run_reaction("write", "isodesmic", "CCCCO", outfolder=str(out))
+    idx = _fake_run(out, monkeypatch)
+    name = next(iter(idx.conformers))
+    for k in range(1, idx.conformers[name] + 1):
+        os.remove(out / (conformer_name(name, k) + ".log"))
     assert cf.compute_folder(str(out)) is None
 
 

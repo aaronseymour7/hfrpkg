@@ -166,7 +166,7 @@ def compute_spec_folder(folder_path):
         for name, _, _ in index.entries:
             sp_log = os.path.join(spec_dir, name + sp_out)
             try:  # ZPVE comes from the lowest-energy conformer, the geometry the single point was run on
-                _, (_, zpve), _ = select_lowest(folder_path, name, index.conformers.get(name, 1), opt_out)
+                _, (_, zpve), _ = select_lowest(folder_path, name, index.conformers.get(name, 1), opt_out, quiet=True)
             except ValueError:
                 energies[name] = (None, None)
                 continue

@@ -48,7 +48,8 @@ def write_conformer_selection(reaction_data, folder_path):
         fh.write("species,conformer,E_plus_ZPVE_hartree,selected\n")
         for name, info in sel.items():
             for stem, e in info["energies"]:
-                fh.write(f"{name},{stem},{e:.8f},{'yes' if stem == info['selected'] else ''}\n")
+                flag = "yes" if stem == info["selected"] else ("not finished" if e is None else "")
+                fh.write(f"{name},{stem},{'' if e is None else f'{e:.8f}'},{flag}\n")
     return path
 
 

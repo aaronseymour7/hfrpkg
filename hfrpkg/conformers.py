@@ -109,20 +109,26 @@ def conformer_logs(directory, name, n, out_ext):
     return [os.path.join(directory, conformer_name(name, k) + out_ext) for k in range(1, n + 1)]
 
 
-def select_lowest(directory, name, n, out_ext):
+def select_lowest(directory, name, n, out_ext, quiet=False):
     """Pick the lowest-energy conformer of a species from its finished frequency jobs.
 
-    Returns (log_path, (E_plus_zpve, zpve), info) where info lists the energy of every conformer.
-    Raises ValueError if any conformer has no usable energy (as extractConfs.py does for an unfinished
-    job): choosing among a partial set could silently return a conformer that is not the lowest.
+    Returns (log_path, (E_plus_zpve, zpve), info) where info lists the energy of every conformer
+    (None for one that did not finish) and info["missing"] names the conformers without an energy.
+    Conformers that failed or did not finish are skipped with a warning and the lowest of the finished
+    ones is used; a species is an error only when none of its conformers finished.
     """
     from hfrpkg.compute_folder import read_opt_energy  # lazy: avoids a circular import
 
     logs = conformer_logs(directory, name, n, out_ext)
     results = [read_opt_energy(p) if os.path.exists(p) else (None, None) for p in logs]
     missing = [os.path.basename(p) for p, r in zip(logs, results) if r[0] is None]
-    if missing:
+    done = [i for i, r in enumerate(results) if r[0] is not None]
+    if not done:
         raise ValueError(f"no energy for conformer(s) of {name}: {', '.join(missing)}")
-    best = min(range(len(logs)), key=lambda i: results[i][0])
+    best = min(done, key=lambda i: results[i][0])
+    if missing and not quiet:
+        print(f"[WARNING] {name}: using the lowest of {len(done)} finished conformers "
+              f"({os.path.basename(logs[best])}); no energy for {', '.join(missing)}")
     info = [(os.path.basename(p), r[0]) for p, r in zip(logs, results)]
-    return logs[best], results[best], {"selected": os.path.basename(logs[best]), "n": len(logs), "energies": info}
+    return logs[best], results[best], {"selected": os.path.basename(logs[best]), "n": len(logs),
+                                       "energies": info, "missing": missing}

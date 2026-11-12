@@ -11,7 +11,7 @@ ETOH = "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
 
 
 def test_atct_data_is_packaged_and_found():
-    assert get_Hf("InChI=1S/CH4/h1H4") == pytest.approx(-66.540)
+    assert get_Hf("InChI=1S/CH4/h1H4") == pytest.approx(-66.531)  # ATcT 1.228
 
 
 def test_parse_name_and_software():
