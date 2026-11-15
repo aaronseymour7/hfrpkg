@@ -40,6 +40,9 @@ def reader(path):
 def species_rows(run_dir, lowest=False, exclude=()):
     seen = {}
     for folder in sorted(glob.glob(os.path.join(run_dir, "*.mhfr")), key=lambda p: int(os.path.basename(p).split(".")[0])):
+        if not os.path.exists(os.path.join(folder, "index.txt")):
+            print(f"[WARN] {folder}: no index.txt, skipped")
+            continue
         index = read_index(folder)
         _, out_ext = index.extensions
         spec_dir = os.path.join(folder, "spec")
