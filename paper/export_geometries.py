@@ -13,8 +13,14 @@ thermochemistry.  Writes:
 
 Species shared by several reactions are written once per run directory, unless reactions computed
 the same species separately and got different energies; then each distinct structure is written
-(the conformer field, N.mhfr/file, says which reaction folder it came from).  Any species with an
-imaginary frequency is also printed, so that the "no imaginary frequencies" statement can be checked.
+(the conformer field, N.mhfr/file, says which reaction folder it came from).  With --lowest, only the
+lowest-energy copy (E + ZPVE) of each species in each run directory is written, i.e. one geometry and
+one energy per molecule and level.  --exclude drops species by SMILES (e.g. molecules removed from
+the benchmark for failed convergence).  Any species with an imaginary frequency is also printed, so
+that the "no imaginary frequencies" statement can be checked.
+
+    python export_geometries.py b3lyp m062x wb97xd --lowest --out structures_3_expansion \
+        --exclude "C#CC=C=CC" "C=C=C=CC=C"
 """
 import argparse
 import csv
@@ -31,7 +37,7 @@ def reader(path):
     return FileReader(path, just_geom=False)
 
 
-def species_rows(run_dir):
+def species_rows(run_dir, lowest=False, exclude=()):
     seen = {}
     for folder in sorted(glob.glob(os.path.join(run_dir, "*.mhfr")), key=lambda p: int(os.path.basename(p).split(".")[0])):
         index = read_index(folder)
@@ -41,13 +47,15 @@ def species_rows(run_dir):
         if os.path.exists(os.path.join(spec_dir, "index.txt")):
             sp_ext = resolve_software(read_index(spec_dir).software)[2]
         for name, inchi, smiles in index.entries:
+            if inchi in exclude:
+                continue
             try:
                 log, (e_zpve, zpve), _ = select_lowest(folder, name, index.conformers.get(name, 1), out_ext)
             except ValueError as exc:
                 print(f"[WARN] {folder}: {exc}")
                 continue
-            key = (inchi, round(e_zpve, 6))
-            if key in seen:
+            key = inchi if lowest else (inchi, round(e_zpve, 6))
+            if key in seen and (not lowest or seen[key]["E_ZPVE"] <= e_zpve):
                 continue
             r = reader(log)
             imag = r["frequency"].imaginary_frequencies if "frequency" in r.keys() else None
@@ -67,8 +75,13 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("run_dirs", nargs="+")
     ap.add_argument("--out", default="si_structures")
+    ap.add_argument("--lowest", action="store_true", help="one structure per species and run directory: the lowest E + ZPVE")
+    ap.add_argument("--exclude", nargs="*", default=[], metavar="SMILES", help="species to leave out")
     args = ap.parse_args()
-    rows = [row for d in args.run_dirs for row in species_rows(d)]
+    from rdkit import Chem
+
+    exclude = {Chem.MolToInchi(Chem.MolFromSmiles(s)) for s in args.exclude}
+    rows = [row for d in args.run_dirs for row in species_rows(d, args.lowest, exclude)]
     with open(args.out + ".xyz", "w") as fh:
         for r in rows:
             fh.write(f"{len(r['atoms'])}\n")
