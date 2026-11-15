@@ -20,7 +20,20 @@ S = ["ID", "HY", "HO"]
 E = {(st, lv, s): np.array([float(next(r[s] for r in rows if r["inchi"] == m and r["stage"] == st and r["geometry_level"] == lv)) for m in mols])
      for st in ("opt", "sp") for lv in LV for s in S}
 strained = np.array([cls[m] == "strained" for m in mols])
-SUB = {"unstrained": ~strained, "strained": strained, "all": np.ones(len(mols), bool)}
+from rdkit import Chem
+
+
+def _n_arom(smi):
+    m = Chem.MolFromSmiles(smi)
+    return sum(all(m.GetAtomWithIdx(i).GetIsAromatic() for i in ring) for ring in m.GetRingInfo().AtomRings())
+
+
+smi = {r["inchi"]: r["smiles"] for r in rows}
+aromatic = np.array([_n_arom(smi[m]) > 0 for m in mols])
+# classes: unstrained = acyclic; strained = contains a 3-5-membered ring; ring = 6-7-membered and aromatic rings only
+SUB = {"unstrained": np.array([cls[m] == "unstrained" for m in mols]), "strained": strained,
+       "ring": np.array([cls[m] == "ring" for m in mols]), "aromatic": aromatic, "nonaromatic": ~aromatic,
+       "all": np.ones(len(mols), bool)}
 
 
 def pooled(st, s, sub):
@@ -48,7 +61,7 @@ def sign_p(k, n):
 
 print("== Tables 1/2: pooled RMSE / MAE / ME / STD(n-1)")
 for st in ("opt", "sp"):
-    for sub in ("unstrained", "strained", "all"):
+    for sub in SUB:
         for s in S:
             v = pooled(st, s, sub)
             print(f"{st:3s} {sub:10s} {s}  N={len(v):3d} RMSE={rmse(v):.3f} MAE={np.mean(np.abs(v)):.3f} ME={v.mean():+.3f} STD={v.std(ddof=1):.3f}")
@@ -60,14 +73,14 @@ print("\n== HY vs HO")
 for st in ("opt", "sp"):
     same = sum(abs(E[(st, lv, "HY")][i] - E[(st, lv, "HO")][i]) < 1e-9 for lv in LV for i in range(len(mols)))
     diffmol = {i for lv in LV for i in range(len(mols)) if abs(E[(st, lv, "HY")][i] - E[(st, lv, "HO")][i]) > 1e-9}
-    print(f"{st}: identical {same}/{sum(r['stage'] == st for r in rows)}; molecules where they differ: {len(diffmol)} (acyclic {sum(not strained[i] for i in diffmol)}, strained {sum(strained[i] for i in diffmol)})")
-    for sub in ("unstrained", "strained", "all"):
+    print(f"{st}: identical {same}/{sum(r['stage'] == st for r in rows)}; molecules where they differ: {len(diffmol)} (" + ", ".join(f"{k} {sum(SUB[k][i] for i in diffmol)}" for k in ("unstrained", "strained", "ring")) + ")")
+    for sub in SUB:
         pairs = [(abs(E[(st, lv, "HY")][i]), abs(E[(st, lv, "HO")][i])) for lv in LV for i in np.where(SUB[sub])[0] if abs(E[(st, lv, "HY")][i] - E[(st, lv, "HO")][i]) > 1e-9]
         b = sum(o < h for h, o in pairs)
         lo, hi = boot_diff(st, "HY", "HO", sub)
         print(f"  {sub:10s} differing {len(pairs)}, HO better {b}, sign-test p={sign_p(b, len(pairs)):.3f}; RMSE(HY)-RMSE(HO)={rmse(pooled(st,'HY',sub))-rmse(pooled(st,'HO',sub)):.3f} [{lo:.3f}, {hi:.3f}]")
 print("\n== ID - HO (SPR)")
-for sub in ("unstrained", "strained", "all"):
+for sub in SUB:
     lo, hi = boot_diff("sp", "ID", "HO", sub)
     print(f"  {sub:10s} {rmse(pooled('sp','ID',sub))-rmse(pooled('sp','HO',sub)):.3f} [{lo:.3f}, {hi:.3f}]")
 print("\n== geometry spread of HO error (max-min over 3 levels)")
@@ -104,7 +117,7 @@ for a, b in (("HY", "HO"), ("ID", "HO")):
     for st_ in ("opt", "sp"):
         if a == "ID" and st_ == "opt":
             continue
-        for sub in ("unstrained", "strained", "all"):
+        for sub in SUB:
             idx = np.where(SUB[sub])[0]
             d = [_mean_abs(st_, i, a) - _mean_abs(st_, i, b) for i in idx]
             diff = [x for x in d if abs(x) > 1e-9]
