@@ -41,13 +41,19 @@ A, B = 'OCl + OOOCl -> 2 OOCl', 'OO + OOOCl -> OOCl + OOO'  # HClO3: the two run
 LEVEL_RX = {('OOOCl', 'HY', 'B3LYP/6-31+G(d)'): A, ('OOOCl', 'HO', 'B3LYP/6-31+G(d)'): A,
             ('OOOCl', 'HY', 'M06-2X/6-31+G(d)'): A, ('OOOCl', 'HO', 'M06-2X/6-31+G(d)'): B,
             ('OOOCl', 'HY', 'wB97X-D/def2-TZVP'): B, ('OOOCl', 'HO', 'wB97X-D/def2-TZVP'): A}
+# the expansion molecules (data/reactions_expansion.csv; the same reaction at all three levels)
+for r in csv.DictReader(open('data/reactions_expansion.csv')):
+    rx[(r['smiles'],r['scheme'])]=r['reaction']
 rx[('O=c1cc1','HO')]='CC=O + C=O + C=CC + O=c1cc1 -> 2 C=CC=O + CC(C)=O'
-worst=0;n=0;bad=[]
+worst=0;n=0;bad=[];missing=set()
 rows=list(csv.DictReader(open('data/benchmark_errors.csv')))
 for r in rows:
     for sch in ('ID','HY','HO'):
         lhs,rhs=LEVEL_RX.get((r['smiles'],sch,r['geometry_level']),rx[(r['smiles'],sch)]).split(' -> ')
         tot=0;hf=0
+        need=[(r['geometry_level'],inch(s)) for _,s in side(lhs)+side(rhs)]
+        if any(k not in ES for k in need):
+            missing.add(r['smiles']); r['new_'+sch]=float(r[sch]); continue
         for sign,sd in ((-1,side(lhs)),(1,side(rhs))):
             for nu,s in sd:
                 ii=inch(s);e,z,sp=ES[(r['geometry_level'],ii)]
@@ -60,6 +66,7 @@ for r in rows:
         worst=max(worst,d)
         r['new_'+sch]=err
 print(n,'errors recomputed; max diff',round(worst,4),'; >0.01:',len(bad))
+if missing: print(len(missing),'molecules not recomputed (structures not in data/si/, left unchanged):',sorted(missing))
 for b in bad: print(b)
 if '--write' in sys.argv:
     cols=list(rows[0].keys())[:9]
