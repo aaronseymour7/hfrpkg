@@ -1,6 +1,7 @@
 # hfrpkg <a href="https://doi.org/10.5281/zenodo.23683594"> <img align="right" src="https://zenodo.org/badge/1435294364.svg" alt="DOI"></a>
 
 
+# hfrpkg
 
 Generate balanced **isogyric, isodesmic, hypohomodesmotic and homodesmotic** reactions for a molecule, run them
 with Gaussian / ORCA / Psi4, and turn the results into an enthalpy of formation referenced to
@@ -81,8 +82,9 @@ lowest force-field energy for 3. `paper/data/conformer_counts_rdkit2024.03.3.csv
 conformer count and MMFF94s energies of each benchmark molecule, and CI checks them under that version.
 
 - `folder-run` / `multi-run` submit every conformer; `folder-compute` / `multi-compute` pick the lowest and
-  write `conformer_selection.csv` (all conformer energies and the one used). An unfinished conformer is an
-  error, because choosing among a partial set could silently pick the wrong one.
+  write `conformer_selection.csv` (all conformer energies and the one used). A conformer that failed or did not
+  finish is skipped with a `[WARNING]` and the lowest finished conformer is used; it is listed as
+  "not finished" in `conformer_selection.csv`. A species is an error only when none of its conformers finished.
 - `folder-sprun` / `multi-sprun` start from the selected conformer, one single point per species.
 
 ## Software used for the published benchmark
@@ -93,7 +95,7 @@ conformer count and MMFF94s energies of each benchmark molecule, and CI checks t
 | Single-point energies | Psi4 1.9.1 |
 | RDKit (conformers) | 2024.03.3 |
 | PuLP / CBC (reaction ILP) | 2.8.0 / 2.10.3 |
-| ATcT reference values | `hfrpkg/data/ATcT_lib.txt` (ATcT version 1.156; uncertainties are 95% confidence intervals) |
+| ATcT reference values | `hfrpkg/data/ATcT_lib.txt` (ATcT version 1.228; uncertainties are 95% confidence intervals) |
 
 The reactions generated for the benchmark were re-checked under PuLP 2.8.0 and RDKit 2024.03.3
 (`paper/objective_check.py`): the isodesmic and homodesmotic reactions are independent of the solver
