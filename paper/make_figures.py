@@ -112,12 +112,25 @@ def boot_rmse(stage, scheme, subset, n=4000, seed=11):
     return np.percentile(vals, [2.5, 97.5])
 
 
+MAX_W = 3.25  # hard limit on the saved width (in) of every manuscript figure
+
+
 def save(fig, name):
-    w = fig.get_tightbbox().width + 2 * 0.04  # width as saved, including labels outside the axes
-    if w > COL1 + 0.005 and not name.startswith("figS") and name != "fig5_strained":  # fig5 is double column  # the SI figures may be full width
-        print(f"WARNING: {name} is {w:.2f} in wide, more than one column ({COL1} in)")
-    fig.savefig(f"{OUT}/{name}.png", dpi=600, bbox_inches="tight", pad_inches=0.04)
-    fig.savefig(f"{OUT}/{name}.pdf", bbox_inches="tight", pad_inches=0.04, metadata={"CreationDate": None, "ModDate": None})
+    """Save at 600 dpi with a tight bounding box. Manuscript figures are made to fit MAX_W: if the labels push
+    the saved width past it, the canvas is narrowed (fonts keep their size) until it fits."""
+    pad = 0.04
+    if not name.startswith("figS"):  # the SI figures may be full page width
+        for _ in range(20):
+            w = fig.get_tightbbox().width + 2 * pad
+            if w <= MAX_W:
+                break
+            fw, fh = fig.get_size_inches()
+            fig.set_size_inches(fw - (w - MAX_W) - 0.002, fh)
+        w = fig.get_tightbbox().width + 2 * pad
+        if w > MAX_W + 1e-3:
+            raise SystemExit(f"{name} is {w:.3f} in wide, more than {MAX_W} in")
+    fig.savefig(f"{OUT}/{name}.png", dpi=600, bbox_inches="tight", pad_inches=pad)
+    fig.savefig(f"{OUT}/{name}.pdf", bbox_inches="tight", pad_inches=pad, metadata={"CreationDate": None, "ModDate": None})
     plt.close(fig)
     print("wrote", name)
 
@@ -357,12 +370,16 @@ def fig4():
     save(fig, "fig4_geometry")
 
 
-def ladder(subset, name, ncols=1, xlim=(-5.5, 8.5)):
+def ladder(subset, name, ncols=1, xlim=(-5.5, 8.5), part=None):
     """Per-molecule errors after SPR (mean over the three geometries), ordered by homodesmotic error.
     With ncols > 1 the molecules are split into side-by-side blocks (a double-column figure)."""
     idx = np.where(SUBSETS[subset])[0]
     mean = {s: np.mean([err["sp"][lv][s][idx] for lv in LEVELS], axis=0) for s in SCHEMES}
     order = list(np.argsort(mean["HO"])[::-1])  # largest positive error at top
+    if part is not None:  # (k, n): the k-th of n single-column parts, in the same order
+        k, n = part
+        per_part = math.ceil(len(order) / n)
+        order = order[(k - 1) * per_part:k * per_part]
     per = math.ceil(len(order) / ncols)
     chunks = [order[i:i + per] for i in range(0, len(order), per)]
     rowh, left, right, bottom, top = 0.31, 1.34, 0.14, 0.42, 0.30
@@ -400,7 +417,10 @@ def ladder(subset, name, ncols=1, xlim=(-5.5, 8.5)):
 
 
 def fig5():
-    ladder("strained", "fig5_strained", ncols=2)
+    # 41 molecules do not fit one column on one page: two single-column parts (a: top half, b: bottom half),
+    # both on the same x range so they can be placed side by side
+    ladder("strained", "fig5a_strained", part=(1, 2))
+    ladder("strained", "fig5b_strained", part=(2, 2))
 
 
 def fig6():
