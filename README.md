@@ -1,8 +1,6 @@
 # hfrpkg <a href="https://doi.org/10.5281/zenodo.23683594"> <img align="right" src="https://zenodo.org/badge/1435294364.svg" alt="DOI"></a>
 
 
-# hfrpkg
-
 Generate balanced **isogyric, isodesmic, hypohomodesmotic and homodesmotic** reactions for a molecule, run them
 with Gaussian / ORCA / Psi4, and turn the results into an enthalpy of formation referenced to
 [ATcT](https://atct.anl.gov) values. Built on RDKit, PuLP and AaronTools.
