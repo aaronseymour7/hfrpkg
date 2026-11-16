@@ -19,21 +19,17 @@ cls = {r["inchi"]: r["class"] for r in rows}
 S = ["ID", "HY", "HO"]
 E = {(st, lv, s): np.array([float(next(r[s] for r in rows if r["inchi"] == m and r["stage"] == st and r["geometry_level"] == lv)) for m in mols])
      for st in ("opt", "sp") for lv in LV for s in S}
-strained = np.array([cls[m] == "strained" for m in mols])
 from rdkit import Chem
 
-
-def _n_arom(smi):
-    m = Chem.MolFromSmiles(smi)
-    return sum(all(m.GetAtomWithIdx(i).GetIsAromatic() for i in ring) for ring in m.GetRingInfo().AtomRings())
-
+from groups import group, n_benzene
 
 smi = {r["inchi"]: r["smiles"] for r in rows}
-aromatic = np.array([_n_arom(smi[m]) > 0 for m in mols])
-# classes: unstrained = acyclic; strained = contains a 3-5-membered ring; ring = 6-7-membered and aromatic rings only
-SUB = {"unstrained": np.array([cls[m] == "unstrained" for m in mols]), "strained": strained,
-       "ring": np.array([cls[m] == "ring" for m in mols]), "aromatic": aromatic, "nonaromatic": ~aromatic,
-       "all": np.ones(len(mols), bool)}
+grp = {m: group(smi[m], cls[m]) for m in mols}
+strained = np.array([grp[m] == "strained" for m in mols])
+SUB = {g: np.array([grp[m] == g for m in mols]) for g in ("simple", "strained", "aromatic")}
+SUB["nonaromatic"] = ~SUB["aromatic"]
+SUB["original 77"] = np.array([i < 77 for i in range(len(mols))])
+SUB["all"] = np.ones(len(mols), bool)
 
 
 def pooled(st, s, sub):
@@ -73,7 +69,7 @@ print("\n== HY vs HO")
 for st in ("opt", "sp"):
     same = sum(abs(E[(st, lv, "HY")][i] - E[(st, lv, "HO")][i]) < 1e-9 for lv in LV for i in range(len(mols)))
     diffmol = {i for lv in LV for i in range(len(mols)) if abs(E[(st, lv, "HY")][i] - E[(st, lv, "HO")][i]) > 1e-9}
-    print(f"{st}: identical {same}/{sum(r['stage'] == st for r in rows)}; molecules where they differ: {len(diffmol)} (" + ", ".join(f"{k} {sum(SUB[k][i] for i in diffmol)}" for k in ("unstrained", "strained", "ring")) + ")")
+    print(f"{st}: identical {same}/{sum(r['stage'] == st for r in rows)}; molecules where they differ: {len(diffmol)} (" + ", ".join(f"{k} {sum(SUB[k][i] for i in diffmol)}" for k in ("simple", "strained", "aromatic")) + ")")
     for sub in SUB:
         pairs = [(abs(E[(st, lv, "HY")][i]), abs(E[(st, lv, "HO")][i])) for lv in LV for i in np.where(SUB[sub])[0] if abs(E[(st, lv, "HY")][i] - E[(st, lv, "HO")][i]) > 1e-9]
         b = sum(o < h for h, o in pairs)
@@ -142,3 +138,23 @@ if os.path.exists("data/feasibility.csv"):
         print(f"  HO, {g:13s} n={len(sel):3d}: reaction {c['reaction']:3d} identity only {c['identity only']:3d} no reaction {c['no reaction']:3d}")
     t = [float(r["seconds"]) for r in f]
     print(f"  solve time: median {np.median(t) * 1000:.0f} ms, max {max(t):.2f} s")
+
+# ---- per level, by group (Table S1)
+print("\n== RMSE per optimization level and group (ID / HY / HO)")
+for st_ in ("opt", "sp"):
+    for lv in LV:
+        print(f"  {st_:3s} {lv:18s} " + "  ".join(f"{g} " + "/".join(f"{rmse(E[(st_, lv, s)][SUB[g]]):.2f}" for s in S)
+                                             for g in ("simple", "strained", "aromatic", "all")))
+
+# ---- aromatic: homodesmotic error per benzene ring (after SPR, mean over the three geometries)
+nb = np.array([n_benzene(smi[m]) for m in mols])
+ar = SUB["aromatic"]
+for s in S:
+    y = np.mean([E[("sp", lv, s)] for lv in LV], axis=0)[ar]
+    slope, icpt = np.polyfit(nb[ar], y, 1)
+    print(f"  aromatic {s}: error vs number of benzene rings, slope {slope:+.2f}, intercept {icpt:+.2f} kcal/mol;"
+          f" per-ring through origin {np.sum(y * nb[ar]) / np.sum(nb[ar] ** 2):+.2f}")
+benz_only = [m for m in mols if smi[m] in ("c1ccccc1", "c1ccc2ccccc2c1", "c1ccc2cc3ccccc3cc2c1", "c1ccc2c(c1)ccc1ccccc12", "c1ccc(-c2ccccc2)cc1")]
+for m in benz_only:
+    i = mols.index(m)
+    print(f"    {smi[m]:24s} HO {np.mean([E[('sp', lv, 'HO')][i] for lv in LV]):+.2f}  HY {np.mean([E[('sp', lv, 'HY')][i] for lv in LV]):+.2f}  ID {np.mean([E[('sp', lv, 'ID')][i] for lv in LV]):+.2f}")
