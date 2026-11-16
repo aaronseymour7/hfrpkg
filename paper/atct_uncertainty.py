@@ -47,10 +47,13 @@ def main():
     targets = {}
     for r in csv.DictReader(open("data/benchmark_errors.csv", encoding="utf-8")):
         targets.setdefault(r["inchi"], (r["smiles"], float(r["atct_kcal"])))
+    rows = [(r["smiles"], r["scheme"], r["legacy_no_imine"] if r["scheme"] == "HY" else r["current"]) for r in rows]
+    # the expansion molecules (data/reactions_expansion.csv)
+    rows += [(r["smiles"], r["scheme"], r["reaction"]) for r in csv.DictReader(open("data/reactions_expansion.csv", encoding="utf-8"))]
     sig_ref = {}
-    for r in rows:
-        col = "legacy_no_imine" if r["scheme"] == "HY" else "current"
-        lhs, rhs = parse(r[col])
+    for smiles, scheme, reaction in rows:
+        r = {"smiles": smiles, "scheme": scheme}
+        lhs, rhs = parse(reaction)
         target = inchi(r["smiles"])
         var = 0.0
         for nu, smi in lhs + rhs:
@@ -63,7 +66,10 @@ def main():
         w = csv.writer(fh)
         w.writerow(["inchi", "smiles", "atct_kcal", "sigma_target_kcal", "sigma_refs_ID", "sigma_refs_HY", "sigma_refs_HO"])
         for i, (smi, h) in targets.items():
-            w.writerow([i, smi, f"{h:.4f}", f"{lib[i][1] / KJ_PER_KCAL:.4f}"] + [f"{sig_ref[(i, k)]:.4f}" for k in ("ID", "HY", "HO")])
+            # cis-1,3,5-hexatriene is listed in the library without its stereo layer
+            key = i if i in lib else re.sub(r"/b[^/]*", "", i)
+            sig_t = f"{lib[key][1] / KJ_PER_KCAL:.4f}"
+            w.writerow([i, smi, f"{h:.4f}", sig_t] + [f"{sig_ref[(i, k)]:.4f}" for k in ("ID", "HY", "HO")])
 
 
 if __name__ == "__main__":
