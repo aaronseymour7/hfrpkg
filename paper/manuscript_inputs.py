@@ -3,7 +3,7 @@
     python manuscript_inputs.py   ->  data/stats.json, data/mols.json, data/hy_ambiguous.json
 
 stats.json         error statistics per stage / subset / level / scheme (Tables 1, 2, S1)
-mols.json          the 77 benchmark molecules with class, formula, ring sizes (Table S2)
+mols.json          the 151 benchmark molecules with group, formula, ring sizes (Table S2)
 hy_ambiguous.json  hypohomodesmotic reactions that depend on the ILP objective (Table S4)
 wildcards.json     wildcard fragment libraries (Table S5)
 feasibility_summary.json  applicability survey (feasibility.csv)
@@ -14,6 +14,8 @@ import statistics
 
 from rdkit import Chem, RDLogger
 from rdkit.Chem.rdMolDescriptors import CalcMolFormula
+
+from groups import GROUPS, group
 
 RDLogger.DisableLog("rdApp.*")
 KEY = {  # (stage, geometry level) -> sheet key used by the manuscript builder
@@ -31,10 +33,12 @@ def summarize(v):
 
 def main():
     rows = list(csv.DictReader(open("data/benchmark_errors.csv", encoding="utf-8")))
+    for r in rows:
+        r["group"] = group(r["smiles"], r["class"])
     stats = {}
     for stage in ("opt", "sp"):
-        for subset in ("unstrained", "strained", "combined"):
-            sel = [r for r in rows if r["stage"] == stage and (subset == "combined" or r["class"] == subset)]
+        for subset in GROUPS + ("combined",):
+            sel = [r for r in rows if r["stage"] == stage and (subset == "combined" or r["group"] == subset)]
             for k in SCHEMES:
                 stats[f"{stage}|{subset}|pooled|{k}"] = summarize([float(r[k]) for r in sel])
                 for (st, lv), key in KEY.items():
@@ -50,7 +54,7 @@ def main():
         seen.add(r["inchi"])
         m = Chem.MolFromInchi(r["inchi"])
         u = unc[r["inchi"]]
-        mols.append(dict(i=len(mols) + 1, cls=r["class"], smiles=Chem.MolToSmiles(m), formula=CalcMolFormula(m),
+        mols.append(dict(i=len(mols) + 1, cls=r["group"], new=len(mols) >= 77, smiles=Chem.MolToSmiles(m), formula=CalcMolFormula(m),
                          atct=float(r["atct_kcal"]), rings=sorted(len(x) for x in m.GetRingInfo().AtomRings()), inchi=r["inchi"],
                          sigma=float(u["sigma_target_kcal"]), sigma_ref=float(u["sigma_refs_HO"])))
     json.dump(mols, open("data/mols.json", "w"), indent=1)
