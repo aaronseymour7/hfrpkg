@@ -75,8 +75,20 @@ for r in rows:
     i = mol_order.index(r["inchi"])
     for s in SCHEMES:
         err[r["stage"]][r["geometry_level"]][s][i] = float(r[s])
-is_str = np.array([CLASS[m] == "strained" for m in mol_order])
-SUBSETS = {"unstrained": ~is_str, "strained": is_str, "all": np.ones(len(mol_order), bool)}
+from groups import group as _group  # simple / strained / aromatic
+
+
+def group(inchi):
+    return _group(SMILES[inchi], CLASS[inchi])
+
+
+GROUP = {m: group(m) for m in mol_order}
+is_str = np.array([GROUP[m] == "strained" for m in mol_order])
+is_aro = np.array([GROUP[m] == "aromatic" for m in mol_order])
+is_sim = np.array([GROUP[m] == "simple" for m in mol_order])
+SUBSETS = {"simple": is_sim, "strained": is_str, "aromatic": is_aro, "all": np.ones(len(mol_order), bool)}
+GROUP_TITLE = {"simple": "Simple (acyclic and 6–7-membered rings)", "strained": "Strained (3–5-membered rings, cyclic allenes)",
+               "aromatic": "Aromatic (benzenoid)", "all": "All"}
 
 
 def pooled(stage, scheme, subset="all"):
@@ -102,7 +114,7 @@ def boot_rmse(stage, scheme, subset, n=4000, seed=11):
 
 def save(fig, name):
     w = fig.get_tightbbox().width + 2 * 0.04  # width as saved, including labels outside the axes
-    if w > COL1 + 0.005 and not name.startswith("figS"):  # the SI figures may be full width
+    if w > COL1 + 0.005 and not name.startswith("figS") and name != "fig5_strained":  # fig5 is double column  # the SI figures may be full width
         print(f"WARNING: {name} is {w:.2f} in wide, more than one column ({COL1} in)")
     fig.savefig(f"{OUT}/{name}.png", dpi=600, bbox_inches="tight", pad_inches=0.04)
     fig.savefig(f"{OUT}/{name}.pdf", bbox_inches="tight", pad_inches=0.04, metadata={"CreationDate": None, "ModDate": None})
@@ -268,22 +280,22 @@ def dist_panel(ax, stage, subset, ylim):
 
 def fig2(stage="sp", name="fig2_distributions", ylim=None):
     if ylim is None:  # derived from the data so that no point is ever clipped
-        ext = [kde_profile(pooled(stage, s, sub))[0] for s in SCHEMES for sub in ("unstrained", "strained")]
+        ext = [kde_profile(pooled(stage, s, sub))[0] for s in SCHEMES for sub in ("simple", "strained", "aromatic")]
         ylim = (np.floor(min(e.min() for e in ext) - 0.3), np.ceil(max(e.max() for e in ext) + 2.4))
-    fig, axes = plt.subplots(2, 1, figsize=(COL1 - 0.03, 5.0), sharex=True, gridspec_kw=dict(hspace=0.28))
-    for ax, subset, title in zip(axes, ("unstrained", "strained"), ("Unstrained (acyclic): {} molecules, {} reactions", "Strained (3–5-membered rings): {} molecules, {} reactions")):
+    fig, axes = plt.subplots(3, 1, figsize=(COL1 - 0.03, 7.2), sharex=True, gridspec_kw=dict(hspace=0.26))
+    for ax, subset, letter in zip(axes, ("simple", "strained", "aromatic"), "abc"):
         dist_panel(ax, stage, subset, ylim)
         n = int(SUBSETS[subset].sum())
-        ax.set_title(title.format(n, 3 * n), fontsize=7.8, pad=4)
+        ax.set_title(f"{GROUP_TITLE[subset]}: {n} molecules", fontsize=7.6, pad=4)
         ax.set_ylabel("Error vs. ATcT (kcal mol$^{-1}$)")
-    panel(axes[0], "a", -0.20, 1.02)
-    panel(axes[1], "b", -0.20, 1.02)
+        panel(ax, letter, -0.20, 1.02)
     save(fig, name)
 
 
 def fig3():
-    fig, axes = plt.subplots(3, 1, figsize=(COL1 - 0.03, 5.6), sharex=True, gridspec_kw=dict(hspace=0.32))
-    for ax, subset, title in zip(axes, ("unstrained", "strained", "all"), ("Unstrained", "Strained", "All molecules")):
+    fig, axes = plt.subplots(4, 1, figsize=(COL1 - 0.03, 7.4), sharex=True, gridspec_kw=dict(hspace=0.32))
+    for ax, subset in zip(axes, ("simple", "strained", "aromatic", "all")):
+        title = f"{GROUP_TITLE[subset].split(' (')[0]} ({int(SUBSETS[subset].sum())} molecules)"
         top = 0
         for j, s in enumerate(SCHEMES):
             for k, (stage, hatch, alpha) in enumerate((("opt", "////", 0.45), ("sp", None, 1.0))):
@@ -292,19 +304,19 @@ def fig3():
                 x = j + (k - 0.5) * 0.38
                 ax.bar(x, rmse(v), width=0.36, color=COL[s], alpha=alpha, hatch=hatch, edgecolor="white" if hatch is None else COL[s], lw=0)
                 ax.errorbar(x, rmse(v), yerr=[[rmse(v) - lo], [hi - rmse(v)]], color="black", lw=0.8, capsize=2, capthick=0.8)
-                ax.text(x, hi + 0.06 * (5.2 if subset == "strained" else 3.4) / 3, f"{rmse(v):.2f}", ha="center", va="bottom", fontsize=6.4)
+                ax.text(x, hi + 0.07, f"{rmse(v):.2f}", ha="center", va="bottom", fontsize=6.4)
                 top = max(top, hi)
         ax.set_xticks(range(3)); ax.set_xticklabels(SCHEMES)
         ax.set_title(title, fontsize=8, pad=3)
         ax.set_ylim(0, math.ceil(top * 1.12 + 0.3))
         ax.set_xlim(-0.6, 2.6)
         ax.set_ylabel("RMSE (kcal mol$^{-1}$)")
-    for a_, l in zip(axes, "abc"):
+    for a_, l in zip(axes, "abcd"):
         panel(a_, l, -0.20, 1.02)
     handles = [Patch(fc="#888888", alpha=0.45, hatch="////", ec="#888888", label="Before SPR"),
                Patch(fc="#888888", label="After SPR (ωB97X-V/def2-TZVP)")]
     fig.legend(handles=handles, loc="upper center", ncol=2, frameon=False, bbox_to_anchor=(0.5, 1.0), fontsize=7)
-    fig.subplots_adjust(top=0.92)
+    fig.subplots_adjust(top=0.94)
     save(fig, "fig3_rmse")
 
 
@@ -317,8 +329,9 @@ def fig4():
         x = err[stage][lv_a]["HO"]; y = err[stage][lv_b]["HO"]
         lim = float(np.ceil(max(np.abs(x).max(), np.abs(y).max()) + 0.5))
         ax.plot([-lim, lim], [-lim, lim], color="black", lw=0.6, ls=(0, (4, 3)), zorder=1)
-        ax.scatter(x[~is_str], y[~is_str], s=8, color=COL["HO"], lw=0, alpha=0.8, label="unstrained", zorder=3)
+        ax.scatter(x[is_sim], y[is_sim], s=8, color=COL["HO"], lw=0, alpha=0.8, label="simple", zorder=3)
         ax.scatter(x[is_str], y[is_str], s=9, color="white", edgecolor=COL["HO"], lw=0.8, label="strained", zorder=3)
+        ax.scatter(x[is_aro], y[is_aro], s=10, marker="D", color="white", edgecolor="#444444", lw=0.7, label="aromatic", zorder=3)
         ax.set_xlim(-lim, lim); ax.set_ylim(-lim, lim); ax.set_aspect("equal")
         ax.set_title(title, fontsize=8, pad=4)
         ax.set_xlabel("Error, B3LYP geom.", fontsize=7.5)
@@ -344,43 +357,57 @@ def fig4():
     save(fig, "fig4_geometry")
 
 
-def fig5():
-    idx = np.where(is_str)[0]
+def ladder(subset, name, ncols=1, xlim=(-5.5, 8.5)):
+    """Per-molecule errors after SPR (mean over the three geometries), ordered by homodesmotic error.
+    With ncols > 1 the molecules are split into side-by-side blocks (a double-column figure)."""
+    idx = np.where(SUBSETS[subset])[0]
     mean = {s: np.mean([err["sp"][lv][s][idx] for lv in LEVELS], axis=0) for s in SCHEMES}
-    order = np.argsort(mean["HO"])[::-1]  # largest positive error at top
-    n = len(order)
-    rowh, left, right, bottom, top = 0.31, 1.34, 0.08, 0.42, 0.30
-    W, H = COL1, rowh * n + bottom + top
+    order = list(np.argsort(mean["HO"])[::-1])  # largest positive error at top
+    per = math.ceil(len(order) / ncols)
+    chunks = [order[i:i + per] for i in range(0, len(order), per)]
+    rowh, left, right, bottom, top = 0.31, 1.34, 0.14, 0.42, 0.30
+    gap = 0.25
+    W, H = ncols * COL1 + (ncols - 1) * gap, rowh * per + bottom + top
     fig = plt.figure(figsize=(W, H))
-    # structures alternate between two columns so that each can be about two rows tall
-    bw, bh, xc = 0.60, 0.56, (0.33, 0.97)
-    smis = [SMILES[mol_order[idx[o]]] for o in order]
-    sc = min(ACS, common_scale(smis, bw, bh, label_ends=False))
-    ax = fig.add_axes([left / W, bottom / H, (W - left - right) / W, (H - bottom - top) / H])
-    y = np.arange(n)[::-1]
-    ax.axvspan(-1, 1, color="#999999", alpha=0.10, lw=0)
-    ax.axvline(0, color="black", lw=0.7, ls=(0, (4, 3)))
-    for yi, o in zip(y, order):
-        vals = [mean[s][o] for s in SCHEMES]
-        ax.plot([min(vals), max(vals)], [yi, yi], color="#BBBBBB", lw=0.9, zorder=1)
-    for s, mk in zip(SCHEMES, ("s", "^", "o")):
-        ax.scatter([mean[s][o] for o in order], y, marker=mk, s=16, color=COL[s], edgecolor="black", lw=0.35, zorder=3, label=NAME[s])
-    ax.set_yticks([]); ax.set_ylim(-0.6, n - 0.4); ax.set_xlim(-5.5, 8.5)
-    ax.set_xlabel("Error vs. ATcT after SPR (kcal mol$^{-1}$)")
-    ax.spines["left"].set_visible(False)
-    fig.legend(handles=ax.get_legend_handles_labels()[0], labels=SCHEMES, loc="upper center", ncol=3, frameon=False,
+    bw, bh = 0.60, 0.56
+    sc = min(ACS, common_scale([SMILES[mol_order[idx[o]]] for o in order], bw, bh, label_ends=False))
+    for c, chunk in enumerate(chunks):
+        x0 = c * (COL1 + gap)
+        xc = (x0 + 0.33, x0 + 0.97)
+        ax = fig.add_axes([(x0 + left) / W, bottom / H, (COL1 - left - right) / W, (H - bottom - top) / H])
+        y = np.arange(per)[::-1][:len(chunk)]
+        ax.axvspan(-1, 1, color="#999999", alpha=0.10, lw=0)
+        ax.axvline(0, color="black", lw=0.7, ls=(0, (4, 3)))
+        for yi, o in zip(y, chunk):
+            vals = [mean[s][o] for s in SCHEMES]
+            ax.plot([min(vals), max(vals)], [yi, yi], color="#BBBBBB", lw=0.9, zorder=1)
+        for s, mk in zip(SCHEMES, ("s", "^", "o")):
+            ax.scatter([mean[s][o] for o in chunk], y, marker=mk, s=16, color=COL[s], edgecolor="black", lw=0.35, zorder=3, label=NAME[s])
+        ax.set_yticks([]); ax.set_ylim(-0.6, per - 0.4); ax.set_xlim(*xlim)
+        ax.set_xlabel("Error vs. ATcT after SPR (kcal mol$^{-1}$)")
+        ax.spines["left"].set_visible(False)
+        ylo, yhi = ax.get_ylim()
+        for k, (yi, o) in enumerate(zip(y, chunk)):
+            cy = bottom + (yi - ylo) / (yhi - ylo) * (H - bottom - top)
+            a = place_mol(fig, SMILES[mol_order[idx[o]]], xc[k % 2], cy, bw, bh, scale=sc, label_ends=False)
+            x1 = a.get_position().x1 * W + 0.03
+            fig.add_artist(plt.Line2D([x1 / W, (x0 + left - 0.02) / W], [cy / H] * 2, color="#CCCCCC", lw=0.5, ls=(0, (1, 1.5))))
+        if c == 0:
+            handles = ax.get_legend_handles_labels()[0]
+    fig.legend(handles=handles, labels=SCHEMES, loc="upper center", ncol=3, frameon=False,
                bbox_to_anchor=(0.5, 1.0), handletextpad=0.1, columnspacing=1.2, fontsize=7)
-    ylo, yhi = ax.get_ylim()
-    for k, (yi, o) in enumerate(zip(y, order)):
-        cy = bottom + (yi - ylo) / (yhi - ylo) * (H - bottom - top)
-        cx = xc[k % 2]
-        a = place_mol(fig, smis[k], cx, cy, bw, bh, scale=sc, label_ends=False)
-        x1 = a.get_position().x1 * W + 0.03
-        fig.add_artist(plt.Line2D([x1 / W, (left - 0.02) / W], [cy / H] * 2, color="#CCCCCC", lw=0.5, ls=(0, (1, 1.5))))
-    save(fig, "fig5_strained")
+    save(fig, name)
+
+
+def fig5():
+    ladder("strained", "fig5_strained", ncols=2)
 
 
 def fig6():
+    ladder("aromatic", "fig6_aromatic", ncols=1, xlim=(-8, 7.5))
+
+
+def fig7():
     data = list(csv.DictReader(open("data/scaling.csv")))
     W, H = COL1 - 0.17, 3.2
     fig = plt.figure(figsize=(W, H))
@@ -411,7 +438,7 @@ def fig6():
         fig.text((x + 0.01) / W, y0 / H, cnt, ha="left", va="center", fontsize=8.5); x += 0.18
         iw = img.shape[1] * sc
         place_mol(fig, smi, x + iw / 2, y0, iw, img.shape[0] * sc, scale=sc); x += iw + 0.03
-    save(fig, "fig6_scalability")
+    save(fig, "fig7_scalability")
 
 
 def frag_png(pattern, syntax, w=520, h=300):
@@ -499,5 +526,6 @@ if __name__ == "__main__":
     fig4()
     fig5()
     fig6()
+    fig7()
     fig_wildcards((1, 2, 3), "figS2_wildcard_libraries", True)
     fig_wildcards((4,), "figS3_wildcard_library_homodesmotic", False)
