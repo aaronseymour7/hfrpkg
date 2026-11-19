@@ -12,6 +12,7 @@ Every qualifying species is listed with its status: in the benchmark, or exclude
 Species list: data/feasibility.csv.  Output: data/selection_check.csv
 """
 import csv
+import re
 
 from rdkit import Chem, RDLogger
 
@@ -27,6 +28,16 @@ EXCLUDED = {  # qualifying species left out of the study, and why
     "InChI=1S/C2H2F2/c3-1-2-4/h1-2H": "stereo-unspecified duplicate of the (Z) isomer in the benchmark",
     "InChI=1S/2CH4O/c2*1-2/h2*2H,1H3": "dimer (two molecules), not a single species",
     "InChI=1S/C5H4/c1-2-4-3(1)5(1,2)4/h1-4H": "pyramidane: no complete conformer set at wB97X-D/def2-TZVP",
+    # species with 6-12 heavy atoms
+    "InChI=1S/C6H6/c1-3-5-6-4-2/h1,4-6H,2H2": "stereo-unspecified duplicate of the (E) and (Z) isomers in the benchmark",
+    "InChI=1S/C6H4/c1-2-4-6-5-3-1/h1-4H": "o-benzyne: singlet diradical, outside the closed-shell scope",
+    "InChI=1S/C6H6/c1-3-5-6-4-2/h1,4-5H,2H3": "3,4-hexadien-1-yne: wB97X-D/def2-TZVP calculations did not converge",
+    "InChI=1S/C6H6/c1-3-5-6-4-2/h3,5H,1-2H2": "1,2,3,5-hexatetraene: wB97X-D/def2-TZVP calculations did not converge",
+    **{i: "the homodesmotic reaction of the current solver needs a reference species without an ATcT value" for i in (
+        "InChI=1S/C7H6O/c8-6-7-4-2-1-3-5-7/h1-6H", "InChI=1S/C8H6/c1-2-8-6-4-3-5-7-8/h1,3-7H",
+        "InChI=1S/C8H8O/c1-7(9)8-5-3-2-4-6-8/h2-6H,1H3", "InChI=1S/C8H8O/c1-7-4-2-3-5-8(7)6-9/h2-6H,1H3",
+        "InChI=1S/C8H8O/c1-7-3-2-4-8(5-7)6-9/h2-6H,1H3", "InChI=1S/C8H8O/c1-7-2-4-8(6-9)5-3-7/h2-6H,1H3",
+        "InChI=1S/C9H10O/c1-7-4-3-5-9(6-10)8(7)2/h3-6H,1-2H3", "InChI=1S/C6H6/c1-2-6-4-3-5-6/h1,4H,3,5H2")},
 }
 
 
@@ -34,6 +45,8 @@ def main():
     core.USE_OBJECTIVE, core.EXCLUDE_IDENTITY = False, False
     species = list(dict.fromkeys((r["inchi"], r["smiles"]) for r in csv.DictReader(open("data/feasibility.csv", encoding="utf-8"))))
     bench = {r["inchi"] for r in csv.DictReader(open("data/benchmark_errors.csv", encoding="utf-8"))}
+    # cis-1,3,5-hexatriene is listed in ATcT without its stereo layer
+    bench |= {re.sub(r"/b[^/]*", "", i) for i in bench if i.startswith("InChI=1S/C6H8/c1-3-5-6-4-2/")}
     out = []
     for inchi, smiles in species:
         decomposable, missing = True, set()
