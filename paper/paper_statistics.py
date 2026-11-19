@@ -127,7 +127,7 @@ if os.path.exists("data/feasibility.csv"):
     import collections
 
     f = list(csv.DictReader(open("data/feasibility.csv", encoding="utf-8")))
-    print("\n== applicability survey:", len({r['inchi'] for r in f}), "ATcT species with 3-5 heavy atoms")
+    print("\n== applicability survey:", len({r['inchi'] for r in f}), "ATcT species with 3-12 heavy atoms")
     for s in ("ID", "HY", "HO"):
         c = collections.Counter(r["outcome"] for r in f if r["scheme"] == s)
         n = sum(c.values())
