@@ -16,7 +16,7 @@ InChI=1S/C2H2O/c1-2-3/h1H2,C=C=O,False,False,False,,
 InChI=1S/C2H3N/c1-2-3/h1H3,CC#N,False,False,False,,
 "InChI=1S/C4H10/c1-4(2)3/h4H,1-3H3",CC(C)C,False,False,False,,
 "InChI=1S/CF4/c2-1(3,4)5",FC(F)(F)F,False,False,False,,
-"InChI=1S/CH3NO/c2-1-3/h1H,(H2,2,3)",NC=O,False,False,False,,
+"InChI=1S/CH3NO/c2-1-3/h1H,(H2,2,3)",N=CO,False,False,False,,
 InChI=1S/C3H6/c1-2-3-1/h1-3H2,C1CC1,True,True,True,,benchmark
 "InChI=1S/C5H6/c1-2-4-5-3-1/h1-4H,5H2",C1=CCC=C1,True,True,True,,benchmark
 "InChI=1S/C2H4O/c1-2-3/h2-3H,1H2",C=CO,False,False,False,,
@@ -103,7 +103,7 @@ InChI=1S/C4H4/c1-2-4-3-1/h1-4H,C1=CC=C1,True,True,True,,benchmark
 InChI=1S/C2H2F2/c1-2(3)4/h1H2,C=C(F)F,False,False,False,,
 "InChI=1S/CH3NO2/c2-1(3)4/h2H2,(H,3,4)",NC(=O)O,False,False,False,,
 "InChI=1S/C4H6O/c1-3-4(2)5/h3H,1H2,2H3",C=CC(C)=O,False,False,False,,
-"InChI=1S/CH4N2O/c2-1(3)4/h(H4,2,3,4)",NC(N)=O,False,False,False,,
+"InChI=1S/CH4N2O/c2-1(3)4/h(H4,2,3,4)",N=C(N)O,False,False,False,,
 "InChI=1S/C2H5NO/c1-2(3)4/h1H3,(H2,3,4)",CC(N)=O,False,False,False,,
 InChI=1S/C4H8/c1-2-4-3-1/h1-4H2,C1CCC1,True,True,True,,benchmark
 "InChI=1S/C5H8/c1-4-5(2)3/h4H,1-2H2,3H3",C=CC(=C)C,False,False,False,,
@@ -228,3 +228,143 @@ InChI=1S/C2H4O3/c1-3-2-5-4-1/h1-2H2,C1OCOO1,True,True,True,,benchmark
 InChI=1S/C5H4/c1-2-5(1)3-4-5/h1-4H,C1=CC12C=C2,True,True,True,,benchmark
 InChI=1S/C2H2Cl2/c3-1-2-4/h1-2H,ClC=CCl,False,True,True,,excluded: stereo-unspecified duplicate of the (Z) isomer in the benchmark
 InChI=1S/C2H2F2/c3-1-2-4/h1-2H,FC=CF,False,True,True,,excluded: stereo-unspecified duplicate of the (Z) isomer in the benchmark
+InChI=1S/C6H6/c1-2-4-6-5-3-1/h1-6H,c1ccccc1,True,True,True,,benchmark
+"InChI=1S/C7H8/c1-7-5-3-2-4-6-7/h2-6H,1H3",Cc1ccccc1,True,True,True,,benchmark
+InChI=1S/O3/c1-3-2,O=[O+][O-],False,False,False,,
+InChI=1S/CH2O2/c1-3-2/h1H2,C=[O+][O-],False,False,False,,
+"InChI=1S/C6H6O/c7-6-4-2-1-3-5-6/h1-5,7H",Oc1ccccc1,True,True,True,,benchmark
+InChI=1S/C7H6O/c8-6-7-4-2-1-3-5-7/h1-6H,O=Cc1ccccc1,False,True,True,,excluded: the homodesmotic reaction of the current solver needs a reference species without an ATcT value
+"InChI=1S/HNO3/c2-1(3)4/h(H,2,3,4)",O=[N+]([O-])O,False,False,False,,
+InChI=1S/C6H5Cl/c7-6-4-2-1-3-5-6/h1-5H,Clc1ccccc1,False,True,False,C=C(C)Cl;C=CC(=C)Cl,
+InChI=1S/CH3NO2/c1-2(3)4/h1H3,C[N+](=O)[O-],False,False,False,,
+InChI=1S/C2H3N/c1-3-2/h1H3,[C-]#[N+]C,False,False,False,,
+InChI=1S/C10H8/c1-2-6-10-8-4-3-7-9(10)5-1/h1-8H,c1ccc2ccccc2c1,True,True,True,,benchmark
+InChI=1S/C2F4/c3-1(4)2(5)6,FC(F)=C(F)F,True,True,True,,benchmark
+"InChI=1S/C6H14/c1-3-5-6-4-2/h3-6H2,1-2H3",CCCCCC,True,True,True,,benchmark
+"InChI=1S/C9H8/c1-2-5-9-7-3-6-8(9)4-1/h1-6H,7H2",C1=Cc2ccccc2C1,True,True,True,,benchmark
+InChI=1S/C6H5F/c7-6-4-2-1-3-5-6/h1-5H,Fc1ccccc1,False,True,False,C=C(C)F;C=CC(=C)F,
+InChI=1S/N2O/c1-2-3,[N-]=[N+]=O,False,False,False,,
+InChI=1S/C5H5N/c1-2-4-6-5-3-1/h1-5H,c1ccncc1,False,True,False,C=CC=N;C=CN=C,
+InChI=1S/C6H6/c1-3-5-6-4-2/h1-2H3,CC#CC#CC,True,True,True,,benchmark
+InChI=1S/CH2N2/c1-3-2/h1H2,C=[N+]=[N-],False,False,False,,
+InChI=1S/HN3/c1-3-2/h1H,[N-]=[N+]=N,False,False,False,,
+"InChI=1S/C8H8/c1-2-8-6-4-3-5-7-8/h2-7H,1H2",C=Cc1ccccc1,True,True,True,,benchmark
+"InChI=1S/C8H6/c1-2-8-6-4-3-5-7-8/h1,3-7H",C#Cc1ccccc1,False,True,True,,excluded: the homodesmotic reaction of the current solver needs a reference species without an ATcT value
+"InChI=1S/C8H8O/c1-7(9)8-5-3-2-4-6-8/h2-6H,1H3",CC(=O)c1ccccc1,False,True,True,,excluded: the homodesmotic reaction of the current solver needs a reference species without an ATcT value
+InChI=1S/C3HN/c1-3-4-2/h1H,[C-]#[N+]C#C,False,False,False,,
+"InChI=1S/C6H6/c1-6-4-2-3-5-6/h2-5H,1H2",C=C1C=CC=C1,True,True,True,,benchmark
+InChI=1S/ClHO2/c2-1-3/h2H,[O-][Cl+]O,False,False,False,,
+"InChI=1S/C9H10/c1-2-5-9-7-3-6-8(9)4-1/h1-2,4-5H,3,6-7H2",c1ccc2c(c1)CCC2,True,True,True,,benchmark
+"InChI=1S/C8H8O/c1-7-4-2-3-5-8(7)6-9/h2-6H,1H3",Cc1ccccc1C=O,False,True,True,,excluded: the homodesmotic reaction of the current solver needs a reference species without an ATcT value
+"InChI=1S/C6H6/c1-3-5-6-4-2/h1H,4H2,2H3",C#CC#CCC,True,True,True,,benchmark
+"InChI=1S/C2F6/c3-1(4,5)2(6,7)8",FC(F)(F)C(F)(F)F,False,False,False,,
+InChI=1S/C2Cl4/c3-1(4)2(5)6,ClC(Cl)=C(Cl)Cl,True,True,True,,benchmark
+"InChI=1S/C8H10/c1-2-8-6-4-3-5-7-8/h3-7H,2H2,1H3",CCc1ccccc1,True,True,True,,benchmark
+"InChI=1S/C8H8O/c1-7-3-2-4-8(5-7)6-9/h2-6H,1H3",Cc1cccc(C=O)c1,False,True,True,,excluded: the homodesmotic reaction of the current solver needs a reference species without an ATcT value
+InChI=1S/C12H8/c1-3-9-4-2-6-11-8-7-10(5-1)12(9)11/h1-8H,C1=Cc2cccc3cccc1c23,True,True,True,,benchmark
+InChI=1S/C6H12/c1-2-4-6-5-3-1/h1-6H2,C1CCCCC1,True,True,True,,benchmark
+InChI=1S/CHNO/c1-2-3/h1H,C#[N+][O-],False,False,False,,
+InChI=1S/CHNO/c1-2-3/h3H,[C-]#[N+]O,False,False,False,,
+"InChI=1S/C8H8O/c1-7-2-4-8(6-9)5-3-7/h2-6H,1H3",Cc1ccc(C=O)cc1,False,True,True,,excluded: the homodesmotic reaction of the current solver needs a reference species without an ATcT value
+InChI=1S/HNO2/c2-1-3/h1H,O=[NH+][O-],False,False,False,,
+"InChI=1S/C7H8/c1-2-4-6-7-5-3-1/h1-6H,7H2",C1=CC=CCC=C1,True,True,True,,benchmark
+"InChI=1S/C8H18/c1-3-5-7-8-6-4-2/h3-8H2,1-2H3",CCCCCCCC,True,True,True,,benchmark
+"InChI=1S/C3H3N/c1-3-4-2/h3H,1H2",[C-]#[N+]C=C,False,False,False,,
+"InChI=1S/C12H10/c1-3-9-4-2-6-11-8-7-10(5-1)12(9)11/h1-6H,7-8H2",c1cc2c3c(cccc3c1)CC2,True,True,True,,benchmark
+InChI=1S/HNO4/c2-1(3)5-4/h4H,O=[N+]([O-])OO,False,False,False,,
+"InChI=1S/C7H16/c1-3-5-7-6-4-2/h3-7H2,1-2H3",CCCCCCC,True,True,True,,benchmark
+"InChI=1S/C2Cl6/c3-1(4,5)2(6,7)8",ClC(Cl)(Cl)C(Cl)(Cl)Cl,False,False,False,,
+InChI=1S/ClHO3/c2-1(3)4/h2H,[O-][Cl+2]([O-])O,False,False,False,,
+InChI=1S/C6H2/c1-3-5-6-4-2/h1-2H,C#CC#CC#C,False,False,False,,
+"InChI=1S/C7H8/c1-2-7-4-3-6(1)5-7/h1-4,6-7H,5H2",C1=CC2C=CC1C2,True,True,True,,benchmark
+InChI=1S/C7H5N/c8-6-7-4-2-1-3-5-7/h1-5H,N#Cc1ccccc1,False,True,False,C=C(C)C#N,
+InChI=1S/C8H6/c1-3-7-5-2-6-8(7)4-1/h1-6H,C1=CC2=CC=CC2=C1,True,True,True,,benchmark
+"InChI=1S/C6H6/c1-3-5-6-4-2/h1-2H,5-6H2",C#CCCC#C,True,True,True,,benchmark
+InChI=1S/C3H4O3/c4-3-5-1-2-6-3/h1-2H2,O=C1OCCO1,True,True,True,,benchmark
+"InChI=1S/C3H4O3/c1-2(4)3(5)6/h1H3,(H,5,6)",CC(=O)C(=O)O,False,True,False,CC(=O)C=O,
+InChI=1S/C3H6O2/c1-3(2)5-4/h1-2H3,CC(C)=[O+][O-],False,False,False,,
+"InChI=1S/C2H2O4/c3-1(4)2(5)6/h(H,3,4)(H,5,6)",O=C(O)C(=O)O,False,True,False,O=CC(=O)O,
+"InChI=1S/C7H12/c1-2-4-6-7-5-3-1/h1-2H,3-7H2",C1=CCCCCC1,True,True,True,,benchmark
+"InChI=1S/C7H8O/c1-8-7-5-3-2-4-6-7/h2-6H,1H3",COc1ccccc1,True,True,True,,benchmark
+InChI=1S/C7H5FO/c8-7(9)6-4-2-1-3-5-6/h1-5H,O=C(F)c1ccccc1,False,True,False,C=CC(=O)F;CC(=O)F,
+InChI=1S/C6H5NO/c8-7-6-4-2-1-3-5-6/h1-5H,O=Nc1ccccc1,False,False,False,C=CC(=C)N;C=CN=O,
+"InChI=1S/C2H5NO2/c1-2-3(4)5/h2H2,1H3",CC[N+](=O)[O-],False,False,False,,
+"InChI=1S/C6H8/c1-6-4-2-3-5-6/h2-6H,1H3",CC1C=CC=C1,True,True,True,,benchmark
+InChI=1S/N2O4/c3-1(4)2(5)6,O=[N+]([O-])[N+](=O)[O-],False,False,False,,
+"InChI=1S/C6H6/c1-3-5-6-4-2/h1H,5H2,2H3",C#CCC#CC,True,True,True,,benchmark
+"InChI=1S/C6H6/c1-3-5-6-4-2/h4H,1H2,2H3",C=C=C=C=CC,False,False,False,,
+InChI=1S/C12H10/c1-3-7-11(8-4-1)12-9-5-2-6-10-12/h1-10H,c1ccc(-c2ccccc2)cc1,True,True,True,,benchmark
+"InChI=1S/C9H20/c1-3-5-7-9-8-6-4-2/h3-9H2,1-2H3",CCCCCCCCC,True,True,True,,benchmark
+InChI=1S/ClHO2/c2-1-3/h1H,[O-][ClH+2][O-],False,False,False,,
+"InChI=1S/C2H2Cl4/c3-1-2(4,5)6/h1H2",ClCC(Cl)(Cl)Cl,True,True,True,,benchmark
+InChI=1S/C6H4/c1-2-4-6-5-3-1/h1-4H,c1ccccc#1,False,True,True,,"excluded: o-benzyne: singlet diradical, outside the closed-shell scope"
+InChI=1S/C7H14/c1-2-4-6-7-5-3-1/h1-7H2,C1CCCCCC1,True,True,True,,benchmark
+InChI=1S/C6H6/c1-2-4-5-3(1)6(4)5/h1-6H,C1=CC2C3C1C23,True,True,True,,benchmark
+InChI=1S/C12H8/c1-2-6-10-9(5-1)11-7-3-4-8-12(10)11/h1-8H,c1ccc2c(c1)=c1ccccc1=2,True,True,True,,benchmark
+"InChI=1S/C6H7N/c7-6-4-2-1-3-5-6/h1-5H,7H2",Nc1ccccc1,False,True,False,C=C(C)N;C=CC(=C)N,
+InChI=1S/N2O5/c3-1(4)7-2(5)6,O=[N+]([O-])O[N+](=O)[O-],False,False,False,,
+"InChI=1S/C6H14/c1-5-6(2,3)4/h5H2,1-4H3",CCC(C)(C)C,True,True,True,,benchmark
+"InChI=1S/C10H22/c1-3-5-7-9-10-8-6-4-2/h3-10H2,1-2H3",CCCCCCCCCC,True,True,True,,benchmark
+InChI=1S/CH2N2/c1-3-2/h2H2,[C-]#[N+]N,False,False,False,,
+InChI=1S/C2H2Cl4/c3-1(4)2(5)6/h1-2H,ClC(Cl)C(Cl)Cl,True,True,True,,benchmark
+InChI=1S/C7H5ClO/c8-7(9)6-4-2-1-3-5-6/h1-5H,O=C(Cl)c1ccccc1,False,True,False,C=CC(=O)Cl,
+InChI=1S/C6F6/c7-1-2(8)4(10)6(12)5(11)3(1)9,Fc1c(F)c(F)c(F)c(F)c1F,False,False,False,C=C(C)F;C=CC(=C)F,
+InChI=1S/C6H5NO2/c8-7(9)6-4-2-1-3-5-6/h1-5H,O=[N+]([O-])c1ccccc1,False,False,False,,
+"InChI=1S/ClHO4/c2-1(3,4)5/h(H,2,3,4,5)",[O-][Cl+3]([O-])([O-])O,False,False,False,,
+InChI=1S/C6H6/c1-2-3(1)6-4(1)5(2)6/h1-6H,C12C3C1C1C2C31,True,True,True,,benchmark
+"InChI=1S/C2HCl5/c3-1(4)2(5,6)7/h1H",ClC(Cl)C(Cl)(Cl)Cl,True,True,True,,benchmark
+"InChI=1S/C9H10O/c1-7-4-3-5-9(6-10)8(7)2/h3-6H,1-2H3",Cc1cccc(C=O)c1C,False,True,True,,excluded: the homodesmotic reaction of the current solver needs a reference species without an ATcT value
+InChI=1S/C4H6O2/c1-3(5)4(2)6/h1-2H3,CC(=O)C(C)=O,False,True,False,CC(=O)C=O,
+"InChI=1S/C6H8/c1-3-5-6-4-2/h3-6H,1-2H2",C=CC=CC=C,True,True,True,,benchmark
+InChI=1S/C6H4O/c7-5-6-3-1-2-4-6/h1-4H,O=C=C1C=CC=C1,True,True,True,,benchmark
+"InChI=1S/C6H14/c1-4-5-6(2)3/h6H,4-5H2,1-3H3",CCCC(C)C,True,True,True,,benchmark
+"InChI=1S/C6H14/c1-4-6(3)5-2/h6H,4-5H2,1-3H3",CCC(C)CC,True,True,True,,benchmark
+"InChI=1S/C6H14/c1-5(2)6(3)4/h5-6H,1-4H3",CC(C)C(C)C,True,True,True,,benchmark
+"InChI=1S/C6H10/c1-3-5-6-4-2/h3-4H,1-2,5-6H2",C=CCCC=C,True,True,True,,benchmark
+InChI=1S/C2N2/c1-3-4-2,[C-]#[N+][N+]#[C-],False,False,False,,
+"InChI=1S/C6H12/c1-6-4-2-3-5-6/h6H,2-5H2,1H3",CC1CCCC1,True,True,True,,benchmark
+"InChI=1S/C6H6/c1-3-5-6-4-2/h1,4-6H,2H2/b6-5+",C#C/C=C/C=C,True,True,True,,benchmark
+"InChI=1S/C6H6/c1-2-4-6-5-3-1/h1-3,6H,4H2",C1=CC=CCC=1,True,True,True,,benchmark
+InChI=1S/C2N2/c1-4-2-3,[C-]#[N+]C#N,False,False,False,,
+InChI=1S/ClHO4/c2-1(3)5-4/h4H,[O-][Cl+2]([O-])OO,False,False,False,,
+InChI=1S/CN4/c2-1-4-5-3,N#CN=[N+]=[N-],False,False,False,,
+"InChI=1S/C6H6O2/c7-8-6-4-2-1-3-5-6/h1-5,7H",OOc1ccccc1,True,True,True,,benchmark
+"InChI=1S/C6H10/c1-2-4-6-5-3-1/h1-2H,3-6H2",C1=CCCCC1,True,True,True,,benchmark
+InChI=1S/C6H6/c1-2-6-4-3-5(1)6/h1-6H,C1=CC2C=CC12,True,True,True,,benchmark
+"InChI=1S/C6H6/c1-3-5-6-4-2/h5H,1H2,2H3",C=C=CC#CC,True,True,True,,benchmark
+"InChI=1S/C6H6/c1-4-6(3)5-2/h1-2,6H,3H3",C#CC(C)C#C,True,True,True,,benchmark
+"InChI=1S/C7H6O2/c8-7(9)6-4-2-1-3-5-6/h1-5H,(H,8,9)",O=C(O)c1ccccc1,False,True,False,C=CC(=O)O,
+InChI=1S/CH2N2/c1-3-2/h1-2H,[CH-]=[N+]=N,False,False,False,,
+InChI=1S/C7H5N/c1-8-7-5-3-2-4-6-7/h2-6H,[C-]#[N+]c1ccccc1,False,False,False,,
+"InChI=1S/C9H8/c1-2-5-9-7-3-6-8(9)4-1/h1-2,4-7H,3H2",C1=c2ccccc2=CC1,True,True,True,,benchmark
+"InChI=1S/C8H8O/c1-7(9)8-5-3-2-4-6-8/h2-6,9H,1H2",C=C(O)c1ccccc1,True,True,True,,benchmark
+InChI=1S/ClHO3/c2-1(3)4/h1H,[O-][ClH+3]([O-])[O-],False,False,False,,
+"InChI=1S/C4H6O4/c5-3(6)1-2-4(7)8/h1-2H2,(H,5,6)(H,7,8)",O=C(O)CCC(=O)O,True,True,True,,benchmark
+InChI=1S/F4N2/c1-5(2)6(3)4,FN(F)N(F)F,False,False,False,NF,
+InChI=1S/C6H6/c1-4-5(2)6(4)3/h1-3H2,C=C1C(=C)C1=C,True,True,True,,benchmark
+"InChI=1S/C6H6/c1-5-3-4-6(5)2/h3-4H,1-2H2",C=C1C=CC1=C,True,True,True,,benchmark
+"InChI=1S/C6H6/c1-2-6-4-3-5-6/h1,4H,3,5H2",C#CC1=CCC1,False,True,True,,excluded: the homodesmotic reaction of the current solver needs a reference species without an ATcT value
+"InChI=1S/C6H6/c1-4-6(3)5-2/h1H,2H2,3H3",C#CC(C)=C=C,False,True,False,C#CC(=C)C,
+InChI=1S/C5H2/c1-3-5-4-2/h1H2,[C-]#CC#C[CH2+],False,False,False,,
+InChI=1S/C3H6O3/c1-5-3(4)6-2/h1-2H3,COC(=O)OC,True,True,True,,benchmark
+"InChI=1S/C6H6/c1-2-5-4-6(5)3-1/h1-3,5H,4H2",C1=CC2CC2=C1,True,True,True,,benchmark
+"InChI=1S/C6H6/c1-2-6-4-3-5-6/h3-4H,1,5H2",C=C=C1C=CC1,True,True,True,,benchmark
+"InChI=1S/C6H6/c1-3-5-6-4-2/h1,4-5H,2H3",C#CC=C=CC,False,True,True,,"excluded: 3,4-hexadien-1-yne: wB97X-D/def2-TZVP calculations did not converge"
+"InChI=1S/C6H6/c1-2-6-4-3-5-6/h1,3-4,6H,5H2",C#CC1C=CC1,True,True,True,,benchmark
+"InChI=1S/C3H7NO2/c1-2-3-6-4-5/h2-3H2,1H3",CCCON=O,False,True,False,CON,
+InChI=1S/Cl2O2/c1-4-2-3,[O-][Cl+]OCl,False,False,False,,
+"InChI=1S/C8H18/c1-7(2)6-8(3,4)5/h7H,6H2,1-5H3",CC(C)CC(C)(C)C,True,True,True,,benchmark
+"InChI=1S/C7H8/c1-2-7-5-3-4-6-7/h2-7H,1H2",C=CC1C=CC=C1,True,True,True,,benchmark
+"InChI=1S/C6H6/c1-3-5-6-4-2/h1,4-6H,2H2",C#CC=CC=C,False,True,True,,excluded: stereo-unspecified duplicate of the (E) and (Z) isomers in the benchmark
+"InChI=1S/C6H6/c1-3-5-6-4-2/h1,4-6H,2H2/b6-5-",C#C/C=C\C=C,True,True,True,,benchmark
+"InChI=1S/C6H6/c1-3-5-6-4-2/h3-4H,1-2H2",C=CC#CC=C,True,True,True,,benchmark
+"InChI=1S/C6H6/c1-3-5-6-4-2/h5-6H,1-2H2",C=C=CC=C=C,True,True,True,,benchmark
+"InChI=1S/C6H6/c1-3-5-6-4-2/h1,6H,2,5H2",C#CCC=C=C,True,True,True,,benchmark
+"InChI=1S/C6H6/c1-4-6(3)5-2/h1,5H,2-3H2",C#CC(=C)C=C,True,True,True,,benchmark
+"InChI=1S/C6H6/c1-3-5-6-4-2/h3,5H,1-2H2",C=C=C=CC=C,False,True,True,,"excluded: 1,2,3,5-hexatetraene: wB97X-D/def2-TZVP calculations did not converge"
+InChI=1S/N2O4/c3-1-6-2(4)5,O=NO[N+](=O)[O-],False,False,False,,
+"InChI=1S/C2H4O2/c1-2-4-3/h2H,1H3",CC=[O+][O-],False,False,False,,
+"InChI=1S/C7H6/c1-2-7-5-3-4-6-7/h3-6H,1H2",C=C=C1C=CC=C1,True,True,True,,benchmark
+"InChI=1S/C7H6/c1-2-4-7-5-6(7)3-1/h1-4H,5H2",c1ccc2c(c1)C2,True,True,True,,benchmark
+InChI=1S/C7H6/c1-2-4-6-7-5-3-1/h1-6H,C1=CC=CC=CC=1,True,True,True,,benchmark
+InChI=1S/ClHO3/c2-1-4-3/h3H,[O-][Cl+]OO,False,False,False,,
